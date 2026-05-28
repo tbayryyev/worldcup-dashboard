@@ -75,6 +75,7 @@ Deployed public URL; all 5 routes functional; live score updates within 30s with
 
 - `docs/requirements-v1.md` — full v1 spec.
 - `docs/findings.md` — why ESPN, lag numbers, architecture rationale.
+- `docs/deploy-storage-decision.md` — why Cloudflare Pages over Vercel, why no database.
 
 ## The research that produced these decisions
 
