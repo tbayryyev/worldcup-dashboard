@@ -73,14 +73,22 @@ Worked first try. Repo now has the Next.js scaffold + project context + planning
 
 **Decision documented in detail in [`deploy-storage-decision.md`](deploy-storage-decision.md).** Video-3 talking points:
 
-### Hosting: Vercel vs Cloudflare
+### Hosting: Vercel vs Cloudflare vs everyone else
 
-Compared:
-- **Vercel Hobby** — best Next.js DX (Vercel built Next.js), but: 100 GB bandwidth/month cap, soft cap on function invocations, and the **commercial-use clause** is a real issue for a YouTube-channel-promoted dashboard.
-- **Cloudflare Workers** — unlimited free bandwidth, 100k requests/day, no commercial-use restriction, but: needs an adapter (`@opennextjs/cloudflare`) to run Next.js.
-- **Netlify / GitHub Pages / Render / Fly.io** — looked at briefly, rejected (similar Vercel-style caps or can't host the API route).
+Walk the audience through the full field, not just the winner — show you actually looked:
 
-Chose Cloudflare for the bandwidth ceiling and the commercial-use clause. The tradeoff: weaker DX, weaker logs.
+- **Vercel Hobby** — best Next.js DX (Vercel built Next.js), but: 100 GB bandwidth/month cap, soft cap on function invocations, and the **commercial-use clause** in the Hobby terms is a real issue for a YouTube-channel-promoted dashboard.
+- **Cloudflare Workers** — unlimited free bandwidth, 100k requests/day, no commercial-use restriction, but: needs an adapter (`@opennextjs/cloudflare`) to run Next.js. **← chosen.**
+- **Netlify** — honest free tier (no commercial clause), but same 100 GB bandwidth ceiling as Vercel. Loses to Cloudflare's unlimited bandwidth.
+- **GitHub Pages** — free and generous but **static-only**. Can't run `/api/live`, which would force the browser to hit ESPN directly (no edge cache, CORS pain). Non-starter.
+- **Render** — free tier exists, but services **sleep after 15 min idle** and cold-start in 30+ seconds. A "live" dashboard that takes 30s to wake up is dead on arrival.
+- **Fly.io** — killed the truly-free tier in 2024; needs a credit card now. Breaks the $0 rule.
+- **AWS / Azure / GCP** — no true free tier, only free *credits* and always-free *quotas* you can silently blow past and get billed for. The "is this still free?" monitoring cost isn't worth it.
+- **DigitalOcean / Heroku** — DO has no free app tier ($5/mo min); Heroku killed its free tier in 2022.
+
+Chose Cloudflare for the **unlimited bandwidth ceiling** and the **no-commercial-use-clause**. The tradeoff we accept: weaker DX, weaker logs, and needing an adapter.
+
+**On-camera line:** "Almost every 'free' cloud host is either free-with-a-bandwidth-cap, free-until-it-sleeps, or free-credits-then-a-bill. Cloudflare's free tier is the only one where a viral spike can't surprise me with an invoice."
 
 ### Storage: why no database
 
@@ -90,6 +98,19 @@ Three workload buckets in this project:
 3. **History** — small, append-only, ~500 KB total over the whole tournament. A `history.json` regenerated every ~2h by GitHub Actions cron, committed to the repo, served by the CDN.
 
 A database (Supabase, Neon, Cloudflare D1, KV…) would add: schema, migrations, an account with a payment method, connection pooling concerns, a new secret. None of which v1 needs.
+
+**On-camera line:** "The live data has a lifetime measured in seconds, so the cache *is* the database. The history is half a megabyte of append-only JSON — that's a file, not a Postgres instance."
+
+### Orchestration: why no Airflow
+
+The instinct when you hear "regenerate a file every 2 hours" is to reach for a scheduler/orchestrator. We deliberately don't.
+
+- **The job:** one task, one output (`history.json`), idempotent, ~30 seconds. That's a **cron tick**, not a pipeline.
+- **What we use:** a GitHub Actions scheduled workflow. Free for public repos, built-in secrets, emails you on failure, manual re-run button, `workflow_dispatch` for testing.
+- **What we rejected:** Airflow, Prefect, Dagster, Temporal. These earn their complexity on **DAGs of interdependent tasks**, multiple workflows, long-running checkpointed jobs, backfills, and lineage. We have *none* of those. Standing up an Airflow scheduler + webserver + metadata DB to wrap a 30-second script is negative value — and it breaks the $0 budget the second you need a host for it.
+- **Future option:** Cloudflare Cron Triggers could run the regen *inside* the Worker (v2 consideration; trades "static file in git" for a storage binding).
+
+**On-camera line:** "Reach for an orchestrator when you have many interdependent jobs you need to reason about as a system. For one job on a timer, cron is the correct, boring answer — and GitHub Actions is just hosted cron with a free tier."
 
 **Show on camera:** the comparison table, then the architecture diagram (Cloudflare Workers + GitHub Actions cron, no DB). Big "lol no Postgres" moment.
 
@@ -219,13 +240,15 @@ fb3b7ec  Add project context, planning docs, and TanStack Query
 ## Things worth showing on camera (highlight reel)
 
 1. **The fresh-Mac moment** — `npx: command not found`, then the install. Sets up "we're starting from zero."
-2. **The decision matrix** for hosting (Vercel vs Cloudflare vs others). Show the table, walk through one row at a time.
-3. **The commercial-use clause** in Vercel's terms — this is the most-overlooked Hobby-tier limit.
-4. **The "Cloudflare has two flows" reveal** — show the deprecation warning when `@cloudflare/next-on-pages` installs.
-5. **The auto-migrate footgun** — show the build log warning line, then explain why it matters.
-6. **The build/deploy mismatch error** — clean illustration of an adapter contract.
-7. **The successful 80s deploy** — payoff. Live URL working.
-8. **The "no database" architecture diagram** — Cloudflare Workers + GitHub Actions cron + static `history.json`. Audience won't expect this to work; it does.
+2. **The full hosting decision matrix** — Vercel vs Cloudflare vs Netlify vs GitHub Pages vs Render vs Fly.io vs the big-three clouds. Walk the table one row at a time so the audience sees you actually surveyed the field, not just picked the popular option.
+3. **The commercial-use clause** in Vercel's terms — the most-overlooked Hobby-tier limit. Pair it with the "free-with-a-catch" framing: cap / sleep / credits-then-bill.
+4. **"Why no database"** — the cache-is-the-database insight + the "half a megabyte of JSON is a file, not Postgres" line. Show the three-bucket breakdown.
+5. **"Why no Airflow"** — the orchestration-vs-cron distinction. Great myth-busting beat: you do NOT need an orchestrator for one job on a timer. Name-drop Airflow/Prefect/Dagster and explain what they're actually *for*.
+6. **The "Cloudflare has two flows" reveal** — show the deprecation warning when `@cloudflare/next-on-pages` installs.
+7. **The auto-migrate footgun** — show the build log warning line, then explain why it matters.
+8. **The build/deploy mismatch error** — clean illustration of an adapter contract.
+9. **The successful 80s deploy** — payoff. Live URL working.
+10. **The "no database, no orchestrator" architecture diagram** — Cloudflare Workers + GitHub Actions cron + static `history.json`. Audience won't expect this to work on $0; it does.
 
 ## What's NOT in this session (for context — coming in later videos)
 
