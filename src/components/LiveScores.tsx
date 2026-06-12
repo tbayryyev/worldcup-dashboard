@@ -47,11 +47,24 @@ export function LiveScores() {
 
   const matches = data.matches;
 
+  // Title reflects what the API gave us: today's slate, or the next matchday.
+  let heading = "Upcoming Matches";
+  if (data.scope === "today") {
+    heading = "Today's Matches";
+  } else if (data.scope === "upcoming" && matches[0]?.date) {
+    const day = new Date(matches[0].date).toLocaleDateString(undefined, {
+      weekday: "long",
+      month: "short",
+      day: "numeric",
+    });
+    heading = `Upcoming Matches · ${day}`;
+  }
+
   return (
     <div>
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
-          {matches.length} {matches.length === 1 ? "match" : "matches"}
+          {heading}
         </h2>
         <span className="inline-flex items-center gap-1.5 text-xs text-zinc-400 dark:text-zinc-500">
           <span

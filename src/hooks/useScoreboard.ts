@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import type { Scoreboard } from "@/lib/espn";
+import type { HomeScoreboard } from "@/lib/espn";
 
 const HOUR = 60 * 60 * 1000;
 
-async function fetchLive(): Promise<Scoreboard> {
+async function fetchLive(): Promise<HomeScoreboard> {
   // cache: "no-store" bypasses the browser's HTTP cache (which would otherwise
   // honor our Cache-Control: max-age=30 and intercept refetches inside that
   // window, returning stale data without ever hitting the network).
@@ -15,7 +15,7 @@ async function fetchLive(): Promise<Scoreboard> {
 // Poll cadence adapts to what's happening, so we don't hammer the endpoint
 // when nothing is on: fast while a match is live, slower near kickoff, idle
 // otherwise. The scoreboard itself tells us each match's state.
-function pollInterval(data: Scoreboard | undefined): number {
+function pollInterval(data: HomeScoreboard | undefined): number {
   const matches = data?.matches ?? [];
   if (matches.some((m) => m.state === "in")) return 30_000;
 

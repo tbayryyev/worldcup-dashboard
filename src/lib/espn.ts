@@ -31,9 +31,41 @@ export interface GoalEvent {
   clock: string; // "33'"
   teamId: string;
   scorer: string | null;
+  assist: string | null; // assisting player, when ESPN provides it
   type: string; // "Goal - Header"
   penalty: boolean;
   ownGoal: boolean;
+}
+
+// A single notable in-game event for the match timeline / feed.
+export type MatchEventType = "goal" | "yellow" | "red" | "sub" | "other";
+
+export interface MatchEvent {
+  type: MatchEventType;
+  clock: string; // "33'"
+  period: number;
+  teamId: string;
+  text: string; // ESPN's full description, e.g. "Goal! ... Assisted by ..."
+  penalty: boolean;
+  ownGoal: boolean;
+  scorer: string | null; // goals
+  assist: string | null; // goals
+  playerIn: string | null; // substitutions
+  playerOut: string | null; // substitutions
+  player: string | null; // cards (and other single-player events)
+}
+
+// One team-vs-team statistic (possession, shots, etc.).
+export interface TeamStat {
+  name: string; // ESPN machine name, e.g. "possessionPct"
+  label: string; // human label, e.g. "Possession"
+  displayValue: string; // formatted value, e.g. "60.5"
+}
+
+export interface TeamStats {
+  teamId: string;
+  homeAway: "home" | "away";
+  stats: TeamStat[];
 }
 
 export interface Match {
@@ -53,11 +85,19 @@ export interface Scoreboard {
   fetchedAt: string;
 }
 
+// What the Home page consumes: either today's slate, or — if nothing is on
+// today — the next matchday's slate. `scope` lets the UI title itself.
+export interface HomeScoreboard extends Scoreboard {
+  scope: "today" | "upcoming" | "none";
+}
+
 export interface LineupPlayer {
   name: string;
   jersey: string;
   position: string;
   starter: boolean;
+  subbedIn: boolean;
+  subbedOut: boolean;
 }
 
 export interface TeamLineup {
@@ -77,6 +117,8 @@ export interface MatchDetail {
   home: TeamSide;
   away: TeamSide;
   goals: GoalEvent[];
+  events: MatchEvent[]; // full timeline: goals, cards, subs
+  teamStats: TeamStats[]; // possession, shots, etc. (empty pre-match)
   lineups: TeamLineup[];
   fetchedAt: string;
 }
@@ -163,16 +205,51 @@ interface RawRosterPlayer {
   position?: { abbreviation?: string };
 }
 
+interface RawRosterPlayerFull extends RawRosterPlayer {
+  subbedIn?: boolean;
+  subbedOut?: boolean;
+}
+
 interface RawRoster {
   homeAway?: string;
   formation?: string;
   team?: { id?: string };
-  roster?: RawRosterPlayer[];
+  roster?: RawRosterPlayerFull[];
+}
+
+interface RawKeyEvent {
+  type?: { text?: string };
+  clock?: { displayValue?: string };
+  period?: { number?: number };
+  team?: { id?: string };
+  scoringPlay?: boolean;
+  text?: string;
+  participants?: { athlete?: { displayName?: string } }[];
+}
+
+interface RawBoxStat {
+  name?: string;
+  abbreviation?: string;
+  label?: string;
+  displayName?: string;
+  displayValue?: string;
+}
+
+interface RawBoxscoreTeam {
+  homeAway?: string;
+  team?: { id?: string };
+  statistics?: RawBoxStat[];
+}
+
+interface RawBoxscore {
+  teams?: RawBoxscoreTeam[];
 }
 
 interface RawSummary {
   header?: { competitions?: RawCompetition[] };
   rosters?: RawRoster[];
+  keyEvents?: RawKeyEvent[];
+  boxscore?: RawBoxscore;
 }
 
 interface RawStat {
@@ -227,10 +304,72 @@ function mapGoals(details: RawDetail[] | undefined): GoalEvent[] {
       clock: d.clock?.displayValue ?? "",
       teamId: d.team?.id ?? "",
       scorer: d.athletesInvolved?.[0]?.displayName ?? null,
+      assist: d.athletesInvolved?.[1]?.displayName ?? null,
       type: d.type?.text ?? "Goal",
       penalty: d.penaltyKick ?? false,
       ownGoal: d.ownGoal ?? false,
     }));
+}
+
+// ESPN's keyEvents feed is richer than scoreboard `details`: it carries cards,
+// substitutions, and assist credits. We keep only the notable types and map
+// each into a flat MatchEvent the UI can render without re-parsing prose.
+function classifyEvent(typeText: string, scoringPlay: boolean): MatchEventType {
+  const t = typeText.toLowerCase();
+  if (scoringPlay || t.includes("goal")) return "goal";
+  if (t.includes("yellow")) return "yellow";
+  if (t.includes("red")) return "red";
+  if (t.includes("substitution")) return "sub";
+  return "other";
+}
+
+function mapKeyEvents(events: RawKeyEvent[] | undefined): MatchEvent[] {
+  if (!events) return [];
+  return events
+    .map((e): MatchEvent | null => {
+      const typeText = e.type?.text ?? "";
+      const scoringPlay = e.scoringPlay ?? false;
+      const kind = classifyEvent(typeText, scoringPlay);
+      if (kind === "other") return null;
+
+      const names = (e.participants ?? [])
+        .map((p) => p.athlete?.displayName ?? "")
+        .filter(Boolean);
+      const text = e.text ?? "";
+
+      return {
+        type: kind,
+        clock: e.clock?.displayValue ?? "",
+        period: e.period?.number ?? 0,
+        teamId: e.team?.id ?? "",
+        text,
+        penalty: /penalt/i.test(typeText) || /penalty/i.test(text),
+        ownGoal: /own goal/i.test(typeText) || /own goal/i.test(text),
+        // Goal: participants[0] = scorer, [1] = assister (when present).
+        scorer: kind === "goal" ? names[0] ?? null : null,
+        assist: kind === "goal" ? names[1] ?? null : null,
+        // Substitution: participants[0] = player coming on, [1] = coming off.
+        playerIn: kind === "sub" ? names[0] ?? null : null,
+        playerOut: kind === "sub" ? names[1] ?? null : null,
+        // Cards: the single booked player.
+        player:
+          kind === "yellow" || kind === "red" ? names[0] ?? null : null,
+      };
+    })
+    .filter((e): e is MatchEvent => e !== null);
+}
+
+function mapTeamStats(boxscore: RawBoxscore | undefined): TeamStats[] {
+  if (!boxscore?.teams) return [];
+  return boxscore.teams.map((t) => ({
+    teamId: t.team?.id ?? "",
+    homeAway: t.homeAway === "away" ? "away" : "home",
+    stats: (t.statistics ?? []).map((s) => ({
+      name: s.name ?? "",
+      label: s.label ?? s.displayName ?? s.name ?? "",
+      displayValue: s.displayValue ?? "",
+    })),
+  }));
 }
 
 function mapLineups(rosters: RawRoster[] | undefined): TeamLineup[] {
@@ -241,6 +380,8 @@ function mapLineups(rosters: RawRoster[] | undefined): TeamLineup[] {
       jersey: p.jersey ?? "",
       position: p.position?.abbreviation ?? "",
       starter: p.starter ?? false,
+      subbedIn: p.subbedIn ?? false,
+      subbedOut: p.subbedOut ?? false,
     }));
     return {
       teamId: r.team?.id ?? "",
@@ -354,6 +495,54 @@ export async function fetchScoreboard(dates?: string): Promise<Scoreboard> {
   };
 }
 
+// ESPN groups its scoreboard by US Eastern calendar day, so we compute "today"
+// in that zone to line up with how ESPN buckets matches.
+function easternYYYYMMDD(d: Date): string {
+  // en-CA renders as YYYY-MM-DD; strip the dashes for ESPN's ?dates= format.
+  return new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  })
+    .format(d)
+    .replace(/-/g, "");
+}
+
+/**
+ * Home-page scoreboard. Returns today's matches if any are scheduled today;
+ * otherwise looks ahead and returns the next matchday's slate (so the page is
+ * never empty during off-days). `scope` tells the UI which case it got.
+ */
+export async function fetchHomeScoreboard(): Promise<HomeScoreboard> {
+  const today = easternYYYYMMDD(new Date());
+
+  const todaySb = await fetchScoreboard(today);
+  if (todaySb.matches.length > 0) {
+    return { ...todaySb, scope: "today" };
+  }
+
+  // Nothing today — scan the next 30 days in one range query and surface the
+  // earliest matchday found.
+  const end = easternYYYYMMDD(
+    new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+  );
+  const ahead = await fetchScoreboard(`${today}-${end}`);
+  const upcoming = ahead.matches
+    .filter((m) => m.date && easternYYYYMMDD(new Date(m.date)) > today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+
+  if (upcoming.length === 0) {
+    return { ...ahead, matches: [], scope: "none" };
+  }
+
+  const nextDay = easternYYYYMMDD(new Date(upcoming[0].date));
+  const matches = upcoming.filter(
+    (m) => easternYYYYMMDD(new Date(m.date)) === nextDay,
+  );
+  return { ...ahead, matches, scope: "upcoming" };
+}
+
 /**
  * Fetches full detail for a single match (lineups, goal events, status) from
  * ESPN's `summary` endpoint. Returns null if the event is missing or malformed
@@ -383,6 +572,23 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
 
   const status = comp.status ?? {};
 
+  // keyEvents carries assists/cards/subs; the header `details` only has bare
+  // scorers. Prefer keyEvents for goals (so assists show), fall back to the
+  // header when the feed is empty (e.g. very early in a live match).
+  const events = mapKeyEvents(raw.keyEvents);
+  const goalsFromEvents: GoalEvent[] = events
+    .filter((e) => e.type === "goal")
+    .map((e) => ({
+      clock: e.clock,
+      teamId: e.teamId,
+      scorer: e.scorer,
+      assist: e.assist,
+      type: "Goal",
+      penalty: e.penalty,
+      ownGoal: e.ownGoal,
+    }));
+  const goals = goalsFromEvents.length > 0 ? goalsFromEvents : mapGoals(comp.details);
+
   return {
     id: eventId,
     date: comp.date ?? "",
@@ -391,7 +597,9 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
     clock: status.displayClock ?? "",
     home: mapCompetitor(home),
     away: mapCompetitor(away),
-    goals: mapGoals(comp.details),
+    goals,
+    events,
+    teamStats: mapTeamStats(raw.boxscore),
     lineups: mapLineups(raw.rosters),
     fetchedAt: new Date().toISOString(),
   };

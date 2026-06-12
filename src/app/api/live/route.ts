@@ -1,4 +1,4 @@
-import { fetchScoreboard } from "@/lib/espn";
+import { fetchHomeScoreboard } from "@/lib/espn";
 
 export const dynamic = "force-dynamic";
 
@@ -28,7 +28,7 @@ export async function GET(request: Request) {
   }
 
   try {
-    const data = await fetchScoreboard();
+    const data = await fetchHomeScoreboard();
     const body = JSON.stringify(data);
     const baseHeaders: Record<string, string> = {
       "content-type": "application/json",
