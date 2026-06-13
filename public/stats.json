@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T07:57:50.673Z",
+  "generatedAt": "2026-06-13T10:40:14.892Z",
   "matchesPlayed": 4,
   "totalGoals": 12,
   "topScorers": [
@@ -906,9 +906,9 @@
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "matches": 1,
-      "accuratePasses": 510,
+      "accuratePasses": 509,
       "totalPasses": 598,
-      "passPct": 85.3
+      "passPct": 85.1
     },
     {
       "teamId": "467",
@@ -936,9 +936,9 @@
       "abbr": "PAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "matches": 1,
-      "accuratePasses": 230,
-      "totalPasses": 320,
-      "passPct": 71.9
+      "accuratePasses": 232,
+      "totalPasses": 319,
+      "passPct": 72.7
     },
     {
       "teamId": "450",
