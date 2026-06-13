@@ -1,4 +1,5 @@
 import { LiveScores } from "@/components/LiveScores";
+import { HomeStats } from "@/components/HomeStats";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           </p>
         </header>
         <LiveScores />
+        <HomeStats />
       </main>
     </div>
   );
