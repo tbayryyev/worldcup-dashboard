@@ -72,6 +72,7 @@ export interface Match {
   id: string;
   date: string; // ISO
   state: MatchState;
+  statusName: string; // ESPN status enum, e.g. "STATUS_HALFTIME"
   statusDetail: string; // "Scheduled" / "FT" / "33'"
   clock: string; // displayClock, e.g. "45'"
   home: TeamSide;
@@ -112,6 +113,7 @@ export interface MatchDetail {
   id: string;
   date: string;
   state: MatchState;
+  statusName: string; // ESPN status enum, e.g. "STATUS_HALFTIME"
   statusDetail: string;
   clock: string;
   home: TeamSide;
@@ -176,7 +178,7 @@ interface RawDetail {
 
 interface RawStatus {
   displayClock?: string;
-  type?: { state?: string; description?: string; shortDetail?: string };
+  type?: { name?: string; state?: string; description?: string; shortDetail?: string };
 }
 
 interface RawCompetition {
@@ -450,12 +452,27 @@ function mapEvent(ev: RawEvent): Match | null {
     id: ev.id,
     date: ev.date ?? "",
     state: normalizeState(status.type?.state),
+    statusName: status.type?.name ?? "",
     statusDetail: status.type?.shortDetail ?? status.type?.description ?? "",
     clock: status.displayClock ?? "",
     home: mapCompetitor(home),
     away: mapCompetitor(away),
     goals: mapGoals(comp.details),
   };
+}
+
+/**
+ * The short status label to show for a live match. ESPN freezes `displayClock`
+ * at "45'" during the interval but flips the status to STATUS_HALFTIME, so we
+ * surface an explicit "HT" there; otherwise we show the running minute.
+ */
+export function liveStatusLabel(m: {
+  statusName: string;
+  clock: string;
+  statusDetail: string;
+}): string {
+  if (m.statusName === "STATUS_HALFTIME") return "HT";
+  return m.clock || m.statusDetail || "LIVE";
 }
 
 // --- Public API ---
@@ -593,6 +610,7 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
     id: eventId,
     date: comp.date ?? "",
     state: normalizeState(status.type?.state),
+    statusName: status.type?.name ?? "",
     statusDetail: status.type?.shortDetail ?? status.type?.description ?? "",
     clock: status.displayClock ?? "",
     home: mapCompetitor(home),

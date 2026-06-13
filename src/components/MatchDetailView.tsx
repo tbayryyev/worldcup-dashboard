@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
-import type {
-  MatchDetail,
-  MatchEvent,
-  TeamSide,
-  TeamLineup,
-  TeamStats,
+import {
+  liveStatusLabel,
+  type MatchDetail,
+  type MatchEvent,
+  type TeamSide,
+  type TeamLineup,
+  type TeamStats,
 } from "@/lib/espn";
 
 function formatTime(ms: number | undefined): string {
@@ -68,7 +69,7 @@ function Scoreline({ match }: { match: MatchDetail }) {
             : "text-zinc-500 dark:text-zinc-400"
         }`}
       >
-        {match.state === "in" ? match.clock || "LIVE" : match.statusDetail}
+        {match.state === "in" ? liveStatusLabel(match) : match.statusDetail}
       </div>
     </div>
   );

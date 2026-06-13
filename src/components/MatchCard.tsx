@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Match, TeamSide } from "@/lib/espn";
+import { liveStatusLabel, type Match, type TeamSide } from "@/lib/espn";
 
 function kickoffLabel(iso: string): string {
   if (!iso) return "TBD";
@@ -21,7 +21,7 @@ function StatusBadge({ match }: { match: Match }) {
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
           <span className="relative inline-flex h-2 w-2 rounded-full bg-red-600" />
         </span>
-        {match.clock || "LIVE"}
+        {liveStatusLabel(match)}
       </span>
     );
   }
