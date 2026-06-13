@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T21:39:34.927Z",
+  "generatedAt": "2026-06-13T23:34:08.440Z",
   "matchesPlayed": 5,
   "totalGoals": 14,
   "topScorers": [
@@ -20,15 +20,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
       "goals": 1,
       "assists": 1
-    },
-    {
-      "name": "Boualem Khoukhi",
-      "teamId": "4398",
-      "teamName": "Qatar",
-      "teamAbbr": "QAT",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
-      "goals": 1,
-      "assists": 0
     },
     {
       "name": "Breel Embolo",
@@ -512,10 +503,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "group": "Group C",
       "played": 0,
       "goalsFor": 0,
@@ -523,10 +514,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "2654",
-      "name": "Haiti",
-      "abbr": "HAI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "group": "Group C",
       "played": 0,
       "goalsFor": 0,
@@ -938,8 +929,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "matches": 1,
       "accuratePasses": 526,
-      "totalPasses": 578,
-      "passPct": 91
+      "totalPasses": 577,
+      "passPct": 91.2
     },
     {
       "teamId": "203",
@@ -1008,8 +999,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
       "matches": 1,
       "accuratePasses": 200,
-      "totalPasses": 279,
-      "passPct": 71.7
+      "totalPasses": 278,
+      "passPct": 71.9
     },
     {
       "teamId": "450",
