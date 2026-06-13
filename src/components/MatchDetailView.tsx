@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
+import { LineupPitch } from "@/components/LineupPitch";
 import {
   liveStatusLabel,
   type MatchDetail,
@@ -338,17 +339,7 @@ function LineupColumn({
           {lineup.formation}
         </div>
       )}
-      <ul className="space-y-1">
-        {lineup.starters.map((p, i) => (
-          <PlayerRow
-            key={i}
-            jersey={p.jersey}
-            name={p.name}
-            position={p.position}
-            subbedOut={showSubs && p.subbedOut}
-          />
-        ))}
-      </ul>
+      <LineupPitch lineup={lineup} showSubs={showSubs} />
       {lineup.subs.length > 0 && (
         <>
           <div className="mb-1.5 mt-4 text-xs font-semibold uppercase tracking-wide text-zinc-400">
