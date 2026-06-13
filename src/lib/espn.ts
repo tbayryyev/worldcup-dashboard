@@ -694,3 +694,268 @@ export async function fetchAllFixtures(): Promise<Scoreboard> {
     fetchedAt: new Date().toISOString(),
   };
 }
+
+// --- Teams ---
+
+export interface TeamListItem {
+  id: string;
+  name: string;
+  abbreviation: string;
+  logo: string | null;
+}
+
+export interface SquadPlayer {
+  id: string;
+  name: string;
+  jersey: string;
+  positionAbbr: string; // "G" | "D" | "M" | "F"
+  positionName: string; // "Goalkeeper", etc.
+  age: number | null;
+  height: string; // displayHeight, e.g. "5' 8\""
+}
+
+export interface AgeProfile {
+  squadSize: number;
+  average: number | null;
+  youngest: { name: string; age: number } | null;
+  oldest: { name: string; age: number } | null;
+  under21: number;
+  under23: number;
+}
+
+export interface TeamFormMatch {
+  matchId: string;
+  date: string;
+  opponent: string;
+  opponentAbbr: string;
+  scoreFor: number;
+  scoreAgainst: number;
+  result: "W" | "D" | "L";
+}
+
+export interface TeamNextMatch {
+  matchId: string;
+  date: string;
+  opponent: string;
+  opponentAbbr: string;
+  state: MatchState;
+  statusDetail: string;
+}
+
+export interface TeamProfile {
+  id: string;
+  name: string;
+  abbreviation: string;
+  logo: string | null;
+  color: string | null;
+  groupName: string | null;
+  rank: number | null;
+  points: number | null;
+  wins: number;
+  draws: number;
+  losses: number;
+  goalsFor: number;
+  goalsAgainst: number;
+  ageProfile: AgeProfile;
+  squad: SquadPlayer[];
+  recentForm: TeamFormMatch[]; // finished WC matches, newest first
+  nextMatch: TeamNextMatch | null;
+  fetchedAt: string;
+}
+
+interface RawTeamsList {
+  sports?: { leagues?: { teams?: { team?: RawTeam }[] }[] }[];
+}
+
+interface RawAthlete {
+  id?: string;
+  displayName?: string;
+  age?: number;
+  jersey?: string;
+  displayHeight?: string;
+  position?: { abbreviation?: string; name?: string };
+}
+
+interface RawTeamDetail {
+  team?: RawTeam & { color?: string; athletes?: RawAthlete[] };
+}
+
+function mapSquad(athletes: RawAthlete[] | undefined): SquadPlayer[] {
+  if (!athletes) return [];
+  return athletes.map((a) => ({
+    id: a.id ?? "",
+    name: a.displayName ?? "Unknown",
+    jersey: a.jersey ?? "",
+    positionAbbr: a.position?.abbreviation ?? "",
+    positionName: a.position?.name ?? "",
+    age: typeof a.age === "number" ? a.age : null,
+    height: a.displayHeight ?? "",
+  }));
+}
+
+function computeAgeProfile(squad: SquadPlayer[]): AgeProfile {
+  const withAge = squad.filter(
+    (p): p is SquadPlayer & { age: number } => p.age != null,
+  );
+  const ages = withAge.map((p) => p.age);
+  const average =
+    ages.length > 0
+      ? Math.round((ages.reduce((s, a) => s + a, 0) / ages.length) * 10) / 10
+      : null;
+  const youngest =
+    withAge.length > 0
+      ? withAge.reduce((m, p) => (p.age < m.age ? p : m))
+      : null;
+  const oldest =
+    withAge.length > 0
+      ? withAge.reduce((m, p) => (p.age > m.age ? p : m))
+      : null;
+  return {
+    squadSize: squad.length,
+    average,
+    youngest: youngest ? { name: youngest.name, age: youngest.age } : null,
+    oldest: oldest ? { name: oldest.name, age: oldest.age } : null,
+    under21: ages.filter((a) => a < 21).length,
+    under23: ages.filter((a) => a < 23).length,
+  };
+}
+
+/**
+ * Fetches the 48-team tournament field (id, name, logo), sorted by name.
+ */
+export async function fetchTeams(): Promise<TeamListItem[]> {
+  const init: RequestInit & {
+    cf?: { cacheTtl: number; cacheEverything: boolean };
+  } = { cf: { cacheTtl: 30, cacheEverything: true } };
+
+  const res = await fetch(`${ESPN_BASE}/teams`, init);
+  if (!res.ok) throw new Error(`ESPN teams returned ${res.status}`);
+
+  const raw = (await res.json()) as RawTeamsList;
+  const entries = raw.sports?.[0]?.leagues?.[0]?.teams ?? [];
+  return entries
+    .map((e) => e.team)
+    .filter((t): t is RawTeam => !!t?.id)
+    .map((t) => ({
+      id: t.id as string,
+      name: t.displayName ?? "TBD",
+      abbreviation: t.abbreviation ?? "",
+      logo: t.logo ?? t.logos?.[0]?.href ?? null,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * Builds a full team profile: squad (with computed age stats), the team's
+ * group/record from standings, and recent form + next match from the fixture
+ * list. Returns null if ESPN doesn't recognise the id. Four ESPN subrequests,
+ * all 30s-edge-cached. Historical context (titles, FIFA rank) is layered on in
+ * the UI from the curated `teamInfo` table — ESPN doesn't expose it.
+ */
+export async function fetchTeamProfile(id: string): Promise<TeamProfile | null> {
+  const init: RequestInit & {
+    cf?: { cacheTtl: number; cacheEverything: boolean };
+  } = { cf: { cacheTtl: 30, cacheEverything: true } };
+
+  const teamUrl = new URL(`${ESPN_BASE}/teams/${id}`);
+  teamUrl.searchParams.set("enable", "roster");
+
+  const [teamRes, standings, fixtures] = await Promise.all([
+    fetch(teamUrl, init),
+    fetchStandings().catch(() => null),
+    fetchAllFixtures().catch(() => null),
+  ]);
+
+  if (!teamRes.ok) return null;
+  const raw = (await teamRes.json()) as RawTeamDetail;
+  const t = raw.team;
+  if (!t?.id) return null;
+
+  const squad = mapSquad(t.athletes);
+
+  // Group + record from the standings tables.
+  let groupName: string | null = null;
+  let rank: number | null = null;
+  let points: number | null = null;
+  let wins = 0,
+    draws = 0,
+    losses = 0,
+    goalsFor = 0,
+    goalsAgainst = 0;
+  for (const g of standings?.groups ?? []) {
+    const entry = g.entries.find((e) => e.team.id === id);
+    if (entry) {
+      groupName = g.name;
+      rank = entry.rank;
+      points = entry.points;
+      wins = entry.wins;
+      draws = entry.draws;
+      losses = entry.losses;
+      goalsFor = entry.goalsFor;
+      goalsAgainst = entry.goalsAgainst;
+      break;
+    }
+  }
+
+  // Recent form + next match from the fixture list.
+  const recentForm: TeamFormMatch[] = [];
+  let nextMatch: TeamNextMatch | null = null;
+  const mine = (fixtures?.matches ?? []).filter(
+    (m) => m.home.id === id || m.away.id === id,
+  );
+  for (const m of mine
+    .filter((m) => m.state === "post")
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 6)) {
+    const isHome = m.home.id === id;
+    const me = isHome ? m.home : m.away;
+    const opp = isHome ? m.away : m.home;
+    const sf = me.score ?? 0;
+    const sa = opp.score ?? 0;
+    recentForm.push({
+      matchId: m.id,
+      date: m.date,
+      opponent: opp.name,
+      opponentAbbr: opp.abbreviation,
+      scoreFor: sf,
+      scoreAgainst: sa,
+      result: sf > sa ? "W" : sf < sa ? "L" : "D",
+    });
+  }
+  const upcoming = mine
+    .filter((m) => m.state !== "post")
+    .sort((a, b) => a.date.localeCompare(b.date));
+  const nm = upcoming.find((m) => m.state === "in") ?? upcoming[0];
+  if (nm) {
+    const opp = nm.home.id === id ? nm.away : nm.home;
+    nextMatch = {
+      matchId: nm.id,
+      date: nm.date,
+      opponent: opp.name,
+      opponentAbbr: opp.abbreviation,
+      state: nm.state,
+      statusDetail: nm.statusDetail,
+    };
+  }
+
+  return {
+    id: t.id,
+    name: t.displayName ?? "TBD",
+    abbreviation: t.abbreviation ?? "",
+    logo: t.logo ?? t.logos?.[0]?.href ?? null,
+    color: t.color ?? null,
+    groupName,
+    rank,
+    points,
+    wins,
+    draws,
+    losses,
+    goalsFor,
+    goalsAgainst,
+    ageProfile: computeAgeProfile(squad),
+    squad,
+    recentForm,
+    nextMatch,
+    fetchedAt: new Date().toISOString(),
+  };
+}
