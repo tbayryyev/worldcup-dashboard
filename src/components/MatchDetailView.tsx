@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
 import { LineupPitch } from "@/components/LineupPitch";
+import { MatchEventToasts } from "@/components/MatchEventToasts";
 import {
   liveStatusLabel,
   type MatchDetail,
@@ -558,6 +559,7 @@ export function MatchDetailView({
 
   return (
     <div className="flex-1 bg-zinc-50 dark:bg-black">
+      <MatchEventToasts match={match} />
       <main className="mx-auto w-full max-w-3xl px-4 py-8 sm:px-6 sm:py-12">
         <div className="flex items-center justify-between">
           <Link
