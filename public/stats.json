@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-14T01:41:14.643Z",
-  "matchesPlayed": 6,
-  "totalGoals": 16,
+  "generatedAt": "2026-06-14T05:11:03.921Z",
+  "matchesPlayed": 7,
+  "totalGoals": 17,
   "topScorers": [
     {
       "name": "Folarin Balogun",
@@ -54,6 +54,15 @@
       "teamName": "Morocco",
       "teamAbbr": "MAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "name": "John McGinn",
+      "teamId": "580",
+      "teamName": "Scotland",
+      "teamAbbr": "SCO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
       "goals": 1,
       "assists": 0
     },
@@ -283,6 +292,14 @@
       "red": 1
     },
     {
+      "name": "Aaron Hickey",
+      "teamId": "580",
+      "teamAbbr": "SCO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Alex Arce",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -339,10 +356,26 @@
       "red": 0
     },
     {
+      "name": "Findlay Curtis",
+      "teamId": "580",
+      "teamAbbr": "SCO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Jassem Gaber",
       "teamId": "4398",
       "teamAbbr": "QAT",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Jean-Ricner Bellegarde",
+      "teamId": "2654",
+      "teamAbbr": "HAI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "yellow": 1,
       "red": 0
     },
@@ -367,6 +400,14 @@
       "teamId": "210",
       "teamAbbr": "PAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Kenny McLean",
+      "teamId": "580",
+      "teamAbbr": "SCO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
       "yellow": 1,
       "red": 0
     },
@@ -478,6 +519,17 @@
       "goalDifference": 1
     },
     {
+      "teamId": "580",
+      "name": "Scotland",
+      "abbr": "SCO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "group": "Group C",
+      "played": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 0,
+      "goalDifference": 1
+    },
+    {
       "teamId": "475",
       "name": "Switzerland",
       "abbr": "SUI",
@@ -566,22 +618,11 @@
       "goalDifference": -3
     },
     {
-      "teamId": "2654",
-      "name": "Haiti",
-      "abbr": "HAI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
-      "group": "Group C",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "580",
-      "name": "Scotland",
-      "abbr": "SCO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
-      "group": "Group C",
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "group": "Group D",
       "played": 0,
       "goalsFor": 0,
       "goalsAgainst": 0,
@@ -592,17 +633,6 @@
       "name": "Türkiye",
       "abbr": "TUR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
-      "group": "Group D",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "628",
-      "name": "Australia",
-      "abbr": "AUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
       "group": "Group D",
       "played": 0,
       "goalsFor": 0,
@@ -962,6 +992,17 @@
       "goalDifference": 0
     },
     {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "group": "Group C",
+      "played": 1,
+      "goalsFor": 0,
+      "goalsAgainst": 1,
+      "goalDifference": -1
+    },
+    {
       "teamId": "467",
       "name": "South Africa",
       "abbr": "RSA",
@@ -1000,9 +1041,9 @@
       "abbr": "BRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "matches": 1,
-      "accuratePasses": 448,
-      "totalPasses": 513,
-      "passPct": 87.3
+      "accuratePasses": 449,
+      "totalPasses": 514,
+      "passPct": 87.4
     },
     {
       "teamId": "451",
@@ -1020,9 +1061,19 @@
       "abbr": "MAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "matches": 1,
-      "accuratePasses": 420,
-      "totalPasses": 487,
+      "accuratePasses": 419,
+      "totalPasses": 486,
       "passPct": 86.2
+    },
+    {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "matches": 1,
+      "accuratePasses": 367,
+      "totalPasses": 431,
+      "passPct": 85.2
     },
     {
       "teamId": "660",
@@ -1033,6 +1084,16 @@
       "accuratePasses": 509,
       "totalPasses": 598,
       "passPct": 85.1
+    },
+    {
+      "teamId": "580",
+      "name": "Scotland",
+      "abbr": "SCO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "matches": 1,
+      "accuratePasses": 306,
+      "totalPasses": 373,
+      "passPct": 82
     },
     {
       "teamId": "467",
@@ -1137,6 +1198,14 @@
       "red": 0
     },
     {
+      "teamId": "580",
+      "name": "Scotland",
+      "abbr": "SCO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "206",
       "name": "Canada",
       "abbr": "CAN",
@@ -1173,6 +1242,14 @@
       "name": "Switzerland",
       "abbr": "SUI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "yellow": 1,
       "red": 0
     }
