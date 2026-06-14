@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-14T20:00:02.539Z",
+  "generatedAt": "2026-06-14T21:42:33.884Z",
   "matchesPlayed": 9,
   "totalGoals": 27,
   "topScorers": [
@@ -1195,9 +1195,9 @@
       "abbr": "GER",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "matches": 1,
-      "accuratePasses": 551,
-      "totalPasses": 635,
-      "passPct": 86.8
+      "accuratePasses": 554,
+      "totalPasses": 637,
+      "passPct": 87
     },
     {
       "teamId": "451",
@@ -1240,6 +1240,16 @@
       "passPct": 85.1
     },
     {
+      "teamId": "11678",
+      "name": "Curaçao",
+      "abbr": "CUW",
+      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
+      "matches": 1,
+      "accuratePasses": 282,
+      "totalPasses": 343,
+      "passPct": 82.2
+    },
+    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
@@ -1247,16 +1257,6 @@
       "matches": 1,
       "accuratePasses": 307,
       "totalPasses": 374,
-      "passPct": 82.1
-    },
-    {
-      "teamId": "11678",
-      "name": "Curaçao",
-      "abbr": "CUW",
-      "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "matches": 1,
-      "accuratePasses": 280,
-      "totalPasses": 341,
       "passPct": 82.1
     },
     {
