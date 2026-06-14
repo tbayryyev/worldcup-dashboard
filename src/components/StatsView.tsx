@@ -1,6 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import {
+  ResponsiveContainer,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  LabelList,
+} from "recharts";
 import { useStats } from "@/hooks/useStats";
 import type {
   StatsData,
@@ -93,10 +101,46 @@ function Empty({ children }: { children: string }) {
   );
 }
 
+function ScorersChart({ players }: { players: PlayerStat[] }) {
+  const data = players.slice(0, 8).map((p) => ({ name: p.name, goals: p.goals }));
+  if (data.length === 0) return null;
+  return (
+    <div className="mb-4 rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+      <ResponsiveContainer width="100%" height={data.length * 34 + 10}>
+        <BarChart
+          data={data}
+          layout="vertical"
+          margin={{ left: 0, right: 28, top: 0, bottom: 0 }}
+        >
+          <XAxis type="number" hide />
+          <YAxis
+            type="category"
+            dataKey="name"
+            width={108}
+            tick={{ fontSize: 12, fill: "#a1a1aa" }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <Bar dataKey="goals" fill="#16a34a" radius={[0, 4, 4, 0]} barSize={16}>
+            <LabelList
+              dataKey="goals"
+              position="right"
+              fill="#a1a1aa"
+              fontSize={12}
+            />
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
 function ScorersTab({ players }: { players: PlayerStat[] }) {
   if (players.length === 0) return <Empty>No goals scored yet.</Empty>;
   return (
-    <Card title="Top Scorers" hint="Goals">
+    <>
+      <ScorersChart players={players} />
+      <Card title="Top Scorers" hint="Goals">
       {players.map((p, i) => (
         <Row
           key={p.name + p.teamId}
@@ -116,7 +160,8 @@ function ScorersTab({ players }: { players: PlayerStat[] }) {
           }
         />
       ))}
-    </Card>
+      </Card>
+    </>
   );
 }
 

@@ -75,6 +75,7 @@ export interface Match {
   statusName: string; // ESPN status enum, e.g. "STATUS_HALFTIME"
   statusDetail: string; // "Scheduled" / "FT" / "33'"
   clock: string; // displayClock, e.g. "45'"
+  round: string | null; // season slug, e.g. "group-stage" | "quarterfinals"
   home: TeamSide;
   away: TeamSide;
   goals: GoalEvent[];
@@ -122,7 +123,44 @@ export interface MatchDetail {
   events: MatchEvent[]; // full timeline: goals, cards, subs
   teamStats: TeamStats[]; // possession, shots, etc. (empty pre-match)
   lineups: TeamLineup[];
+  venue: MatchVenue | null;
+  attendance: number | null;
+  referee: string | null;
+  headToHead: H2HGame[];
+  leaders: TeamLeaders[];
+  commentary: CommentaryItem[]; // chronological (oldest first)
   fetchedAt: string;
+}
+
+export interface MatchVenue {
+  name: string;
+  city: string | null;
+  country: string | null;
+}
+
+export interface H2HGame {
+  date: string;
+  homeTeamId: string;
+  awayTeamId: string;
+  homeScore: string;
+  awayScore: string;
+  competition: string | null;
+}
+
+export interface LeaderItem {
+  category: string; // human label, e.g. "Shots"
+  player: string;
+  value: string;
+}
+
+export interface TeamLeaders {
+  teamId: string;
+  items: LeaderItem[];
+}
+
+export interface CommentaryItem {
+  clock: string; // "45'+2'" or ""
+  text: string;
 }
 
 export interface StandingsEntry {
@@ -192,6 +230,7 @@ interface RawEvent {
   id?: string;
   date?: string;
   status?: RawStatus;
+  season?: { slug?: string; type?: number };
   competitions?: RawCompetition[];
 }
 
@@ -247,11 +286,55 @@ interface RawBoxscore {
   teams?: RawBoxscoreTeam[];
 }
 
+interface RawGameInfo {
+  venue?: {
+    fullName?: string;
+    shortName?: string;
+    address?: { city?: string; country?: string };
+  };
+  attendance?: number;
+  officials?: { displayName?: string }[];
+}
+
+interface RawH2HEvent {
+  gameDate?: string;
+  homeTeamId?: string;
+  awayTeamId?: string;
+  homeTeamScore?: string;
+  awayTeamScore?: string;
+  competitionName?: string;
+  leagueName?: string;
+}
+
+interface RawLeaderCategory {
+  name?: string;
+  displayName?: string;
+  shortDisplayName?: string;
+  leaders?: {
+    displayValue?: string;
+    athlete?: { displayName?: string };
+  }[];
+}
+
+interface RawLeaderTeam {
+  team?: { id?: string };
+  leaders?: RawLeaderCategory[];
+}
+
+interface RawCommentary {
+  time?: { displayValue?: string };
+  text?: string;
+}
+
 interface RawSummary {
   header?: { competitions?: RawCompetition[] };
   rosters?: RawRoster[];
   keyEvents?: RawKeyEvent[];
   boxscore?: RawBoxscore;
+  gameInfo?: RawGameInfo;
+  headToHeadGames?: { team?: { id?: string }; events?: RawH2HEvent[] }[];
+  leaders?: RawLeaderTeam[];
+  commentary?: RawCommentary[];
 }
 
 interface RawStat {
@@ -437,6 +520,88 @@ function mapStandingsGroup(g: RawStandingsGroup): StandingsGroup | null {
   };
 }
 
+// Friendly labels for the leader categories ESPN returns; falls back to the
+// API's own displayName when we don't have a nicer one.
+const LEADER_LABELS: Record<string, string> = {
+  totalShots: "Shots",
+  shotsOnTarget: "Shots on target",
+  accuratePasses: "Passes",
+  totalGoals: "Goals",
+  goalAssists: "Assists",
+  saves: "Saves",
+  defensiveInterventions: "Defensive actions",
+  totalTackles: "Tackles",
+  foulsCommitted: "Fouls",
+};
+
+function mapGameInfo(gi: RawGameInfo | undefined): {
+  venue: MatchVenue | null;
+  attendance: number | null;
+  referee: string | null;
+} {
+  const v = gi?.venue;
+  return {
+    venue: v
+      ? {
+          name: v.fullName ?? v.shortName ?? "",
+          city: v.address?.city ?? null,
+          country: v.address?.country ?? null,
+        }
+      : null,
+    attendance: typeof gi?.attendance === "number" ? gi.attendance : null,
+    referee: gi?.officials?.[0]?.displayName ?? null,
+  };
+}
+
+function mapHeadToHead(
+  blocks: RawSummary["headToHeadGames"],
+): H2HGame[] {
+  const events = blocks?.[0]?.events ?? [];
+  return events
+    .map((e) => ({
+      date: e.gameDate ?? "",
+      homeTeamId: e.homeTeamId ?? "",
+      awayTeamId: e.awayTeamId ?? "",
+      homeScore: e.homeTeamScore ?? "",
+      awayScore: e.awayTeamScore ?? "",
+      competition: e.competitionName ?? e.leagueName ?? null,
+    }))
+    .filter((g) => g.date)
+    .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function mapLeaders(raw: RawLeaderTeam[] | undefined): TeamLeaders[] {
+  if (!raw) return [];
+  return raw
+    .map((t) => ({
+      teamId: t.team?.id ?? "",
+      items: (t.leaders ?? [])
+        .map((cat): LeaderItem | null => {
+          const top = cat.leaders?.[0];
+          if (!top?.athlete?.displayName) return null;
+          return {
+            category:
+              LEADER_LABELS[cat.name ?? ""] ??
+              cat.shortDisplayName ??
+              cat.displayName ??
+              cat.name ??
+              "",
+            player: top.athlete.displayName,
+            value: top.displayValue ?? "",
+          };
+        })
+        .filter((x): x is LeaderItem => x !== null),
+    }))
+    .filter((t) => t.teamId && t.items.length > 0);
+}
+
+function mapCommentary(raw: RawCommentary[] | undefined): CommentaryItem[] {
+  if (!raw) return [];
+  return raw
+    .filter((c) => c.text)
+    .map((c) => ({ clock: c.time?.displayValue ?? "", text: c.text ?? "" }));
+}
+
 function mapEvent(ev: RawEvent): Match | null {
   const comp = ev.competitions?.[0];
   if (!comp || !ev.id) return null;
@@ -455,6 +620,7 @@ function mapEvent(ev: RawEvent): Match | null {
     statusName: status.type?.name ?? "",
     statusDetail: status.type?.shortDetail ?? status.type?.description ?? "",
     clock: status.displayClock ?? "",
+    round: ev.season?.slug ?? null,
     home: mapCompetitor(home),
     away: mapCompetitor(away),
     goals: mapGoals(comp.details),
@@ -619,6 +785,10 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
     events,
     teamStats: mapTeamStats(raw.boxscore),
     lineups: mapLineups(raw.rosters),
+    ...mapGameInfo(raw.gameInfo),
+    headToHead: mapHeadToHead(raw.headToHeadGames),
+    leaders: mapLeaders(raw.leaders),
+    commentary: mapCommentary(raw.commentary),
     fetchedAt: new Date().toISOString(),
   };
 }

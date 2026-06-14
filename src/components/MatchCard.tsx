@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { liveStatusLabel, type Match, type TeamSide } from "@/lib/espn";
 
@@ -67,10 +70,28 @@ function TeamRow({ team, state }: { team: TeamSide; state: Match["state"] }) {
 }
 
 export function MatchCard({ match }: { match: Match }) {
+  // Briefly highlight the card when the score changes during a live match.
+  const [flash, setFlash] = useState(false);
+  const prevScore = useRef(`${match.home.score}-${match.away.score}`);
+  useEffect(() => {
+    const cur = `${match.home.score}-${match.away.score}`;
+    if (match.state === "in" && prevScore.current !== cur) {
+      setFlash(true);
+      const t = setTimeout(() => setFlash(false), 1600);
+      prevScore.current = cur;
+      return () => clearTimeout(t);
+    }
+    prevScore.current = cur;
+  }, [match.home.score, match.away.score, match.state]);
+
   return (
     <Link
       href={`/match/${match.id}`}
-      className="block rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-zinc-300 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-700"
+      className={`block rounded-xl border bg-white p-4 shadow-sm transition hover:shadow-md dark:bg-zinc-900 ${
+        flash
+          ? "border-green-400 ring-2 ring-green-400/60 dark:border-green-500"
+          : "border-zinc-200 hover:border-zinc-300 dark:border-zinc-800 dark:hover:border-zinc-700"
+      }`}
     >
       <div className="mb-3 flex items-center justify-between">
         <StatusBadge match={match} />

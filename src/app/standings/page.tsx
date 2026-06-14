@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import { fetchStandings } from "@/lib/espn";
 import type { StandingsGroup, StandingsEntry } from "@/lib/espn";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Standings",
+  description: "Group-stage standings for the FIFA World Cup 2026 — all 12 groups.",
+};
 
 function GroupTable({ group }: { group: StandingsGroup }) {
   return (

@@ -1,7 +1,13 @@
+import type { Metadata } from "next";
 import { fetchAllFixtures } from "@/lib/espn";
 import { FixturesView } from "@/components/FixturesView";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Fixtures",
+  description: "Every match of the FIFA World Cup 2026 in one schedule.",
+};
 
 export default async function FixturesPage() {
   const data = await fetchAllFixtures();

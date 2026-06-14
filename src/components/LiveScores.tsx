@@ -46,6 +46,7 @@ export function LiveScores() {
   }
 
   const matches = data.matches;
+  const liveCount = matches.filter((m) => m.state === "in").length;
 
   // Title reflects what the API gave us: today's slate, or the next matchday.
   let heading = "Upcoming Matches";
@@ -62,6 +63,15 @@ export function LiveScores() {
 
   return (
     <div>
+      {liveCount > 0 && (
+        <div className="mb-4 flex items-center gap-2 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm font-medium text-red-700 dark:border-red-900/50 dark:bg-red-950/30 dark:text-red-400">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-red-600" />
+          </span>
+          {liveCount} {liveCount === 1 ? "match" : "matches"} live now
+        </div>
+      )}
       <div className="mb-4 flex items-center justify-between">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
           {heading}

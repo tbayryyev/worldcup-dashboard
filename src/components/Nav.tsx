@@ -7,6 +7,7 @@ const ITEMS: { href: string; label: string }[] = [
   { href: "/", label: "Home" },
   { href: "/fixtures", label: "Fixtures" },
   { href: "/standings", label: "Standings" },
+  { href: "/bracket", label: "Bracket" },
   { href: "/teams", label: "Teams" },
   { href: "/stats", label: "Stats" },
 ];

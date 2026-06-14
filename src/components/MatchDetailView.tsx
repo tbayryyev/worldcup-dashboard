@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
 import { LineupPitch } from "@/components/LineupPitch";
@@ -404,6 +405,144 @@ function Lineups({ match }: { match: MatchDetail }) {
   );
 }
 
+function MatchInfoBar({ match }: { match: MatchDetail }) {
+  const bits: { label: string; value: string }[] = [];
+  if (match.venue) {
+    const loc = [match.venue.city, match.venue.country].filter(Boolean).join(", ");
+    bits.push({
+      label: "Venue",
+      value: match.venue.name + (loc ? ` · ${loc}` : ""),
+    });
+  }
+  if (match.referee) bits.push({ label: "Referee", value: match.referee });
+  if (match.attendance != null)
+    bits.push({ label: "Attendance", value: match.attendance.toLocaleString() });
+  if (bits.length === 0) return null;
+  return (
+    <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 rounded-xl border border-zinc-200 bg-white px-4 py-2.5 text-xs dark:border-zinc-800 dark:bg-zinc-900">
+      {bits.map((b, i) => (
+        <span key={i}>
+          <span className="text-zinc-400">{b.label}:</span>{" "}
+          <span className="font-medium text-zinc-700 dark:text-zinc-300">
+            {b.value}
+          </span>
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function Leaders({ match }: { match: MatchDetail }) {
+  if (match.leaders.length === 0) return null;
+  const cols = [
+    { tl: match.leaders.find((l) => l.teamId === match.home.id), name: match.home.name },
+    { tl: match.leaders.find((l) => l.teamId === match.away.id), name: match.away.name },
+  ].filter((c) => c.tl);
+  if (cols.length === 0) return null;
+  return (
+    <section className="mt-8">
+      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        Top Performers
+      </h2>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {cols.map((c) => (
+          <div key={c.name}>
+            <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+              {c.name}
+            </h3>
+            <ul className="space-y-1.5">
+              {c.tl!.items.map((it, i) => (
+                <li key={i} className="flex items-center gap-2 text-sm">
+                  <span className="w-28 shrink-0 text-xs text-zinc-400">
+                    {it.category}
+                  </span>
+                  <span className="min-w-0 flex-1 truncate text-zinc-800 dark:text-zinc-200">
+                    {it.player}
+                  </span>
+                  <span className="shrink-0 font-semibold tabular-nums text-zinc-900 dark:text-zinc-50">
+                    {it.value}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function HeadToHead({ match }: { match: MatchDetail }) {
+  if (match.headToHead.length === 0) return null;
+  const sideFor = (id: string): TeamSide | null =>
+    id === match.home.id ? match.home : id === match.away.id ? match.away : null;
+  return (
+    <section className="mt-8">
+      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        Head-to-Head
+      </h2>
+      <ul className="divide-y divide-zinc-100 rounded-xl border border-zinc-200 bg-white dark:divide-zinc-800 dark:border-zinc-800 dark:bg-zinc-900">
+        {match.headToHead.slice(0, 8).map((g, i) => {
+          const h = sideFor(g.homeTeamId);
+          const a = sideFor(g.awayTeamId);
+          const year = g.date ? new Date(g.date).getFullYear() : "";
+          return (
+            <li key={i} className="flex items-center gap-2 px-3 py-2 text-sm">
+              <span className="w-10 shrink-0 text-xs text-zinc-400">{year}</span>
+              <span className="ml-auto truncate text-right text-zinc-700 dark:text-zinc-300">
+                {h?.abbreviation || "—"}
+              </span>
+              <span className="shrink-0 font-semibold tabular-nums text-zinc-900 dark:text-zinc-50">
+                {g.homeScore}–{g.awayScore}
+              </span>
+              <span className="w-16 shrink-0 truncate text-zinc-700 dark:text-zinc-300">
+                {a?.abbreviation || "—"}
+              </span>
+              {g.competition && (
+                <span className="hidden shrink-0 text-xs text-zinc-400 sm:inline">
+                  {g.competition}
+                </span>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  );
+}
+
+function Commentary({ match }: { match: MatchDetail }) {
+  const [all, setAll] = useState(false);
+  if (match.commentary.length === 0) return null;
+  const items = [...match.commentary].reverse(); // newest first
+  const shown = all ? items : items.slice(0, 12);
+  return (
+    <section className="mt-8">
+      <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        Commentary
+      </h2>
+      <ul className="space-y-2.5">
+        {shown.map((c, i) => (
+          <li key={i} className="flex gap-3 text-sm">
+            <span className="w-10 shrink-0 font-mono text-xs text-zinc-400">
+              {c.clock}
+            </span>
+            <span className="text-zinc-700 dark:text-zinc-300">{c.text}</span>
+          </li>
+        ))}
+      </ul>
+      {items.length > 12 && (
+        <button
+          onClick={() => setAll((v) => !v)}
+          className="mt-3 text-xs font-medium text-zinc-500 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+        >
+          {all ? "Show less" : `Show all ${items.length} entries`}
+        </button>
+      )}
+    </section>
+  );
+}
+
 export function MatchDetailView({
   id,
   initialData,
@@ -445,9 +584,13 @@ export function MatchDetailView({
           <TeamBadge team={match.away} />
         </div>
 
+        <MatchInfoBar match={match} />
         <MatchEvents match={match} />
         <MatchStats match={match} />
+        <Leaders match={match} />
         <Lineups match={match} />
+        <HeadToHead match={match} />
+        <Commentary match={match} />
       </main>
     </div>
   );

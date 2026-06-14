@@ -14,9 +14,41 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const SITE_URL = "https://worldcup-dashboard.mrtahyr.workers.dev";
+const DESCRIPTION =
+  "Live scores, standings, fixtures, match detail, team profiles and stats for the FIFA World Cup 2026 — updated in real time.";
+
 export const metadata: Metadata = {
-  title: "World Cup 2026 — Live",
-  description: "Live scores, standings, fixtures and stats for FIFA World Cup 2026.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "World Cup 2026 — Live Dashboard",
+    template: "%s — World Cup 2026",
+  },
+  description: DESCRIPTION,
+  applicationName: "World Cup 2026 Dashboard",
+  keywords: [
+    "World Cup 2026",
+    "live scores",
+    "standings",
+    "fixtures",
+    "top scorers",
+    "football",
+    "soccer",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "World Cup 2026 Dashboard",
+    title: "World Cup 2026 — Live Dashboard",
+    description: DESCRIPTION,
+    url: SITE_URL,
+    images: [{ url: "/og.svg", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World Cup 2026 — Live Dashboard",
+    description: DESCRIPTION,
+    images: ["/og.svg"],
+  },
 };
 
 export default function RootLayout({

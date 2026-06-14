@@ -6,6 +6,7 @@ import type {
 } from "@/lib/espn";
 import type { TeamHistory } from "@/lib/teamInfo";
 import type { FifaRanking } from "@/lib/fifaRanking";
+import { FavoriteButton } from "@/components/FavoriteButton";
 
 function ordinal(n: number): string {
   const s = ["th", "st", "nd", "rd"];
@@ -311,11 +312,20 @@ export function TeamProfileView({
           ) : (
             <div className="h-16 w-16 shrink-0 rounded-full bg-zinc-200 dark:bg-zinc-700" />
           )}
-          <div className="min-w-0">
-            <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">
-              {profile.name}
-            </h1>
-            <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
+          <div className="min-w-0 flex-1">
+            <div className="flex items-center justify-between gap-2">
+              <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">
+                {profile.name}
+              </h1>
+              <FavoriteButton teamId={profile.id} className="shrink-0" />
+            </div>
+            {profile.color && (
+              <div
+                className="mt-1.5 h-1 w-16 rounded-full"
+                style={{ backgroundColor: `#${profile.color}` }}
+              />
+            )}
+            <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-zinc-500 dark:text-zinc-400">
               {standing && <span>{standing}</span>}
               {record && <span>{record}</span>}
               {ranking && <span>FIFA #{ranking.rank}</span>}
