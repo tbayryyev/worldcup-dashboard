@@ -93,13 +93,21 @@ export interface HomeScoreboard extends Scoreboard {
   scope: "today" | "upcoming" | "none";
 }
 
+export interface PlayerStatLine {
+  name: string; // ESPN machine name, e.g. "totalShots"
+  label: string; // friendly label, e.g. "Shots"
+  value: string;
+}
+
 export interface LineupPlayer {
+  id: string;
   name: string;
   jersey: string;
   position: string;
   starter: boolean;
   subbedIn: boolean;
   subbedOut: boolean;
+  stats: PlayerStatLine[]; // per-match player stats (empty pre-match)
 }
 
 export interface TeamLineup {
@@ -239,16 +247,24 @@ interface RawScoreboard {
   events?: RawEvent[];
 }
 
+interface RawPlayerStat {
+  name?: string;
+  displayName?: string;
+  abbreviation?: string;
+  displayValue?: string;
+}
+
 interface RawRosterPlayer {
   starter?: boolean;
   jersey?: string;
-  athlete?: { displayName?: string };
+  athlete?: { id?: string; displayName?: string };
   position?: { abbreviation?: string };
 }
 
 interface RawRosterPlayerFull extends RawRosterPlayer {
   subbedIn?: boolean;
   subbedOut?: boolean;
+  stats?: RawPlayerStat[];
 }
 
 interface RawRoster {
@@ -457,16 +473,44 @@ function mapTeamStats(boxscore: RawBoxscore | undefined): TeamStats[] {
   }));
 }
 
+// Friendly labels for the per-player stats ESPN's roster feed exposes.
+const PLAYER_STAT_LABELS: Record<string, string> = {
+  totalGoals: "Goals",
+  goalAssists: "Assists",
+  totalShots: "Shots",
+  shotsOnTarget: "Shots on target",
+  foulsCommitted: "Fouls",
+  foulsSuffered: "Fouls won",
+  offsides: "Offsides",
+  yellowCards: "Yellow cards",
+  redCards: "Red cards",
+  ownGoals: "Own goals",
+  saves: "Saves",
+  goalsConceded: "Goals conceded",
+  shotsFaced: "Shots faced",
+};
+
+function mapPlayerStats(stats: RawPlayerStat[] | undefined): PlayerStatLine[] {
+  if (!stats) return [];
+  return stats.map((s) => ({
+    name: s.name ?? "",
+    label: PLAYER_STAT_LABELS[s.name ?? ""] ?? s.displayName ?? s.name ?? "",
+    value: s.displayValue ?? "0",
+  }));
+}
+
 function mapLineups(rosters: RawRoster[] | undefined): TeamLineup[] {
   if (!rosters) return [];
   return rosters.map((r) => {
     const players: LineupPlayer[] = (r.roster ?? []).map((p) => ({
+      id: p.athlete?.id ?? "",
       name: p.athlete?.displayName ?? "Unknown",
       jersey: p.jersey ?? "",
       position: p.position?.abbreviation ?? "",
       starter: p.starter ?? false,
       subbedIn: p.subbedIn ?? false,
       subbedOut: p.subbedOut ?? false,
+      stats: mapPlayerStats(p.stats),
     }));
     return {
       teamId: r.team?.id ?? "",

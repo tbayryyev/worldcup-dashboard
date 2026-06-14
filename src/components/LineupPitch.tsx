@@ -109,9 +109,11 @@ function placePlayers(lineup: TeamLineup): Placed[] {
 export function LineupPitch({
   lineup,
   showSubs,
+  onSelect,
 }: {
   lineup: TeamLineup;
   showSubs: boolean;
+  onSelect?: (player: LineupPlayer) => void;
 }) {
   const placed = placePlayers(lineup);
   if (placed.length === 0) return null;
@@ -159,9 +161,11 @@ export function LineupPitch({
       {placed.map(({ player, x, y }, i) => {
         const off = showSubs && player.subbedOut;
         return (
-          <div
+          <button
+            type="button"
+            onClick={() => onSelect?.(player)}
             key={`${player.jersey}-${player.name}-${i}`}
-            className="absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center"
+            className="absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center outline-none transition hover:scale-110 focus-visible:scale-110"
             style={{ left: `${x}%`, top: `${y}%` }}
           >
             <span
@@ -174,7 +178,7 @@ export function LineupPitch({
             <span className="mt-0.5 max-w-[72px] truncate text-[10px] font-medium leading-tight text-white [text-shadow:_0_1px_2px_rgb(0_0_0_/_80%)]">
               {shortName(player.name)}
             </span>
-          </div>
+          </button>
         );
       })}
     </div>

@@ -5,12 +5,14 @@ import Link from "next/link";
 import { useMatchDetail } from "@/hooks/useMatchDetail";
 import { LineupPitch } from "@/components/LineupPitch";
 import { MatchEventToasts } from "@/components/MatchEventToasts";
+import { PlayerStatsModal } from "@/components/PlayerStatsModal";
 import {
   liveStatusLabel,
   type MatchDetail,
   type MatchEvent,
   type TeamSide,
   type TeamLineup,
+  type LineupPlayer,
   type TeamStats,
 } from "@/lib/espn";
 
@@ -293,46 +295,14 @@ function MatchStats({ match }: { match: MatchDetail }) {
   );
 }
 
-function PlayerRow({
-  jersey,
-  name,
-  position,
-  subbedOut,
-  subbedIn,
-}: {
-  jersey: string;
-  name: string;
-  position?: string;
-  subbedOut?: boolean;
-  subbedIn?: boolean;
-}) {
-  return (
-    <li className="flex items-center gap-2 text-sm">
-      <span className="w-6 shrink-0 text-right font-mono text-xs text-zinc-400">
-        {jersey}
-      </span>
-      <span className="text-zinc-800 dark:text-zinc-200">{name}</span>
-      {subbedOut && (
-        <span className="text-xs text-red-500" title="Substituted off">
-          ▼
-        </span>
-      )}
-      {subbedIn && (
-        <span className="text-xs text-emerald-600 dark:text-emerald-500" title="Substituted on">
-          ▲
-        </span>
-      )}
-      {position && <span className="text-xs text-zinc-400">{position}</span>}
-    </li>
-  );
-}
-
 function LineupColumn({
   lineup,
   showSubs,
+  onSelect,
 }: {
   lineup: TeamLineup;
   showSubs: boolean;
+  onSelect: (player: LineupPlayer) => void;
 }) {
   return (
     <div>
@@ -341,7 +311,7 @@ function LineupColumn({
           {lineup.formation}
         </div>
       )}
-      <LineupPitch lineup={lineup} showSubs={showSubs} />
+      <LineupPitch lineup={lineup} showSubs={showSubs} onSelect={onSelect} />
       {lineup.subs.length > 0 && (
         <>
           <div className="mb-1.5 mt-4 text-xs font-semibold uppercase tracking-wide text-zinc-400">
@@ -349,13 +319,31 @@ function LineupColumn({
           </div>
           <ul className="space-y-1">
             {lineup.subs.map((p, i) => (
-              <PlayerRow
-                key={i}
-                jersey={p.jersey}
-                name={p.name}
-                position={p.position}
-                subbedIn={showSubs && p.subbedIn}
-              />
+              <li key={i}>
+                <button
+                  type="button"
+                  onClick={() => onSelect(p)}
+                  className="-mx-1 flex w-full items-center gap-2 rounded px-1 py-0.5 text-left text-sm transition hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                >
+                  <span className="w-6 shrink-0 text-right font-mono text-xs text-zinc-400">
+                    {p.jersey}
+                  </span>
+                  <span className="text-zinc-800 dark:text-zinc-200">
+                    {p.name}
+                  </span>
+                  {showSubs && p.subbedIn && (
+                    <span
+                      className="text-xs text-emerald-600 dark:text-emerald-500"
+                      title="Substituted on"
+                    >
+                      ▲
+                    </span>
+                  )}
+                  {p.position && (
+                    <span className="text-xs text-zinc-400">{p.position}</span>
+                  )}
+                </button>
+              </li>
             ))}
           </ul>
         </>
@@ -365,6 +353,10 @@ function LineupColumn({
 }
 
 function Lineups({ match }: { match: MatchDetail }) {
+  const [selected, setSelected] = useState<{
+    player: LineupPlayer;
+    teamName: string;
+  } | null>(null);
   const hasStarters = match.lineups.some((l) => l.starters.length > 0);
   if (!hasStarters) {
     return (
@@ -388,20 +380,45 @@ function Lineups({ match }: { match: MatchDetail }) {
       <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
         Lineups
       </h2>
+      <p className="mb-3 -mt-1 text-xs text-zinc-400">
+        Tap a player for their match stats.
+      </p>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
           <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             {match.home.name}
           </h3>
-          {home && <LineupColumn lineup={home} showSubs={showSubs} />}
+          {home && (
+            <LineupColumn
+              lineup={home}
+              showSubs={showSubs}
+              onSelect={(player) =>
+                setSelected({ player, teamName: match.home.name })
+              }
+            />
+          )}
         </div>
         <div>
           <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">
             {match.away.name}
           </h3>
-          {away && <LineupColumn lineup={away} showSubs={showSubs} />}
+          {away && (
+            <LineupColumn
+              lineup={away}
+              showSubs={showSubs}
+              onSelect={(player) =>
+                setSelected({ player, teamName: match.away.name })
+              }
+            />
+          )}
         </div>
       </div>
+
+      <PlayerStatsModal
+        player={selected?.player ?? null}
+        teamName={selected?.teamName ?? ""}
+        onClose={() => setSelected(null)}
+      />
     </section>
   );
 }
