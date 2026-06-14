@@ -134,7 +134,7 @@ export function HomeStats() {
         {scorers.length > 0 && (
           <Card title="Top Scorers" hint="Goals">
             {scorers.map((p, i) => (
-              <ScorerRow key={p.name + p.teamId} rank={i + 1} player={p} />
+              <ScorerRow key={`${p.teamId}-${p.name}-${i}`} rank={i + 1} player={p} />
             ))}
           </Card>
         )}

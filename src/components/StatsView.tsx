@@ -143,7 +143,7 @@ function ScorersTab({ players }: { players: PlayerStat[] }) {
       <Card title="Top Scorers" hint="Goals">
       {players.map((p, i) => (
         <Row
-          key={p.name + p.teamId}
+          key={`${p.teamId}-${p.name}-${i}`}
           rank={i + 1}
           logo={p.teamLogo}
           primary={p.name}
@@ -171,7 +171,7 @@ function AssistsTab({ players }: { players: PlayerStat[] }) {
     <Card title="Top Assisters" hint="Assists">
       {players.map((p, i) => (
         <Row
-          key={p.name + p.teamId}
+          key={`${p.teamId}-${p.name}-${i}`}
           rank={i + 1}
           logo={p.teamLogo}
           primary={p.name}
@@ -291,7 +291,7 @@ function DisciplineTab({
         ) : (
           players.map((p, i) => (
             <Row
-              key={p.name + p.teamId}
+              key={`${p.teamId}-${p.name}-${i}`}
               rank={i + 1}
               logo={p.teamLogo}
               primary={p.name}

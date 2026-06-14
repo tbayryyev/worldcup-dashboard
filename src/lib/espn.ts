@@ -852,10 +852,19 @@ export async function fetchAllFixtures(): Promise<Scoreboard> {
     RawScoreboard,
   ];
 
+  // De-duplicate by event id: the two date windows are meant to be disjoint,
+  // but ESPN occasionally returns a boundary match in both, which would
+  // otherwise double-count it in fixtures, the bracket and the stats build.
   const events = [...(raw1.events ?? []), ...(raw2.events ?? [])];
+  const seen = new Set<string>();
   const matches = events
     .map(mapEvent)
     .filter((m): m is Match => m !== null)
+    .filter((m) => {
+      if (seen.has(m.id)) return false;
+      seen.add(m.id);
+      return true;
+    })
     .sort((a, b) => a.date.localeCompare(b.date));
 
   return {
