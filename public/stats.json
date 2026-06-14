@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-14T21:42:33.884Z",
-  "matchesPlayed": 9,
-  "totalGoals": 27,
+  "generatedAt": "2026-06-14T23:38:54.918Z",
+  "matchesPlayed": 10,
+  "totalGoals": 31,
   "topScorers": [
     {
       "name": "Folarin Balogun",
@@ -67,11 +67,29 @@
       "assists": 0
     },
     {
+      "name": "Crysencio Summerville",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
       "name": "Cyle Larin",
       "teamId": "206",
       "teamName": "Canada",
       "teamAbbr": "CAN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "name": "Daichi Kamada",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 1,
       "assists": 0
     },
@@ -135,6 +153,15 @@
       "teamName": "Mexico",
       "teamAbbr": "MEX",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "name": "Keito Nakamura",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 1,
       "assists": 0
     },
@@ -209,6 +236,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "goals": 1,
       "assists": 0
+    },
+    {
+      "name": "Virgil van Dijk",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 1,
+      "assists": 0
     }
   ],
   "topAssisters": [
@@ -227,6 +263,15 @@
       "teamName": "Germany",
       "teamAbbr": "GER",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
+      "name": "Ryan Gravenberch",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 0,
       "assists": 2
     },
@@ -321,6 +366,15 @@
       "assists": 1
     },
     {
+      "name": "Koki Ogawa",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Lee Kang-In",
       "teamId": "451",
       "teamName": "South Korea",
@@ -371,6 +425,15 @@
       "teamName": "Bosnia-Herzegovina",
       "teamAbbr": "BIH",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "name": "Takefusa Kubo",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 0,
       "assists": 1
     },
@@ -454,6 +517,14 @@
       "teamId": "205",
       "teamAbbr": "BRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Crysencio Summerville",
+      "teamId": "449",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "yellow": 1,
       "red": 0
     },
@@ -562,6 +633,22 @@
       "red": 0
     },
     {
+      "name": "Memphis Depay",
+      "teamId": "449",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Micky van de Ven",
+      "teamId": "449",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Miguel Almirón",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -598,22 +685,6 @@
       "teamId": "467",
       "teamAbbr": "RSA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Tyler Adams",
-      "teamId": "660",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Yunus Akgün",
-      "teamId": "465",
-      "teamAbbr": "TUR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
       "yellow": 1,
       "red": 0
     }
@@ -673,6 +744,28 @@
       "goalsFor": 2,
       "goalsAgainst": 1,
       "goalDifference": 1
+    },
+    {
+      "teamId": "627",
+      "name": "Japan",
+      "abbr": "JPN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "group": "Group F",
+      "played": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0
+    },
+    {
+      "teamId": "449",
+      "name": "Netherlands",
+      "abbr": "NED",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "group": "Group F",
+      "played": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0
     },
     {
       "teamId": "580",
@@ -785,17 +878,6 @@
       "goalDifference": -6
     },
     {
-      "teamId": "209",
-      "name": "Ecuador",
-      "abbr": "ECU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "group": "Group E",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
       "teamId": "4789",
       "name": "Ivory Coast",
       "abbr": "CIV",
@@ -807,22 +889,11 @@
       "goalDifference": 0
     },
     {
-      "teamId": "627",
-      "name": "Japan",
-      "abbr": "JPN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "group": "Group F",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "449",
-      "name": "Netherlands",
-      "abbr": "NED",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "group": "Group F",
+      "teamId": "209",
+      "name": "Ecuador",
+      "abbr": "ECU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "group": "Group E",
       "played": 0,
       "goalsFor": 0,
       "goalsAgainst": 0,
@@ -1180,6 +1251,16 @@
       "passPct": 89.8
     },
     {
+      "teamId": "449",
+      "name": "Netherlands",
+      "abbr": "NED",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "matches": 1,
+      "accuratePasses": 464,
+      "totalPasses": 524,
+      "passPct": 88.5
+    },
+    {
       "teamId": "205",
       "name": "Brazil",
       "abbr": "BRA",
@@ -1238,6 +1319,16 @@
       "accuratePasses": 509,
       "totalPasses": 598,
       "passPct": 85.1
+    },
+    {
+      "teamId": "627",
+      "name": "Japan",
+      "abbr": "JPN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "matches": 1,
+      "accuratePasses": 287,
+      "totalPasses": 342,
+      "passPct": 83.9
     },
     {
       "teamId": "11678",
@@ -1376,6 +1467,14 @@
       "name": "Scotland",
       "abbr": "SCO",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
+      "teamId": "449",
+      "name": "Netherlands",
+      "abbr": "NED",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "yellow": 3,
       "red": 0
     },
