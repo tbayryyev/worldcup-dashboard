@@ -10,6 +10,7 @@ const ITEMS: { href: string; label: string }[] = [
   { href: "/bracket", label: "Bracket" },
   { href: "/teams", label: "Teams" },
   { href: "/stats", label: "Stats" },
+  { href: "/about", label: "About" },
 ];
 
 function isActive(path: string, href: string): boolean {
