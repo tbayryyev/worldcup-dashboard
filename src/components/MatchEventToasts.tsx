@@ -57,7 +57,7 @@ function detail(ev: MatchEvent): string {
 
 function ToastCard({ toast, onDone }: { toast: Toast; onDone: (id: number) => void }) {
   useEffect(() => {
-    const t = setTimeout(() => onDone(toast.id), 6000);
+    const t = setTimeout(() => onDone(toast.id), 15000);
     return () => clearTimeout(t);
   }, [toast.id, onDone]);
 

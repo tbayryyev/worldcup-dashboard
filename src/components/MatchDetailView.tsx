@@ -190,7 +190,15 @@ function MatchEvents({ match }: { match: MatchDetail }) {
 // Curated, ordered subset of ESPN's ~28 team stats — the ones fans actually
 // scan. Each entry maps an ESPN stat `name` to a display label; `percent`
 // stats render with a trailing %.
-const STAT_ROWS: { name: string; label: string; percent?: boolean }[] = [
+// `percent` adds a trailing %. `fraction` means ESPN sends the value as 0–1
+// (e.g. passPct "0.9") so it must be ×100 for display — unlike possessionPct,
+// which already arrives as 0–100.
+const STAT_ROWS: {
+  name: string;
+  label: string;
+  percent?: boolean;
+  fraction?: boolean;
+}[] = [
   { name: "possessionPct", label: "Possession", percent: true },
   { name: "totalShots", label: "Shots" },
   { name: "shotsOnTarget", label: "Shots on Target" },
@@ -200,7 +208,7 @@ const STAT_ROWS: { name: string; label: string; percent?: boolean }[] = [
   { name: "yellowCards", label: "Yellow Cards" },
   { name: "redCards", label: "Red Cards" },
   { name: "saves", label: "Saves" },
-  { name: "passPct", label: "Pass Accuracy", percent: true },
+  { name: "passPct", label: "Pass Accuracy", percent: true, fraction: true },
 ];
 
 function statValue(team: TeamStats | undefined, name: string): string | null {
@@ -212,29 +220,37 @@ function StatRow({
   home,
   away,
   percent,
+  fraction,
 }: {
   label: string;
   home: string;
   away: string;
   percent?: boolean;
+  fraction?: boolean;
 }) {
   const h = parseFloat(home) || 0;
   const a = parseFloat(away) || 0;
   const total = h + a;
   const homePct = total > 0 ? (h / total) * 100 : 50;
   const suffix = percent ? "%" : "";
+  // ESPN sends some percentages as 0–1; scale those to 0–100 for display.
+  const fmt = (v: string) => {
+    if (!fraction) return v;
+    const n = parseFloat(v);
+    return Number.isFinite(n) ? String(Math.round(n * 100)) : v;
+  };
   return (
     <div className="py-2">
       <div className="flex items-center justify-between text-sm font-semibold tabular-nums text-zinc-900 dark:text-zinc-100">
         <span>
-          {home}
+          {fmt(home)}
           {suffix}
         </span>
         <span className="text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
           {label}
         </span>
         <span>
-          {away}
+          {fmt(away)}
           {suffix}
         </span>
       </div>
@@ -288,6 +304,7 @@ function MatchStats({ match }: { match: MatchDetail }) {
             home={r.home}
             away={r.away}
             percent={r.percent}
+            fraction={r.fraction}
           />
         ))}
       </div>
