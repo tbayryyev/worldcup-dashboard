@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T05:30:13.600Z",
+  "generatedAt": "2026-06-15T12:44:24.689Z",
   "matchesPlayed": 12,
   "totalGoals": 38,
   "topScorers": [
@@ -1458,9 +1458,9 @@
       "abbr": "TUN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
       "matches": 1,
-      "accuratePasses": 288,
-      "totalPasses": 364,
-      "passPct": 79.1
+      "accuratePasses": 292,
+      "totalPasses": 371,
+      "passPct": 78.7
     },
     {
       "teamId": "466",
@@ -1468,9 +1468,9 @@
       "abbr": "SWE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
       "matches": 1,
-      "accuratePasses": 279,
-      "totalPasses": 355,
-      "passPct": 78.6
+      "accuratePasses": 278,
+      "totalPasses": 356,
+      "passPct": 78.1
     },
     {
       "teamId": "628",
