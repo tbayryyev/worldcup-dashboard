@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-15T12:44:24.689Z",
-  "matchesPlayed": 12,
+  "generatedAt": "2026-06-15T18:47:59.582Z",
+  "matchesPlayed": 13,
   "totalGoals": 38,
   "topScorers": [
     {
@@ -1032,7 +1032,7 @@
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "group": "Group H",
-      "played": 0,
+      "played": 1,
       "goalsFor": 0,
       "goalsAgainst": 0,
       "goalDifference": 0
@@ -1042,6 +1042,17 @@
       "name": "Cape Verde",
       "abbr": "CPV",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "group": "Group H",
+      "played": 1,
+      "goalsFor": 0,
+      "goalsAgainst": 0,
+      "goalDifference": 0
+    },
+    {
+      "teamId": "212",
+      "name": "Uruguay",
+      "abbr": "URU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
       "group": "Group H",
       "played": 0,
       "goalsFor": 0,
@@ -1053,17 +1064,6 @@
       "name": "Saudi Arabia",
       "abbr": "KSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-      "group": "Group H",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "212",
-      "name": "Uruguay",
-      "abbr": "URU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
       "group": "Group H",
       "played": 0,
       "goalsFor": 0,
@@ -1293,6 +1293,16 @@
   ],
   "teamPassing": [
     {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "matches": 1,
+      "accuratePasses": 734,
+      "totalPasses": 801,
+      "passPct": 91.6
+    },
+    {
       "teamId": "475",
       "name": "Switzerland",
       "abbr": "SUI",
@@ -1493,6 +1503,16 @@
       "passPct": 73.6
     },
     {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "matches": 1,
+      "accuratePasses": 205,
+      "totalPasses": 279,
+      "passPct": 73.5
+    },
+    {
       "teamId": "210",
       "name": "Paraguay",
       "abbr": "PAR",
@@ -1667,6 +1687,22 @@
       "name": "Tunisia",
       "abbr": "TUN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "yellow": 1,
       "red": 0
     }
