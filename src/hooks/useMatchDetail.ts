@@ -14,8 +14,8 @@ async function fetchDetail(id: string): Promise<MatchDetail> {
 // Poll only when it's worth it: fast while live, slower near kickoff, and
 // stop entirely once the match is over (a finished result never changes).
 function pollInterval(data: MatchDetail | undefined): number | false {
-  if (!data) return 30_000;
-  if (data.state === "in") return 30_000;
+  if (!data) return 15_000;
+  if (data.state === "in") return 15_000;
   if (data.state === "post") return false;
   if (data.date) {
     const delta = new Date(data.date).getTime() - Date.now();

@@ -702,7 +702,8 @@ export async function fetchScoreboard(dates?: string): Promise<Scoreboard> {
   const init: RequestInit & {
     cf?: { cacheTtl: number; cacheEverything: boolean };
   } = {
-    cf: { cacheTtl: 30, cacheEverything: true },
+    // 15s so live scores stay fresh for the 15s client poll cadence.
+    cf: { cacheTtl: 15, cacheEverything: true },
   };
 
   const res = await fetch(url, init);
@@ -782,7 +783,8 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
   const init: RequestInit & {
     cf?: { cacheTtl: number; cacheEverything: boolean };
   } = {
-    cf: { cacheTtl: 30, cacheEverything: true },
+    // 15s so live match detail keeps pace with the 15s client poll cadence.
+    cf: { cacheTtl: 15, cacheEverything: true },
   };
 
   const res = await fetch(url, init);

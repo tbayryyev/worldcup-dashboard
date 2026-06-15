@@ -2,7 +2,7 @@ import { fetchSummary } from "@/lib/espn";
 
 export const dynamic = "force-dynamic";
 
-const CACHE_TTL = 30;
+const CACHE_TTL = 15;
 
 // caches.default is a Cloudflare Workers global; absent in local `next dev`.
 function getEdgeCache(): Cache | null {

@@ -2,7 +2,7 @@ import { fetchHomeScoreboard } from "@/lib/espn";
 
 export const dynamic = "force-dynamic";
 
-const CACHE_TTL = 30;
+const CACHE_TTL = 15;
 
 // caches.default is a Cloudflare Workers global; it does not exist in local
 // `next dev` (Node), where this returns null and every request is a MISS.

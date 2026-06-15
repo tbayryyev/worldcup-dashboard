@@ -17,7 +17,7 @@ async function fetchLive(): Promise<HomeScoreboard> {
 // otherwise. The scoreboard itself tells us each match's state.
 function pollInterval(data: HomeScoreboard | undefined): number {
   const matches = data?.matches ?? [];
-  if (matches.some((m) => m.state === "in")) return 30_000;
+  if (matches.some((m) => m.state === "in")) return 15_000;
 
   const now = Date.now();
   const kickoffSoon = matches.some((m) => {
