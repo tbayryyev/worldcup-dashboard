@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-16T18:16:56.503Z",
-  "matchesPlayed": 16,
-  "totalGoals": 46,
+  "generatedAt": "2026-06-16T21:25:31.487Z",
+  "matchesPlayed": 17,
+  "totalGoals": 50,
   "topScorers": [
     {
       "name": "Elijah Just",
@@ -27,6 +27,15 @@
       "teamName": "Germany",
       "teamAbbr": "GER",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Kylian Mbappé",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "goals": 2,
       "assists": 0
     },
@@ -112,6 +121,15 @@
       "assists": 0
     },
     {
+      "name": "Bradley Barcola",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
       "name": "Breel Embolo",
       "teamId": "475",
       "teamName": "Switzerland",
@@ -184,6 +202,15 @@
       "assists": 0
     },
     {
+      "name": "Ibrahim Mbaye",
+      "teamId": "654",
+      "teamName": "Senegal",
+      "teamAbbr": "SEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
       "name": "Ismael Saibari",
       "teamId": "2869",
       "teamName": "Morocco",
@@ -243,33 +270,6 @@
       "teamName": "Czechia",
       "teamAbbr": "CZE",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "goals": 1,
-      "assists": 0
-    },
-    {
-      "name": "Livano Comenencia",
-      "teamId": "11678",
-      "teamName": "Curaçao",
-      "teamAbbr": "CUW",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "goals": 1,
-      "assists": 0
-    },
-    {
-      "name": "Mattias Svanberg",
-      "teamId": "466",
-      "teamName": "Sweden",
-      "teamAbbr": "SWE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "goals": 1,
-      "assists": 0
-    },
-    {
-      "name": "Maurício",
-      "teamId": "210",
-      "teamName": "Paraguay",
-      "teamAbbr": "PAR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "goals": 1,
       "assists": 0
     }
@@ -357,6 +357,15 @@
       "assists": 1
     },
     {
+      "name": "Adrien Rabiot",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Alex Freeman",
       "teamId": "660",
       "teamName": "United States",
@@ -429,6 +438,15 @@
       "assists": 1
     },
     {
+      "name": "Iliman Ndiaye",
+      "teamId": "654",
+      "teamName": "Senegal",
+      "teamAbbr": "SEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Julio Enciso",
       "teamId": "210",
       "teamName": "Paraguay",
@@ -474,6 +492,15 @@
       "assists": 1
     },
     {
+      "name": "Michael Olise",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Mohamed Salah",
       "teamId": "2620",
       "teamName": "Egypt",
@@ -515,33 +542,6 @@
       "teamName": "Bosnia-Herzegovina",
       "teamAbbr": "BIH",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Takefusa Kubo",
-      "teamId": "627",
-      "teamName": "Japan",
-      "teamAbbr": "JPN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Vladimír Coufal",
-      "teamId": "450",
-      "teamName": "Czechia",
-      "teamAbbr": "CZE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Wilfried Singo",
-      "teamId": "4789",
-      "teamName": "Ivory Coast",
-      "teamAbbr": "CIV",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
       "goals": 0,
       "assists": 1
     }
@@ -823,6 +823,17 @@
       "goalDifference": 3
     },
     {
+      "teamId": "478",
+      "name": "France",
+      "abbr": "FRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "group": "Group I",
+      "played": 1,
+      "goalsFor": 3,
+      "goalsAgainst": 1,
+      "goalDifference": 2
+    },
+    {
       "teamId": "203",
       "name": "Mexico",
       "abbr": "MEX",
@@ -1043,6 +1054,17 @@
       "goalDifference": -1
     },
     {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "group": "Group I",
+      "played": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 3,
+      "goalDifference": -2
+    },
+    {
       "teamId": "210",
       "name": "Paraguay",
       "abbr": "PAR",
@@ -1093,28 +1115,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
       "group": "Group H",
       "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "478",
-      "name": "France",
-      "abbr": "FRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "group": "Group I",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "group": "Group I",
-      "played": 0,
       "goalsFor": 0,
       "goalsAgainst": 0,
       "goalDifference": 0
@@ -1380,6 +1380,16 @@
       "passPct": 88.2
     },
     {
+      "teamId": "478",
+      "name": "France",
+      "abbr": "FRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "matches": 1,
+      "accuratePasses": 505,
+      "totalPasses": 576,
+      "passPct": 87.7
+    },
+    {
       "teamId": "205",
       "name": "Brazil",
       "abbr": "BRA",
@@ -1427,6 +1437,16 @@
       "matches": 1,
       "accuratePasses": 391,
       "totalPasses": 455,
+      "passPct": 85.9
+    },
+    {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "matches": 1,
+      "accuratePasses": 427,
+      "totalPasses": 497,
       "passPct": 85.9
     },
     {
