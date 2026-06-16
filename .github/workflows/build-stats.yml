@@ -7,7 +7,7 @@ name: Build tournament stats
 
 on:
   schedule:
-    - cron: "17 */2 * * *" # every 2 hours
+    - cron: "*/30 * * * *" # every 30 minutes (only commits when stats changed)
   workflow_dispatch: {} # allow manual runs
 
 permissions:
