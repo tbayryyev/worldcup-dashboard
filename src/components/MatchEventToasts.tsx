@@ -9,10 +9,22 @@ interface Toast {
   abbr: string;
 }
 
-// Stable-ish signature for an event so we can tell which ones are new between
-// polls (MatchEvent has no id of its own).
+// Base minute of a clock, ignoring stoppage time: "45'+2'" -> "45", "23'" -> "23".
+// ESPN refines the clock of an in-progress event across polls (adding stoppage
+// time) — normalizing it keeps the same goal from looking "new" a second time.
+function baseMinute(clock: string | undefined): string {
+  const m = clock?.match(/\d+/);
+  return m ? m[0] : "";
+}
+
+// Stable signature for an event so we can tell which ones are genuinely new
+// between polls (MatchEvent has no id of its own). Deliberately excludes the
+// volatile `text` (commentary wording gets rewritten) and uses only the base
+// minute — ESPN re-emits the same goal with a refined clock/text once the
+// scoreline catches up, and we must NOT treat that as a new event.
 function sig(e: MatchEvent): string {
-  return [e.type, e.clock, e.text, e.scorer, e.player, e.playerIn].join("|");
+  const who = e.scorer ?? e.player ?? e.playerIn ?? "";
+  return [e.type, e.teamId, who, baseMinute(e.clock)].join("|");
 }
 
 function toastStyle(type: MatchEvent["type"]): { ring: string; label: string } {
