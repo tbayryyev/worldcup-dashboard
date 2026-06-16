@@ -195,6 +195,14 @@ export interface Standings {
   fetchedAt: string;
 }
 
+// A third-placed team in the cross-group race. In the 48-team 2026 format the
+// 8 best third-placed teams (of 12) advance to the Round of 32 alongside the
+// two automatic qualifiers from each group.
+export interface ThirdPlaceEntry extends StandingsEntry {
+  groupName: string; // "Group A"
+  qualifies: boolean; // top 8 of the third-placed teams
+}
+
 // --- Raw ESPN shapes (only the fields we read; everything is optional
 // because the API is undocumented and can omit fields without notice). ---
 
@@ -868,6 +876,30 @@ export async function fetchStandings(): Promise<Standings> {
     groups,
     fetchedAt: new Date().toISOString(),
   };
+}
+
+// Ranks the third-placed team from every group against each other and flags the
+// top 8 as qualifying. FIFA's published tiebreakers are: points, then goal
+// difference, then goals scored — after that come disciplinary record and a
+// drawing of lots, neither of which the API exposes, so ties beyond goals
+// scored are ordered by name purely for a stable, deterministic display.
+export function bestThirdPlaced(standings: Standings): ThirdPlaceEntry[] {
+  const thirds = standings.groups
+    .map((g) => {
+      const e = g.entries.find((x) => x.rank === 3);
+      return e ? { ...e, groupName: g.name, qualifies: false } : null;
+    })
+    .filter((x): x is ThirdPlaceEntry => x !== null);
+
+  thirds.sort(
+    (a, b) =>
+      b.points - a.points ||
+      b.goalDifference - a.goalDifference ||
+      b.goalsFor - a.goalsFor ||
+      a.team.name.localeCompare(b.team.name),
+  );
+
+  return thirds.map((t, i) => ({ ...t, qualifies: i < 8 }));
 }
 
 /**
