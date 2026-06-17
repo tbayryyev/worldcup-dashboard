@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-16T23:02:35.939Z",
-  "matchesPlayed": 17,
-  "totalGoals": 50,
+  "generatedAt": "2026-06-17T02:00:57.457Z",
+  "matchesPlayed": 18,
+  "totalGoals": 55,
   "topScorers": [
     {
       "name": "Elijah Just",
@@ -9,6 +9,15 @@
       "teamName": "New Zealand",
       "teamAbbr": "NZL",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "goals": 2,
       "assists": 0
     },
@@ -117,6 +126,15 @@
       "teamName": "Ivory Coast",
       "teamAbbr": "CIV",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "goals": 1,
+      "assists": 0
+    },
+    {
+      "name": "Aymen Hussein",
+      "teamId": "4375",
+      "teamName": "Iraq",
+      "teamAbbr": "IRQ",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "goals": 1,
       "assists": 0
     },
@@ -254,24 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 1,
       "assists": 0
-    },
-    {
-      "name": "Keito Nakamura",
-      "teamId": "627",
-      "teamName": "Japan",
-      "teamAbbr": "JPN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "goals": 1,
-      "assists": 0
-    },
-    {
-      "name": "Ladislav Krejcí",
-      "teamId": "450",
-      "teamName": "Czechia",
-      "teamAbbr": "CZE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "goals": 1,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -375,6 +375,15 @@
       "assists": 1
     },
     {
+      "name": "Amir Al-Ammari",
+      "teamId": "4375",
+      "teamName": "Iraq",
+      "teamAbbr": "IRQ",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Brahim Díaz",
       "teamId": "2869",
       "teamName": "Morocco",
@@ -398,6 +407,15 @@
       "teamName": "United States",
       "teamAbbr": "USA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "name": "David Møller Wolfe",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "goals": 0,
       "assists": 1
     },
@@ -492,6 +510,15 @@
       "assists": 1
     },
     {
+      "name": "Martin Ødegaard",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Michael Olise",
       "teamId": "478",
       "teamName": "France",
@@ -515,33 +542,6 @@
       "teamName": "Australia",
       "teamAbbr": "AUS",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Promise David",
-      "teamId": "206",
-      "teamName": "Canada",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Roberto Alvarado",
-      "teamId": "203",
-      "teamName": "Mexico",
-      "teamAbbr": "MEX",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Sead Kolasinac",
-      "teamId": "452",
-      "teamName": "Bosnia-Herzegovina",
-      "teamAbbr": "BIH",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
       "goals": 0,
       "assists": 1
     }
@@ -823,6 +823,17 @@
       "goalDifference": 3
     },
     {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "group": "Group I",
+      "played": 1,
+      "goalsFor": 4,
+      "goalsAgainst": 1,
+      "goalDifference": 3
+    },
+    {
       "teamId": "478",
       "name": "France",
       "abbr": "FRA",
@@ -1076,6 +1087,17 @@
       "goalDifference": -3
     },
     {
+      "teamId": "4375",
+      "name": "Iraq",
+      "abbr": "IRQ",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "group": "Group I",
+      "played": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 4,
+      "goalDifference": -3
+    },
+    {
       "teamId": "659",
       "name": "Tunisia",
       "abbr": "TUN",
@@ -1115,28 +1137,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
       "group": "Group H",
       "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "4375",
-      "name": "Iraq",
-      "abbr": "IRQ",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
-      "group": "Group I",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "464",
-      "name": "Norway",
-      "abbr": "NOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "group": "Group I",
-      "played": 0,
       "goalsFor": 0,
       "goalsAgainst": 0,
       "goalDifference": 0
@@ -1360,6 +1360,16 @@
       "passPct": 89.8
     },
     {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "matches": 1,
+      "accuratePasses": 476,
+      "totalPasses": 536,
+      "passPct": 88.8
+    },
+    {
       "teamId": "449",
       "name": "Netherlands",
       "abbr": "NED",
@@ -1386,8 +1396,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "matches": 1,
       "accuratePasses": 505,
-      "totalPasses": 576,
-      "passPct": 87.7
+      "totalPasses": 575,
+      "passPct": 87.8
     },
     {
       "teamId": "205",
@@ -1445,9 +1455,9 @@
       "abbr": "SEN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "matches": 1,
-      "accuratePasses": 427,
-      "totalPasses": 497,
-      "passPct": 85.9
+      "accuratePasses": 430,
+      "totalPasses": 502,
+      "passPct": 85.7
     },
     {
       "teamId": "2654",
@@ -1537,6 +1547,16 @@
       "matches": 1,
       "accuratePasses": 272,
       "totalPasses": 334,
+      "passPct": 81.4
+    },
+    {
+      "teamId": "4375",
+      "name": "Iraq",
+      "abbr": "IRQ",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "matches": 1,
+      "accuratePasses": 271,
+      "totalPasses": 333,
       "passPct": 81.4
     },
     {
@@ -1842,6 +1862,14 @@
       "name": "Iran",
       "abbr": "IRN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "4375",
+      "name": "Iraq",
+      "abbr": "IRQ",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "yellow": 1,
       "red": 0
     }
