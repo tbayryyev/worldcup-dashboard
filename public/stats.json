@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-17T18:40:43.691Z",
-  "matchesPlayed": 20,
-  "totalGoals": 62,
+  "generatedAt": "2026-06-17T21:02:57.628Z",
+  "matchesPlayed": 21,
+  "totalGoals": 64,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -265,11 +265,11 @@
       "assists": 0
     },
     {
-      "name": "John McGinn",
-      "teamId": "580",
-      "teamName": "Scotland",
-      "teamAbbr": "SCO",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
+      "name": "João Neves",
+      "teamId": "482",
+      "teamName": "Portugal",
+      "teamAbbr": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "goals": 1,
       "assists": 0
     }
@@ -380,6 +380,15 @@
       "teamName": "Iraq",
       "teamAbbr": "IRQ",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "name": "Arthur Masuaku",
+      "teamId": "2850",
+      "teamName": "Congo DR",
+      "teamAbbr": "COD",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "goals": 0,
       "assists": 1
     },
@@ -535,15 +544,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "goals": 0,
       "assists": 1
-    },
-    {
-      "name": "Nico González",
-      "teamId": "202",
-      "teamName": "Argentina",
-      "teamAbbr": "ARG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "goals": 0,
-      "assists": 1
     }
   ],
   "playerDiscipline": [
@@ -620,6 +620,14 @@
       "red": 0
     },
     {
+      "name": "Bernardo Silva",
+      "teamId": "482",
+      "teamAbbr": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Brian Gutiérrez",
       "teamId": "203",
       "teamAbbr": "MEX",
@@ -632,6 +640,14 @@
       "teamId": "205",
       "teamAbbr": "BRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Chancel Mbemba",
+      "teamId": "2850",
+      "teamAbbr": "COD",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "yellow": 1,
       "red": 0
     },
@@ -768,22 +784,6 @@
       "teamId": "206",
       "teamAbbr": "CAN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Mahmoud Abunada",
-      "teamId": "4398",
-      "teamAbbr": "QAT",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Marawan Attia",
-      "teamId": "2620",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "yellow": 1,
       "red": 0
     }
@@ -1076,6 +1076,28 @@
       "goalDifference": 0
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "group": "Group K",
+      "played": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "goalDifference": 0
+    },
+    {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "group": "Group K",
+      "played": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "goalDifference": 0
+    },
+    {
       "teamId": "450",
       "name": "Czechia",
       "abbr": "CZE",
@@ -1175,21 +1197,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "482",
-      "name": "Portugal",
-      "abbr": "POR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "group": "Group K",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "group": "Group K",
       "played": 0,
       "goalsFor": 0,
@@ -1208,11 +1219,11 @@
       "goalDifference": 0
     },
     {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "group": "Group K",
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "group": "Group L",
       "played": 0,
       "goalsFor": 0,
       "goalsAgainst": 0,
@@ -1223,17 +1234,6 @@
       "name": "England",
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "group": "Group L",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
       "group": "Group L",
       "played": 0,
       "goalsFor": 0,
@@ -1319,6 +1319,16 @@
     }
   ],
   "teamPassing": [
+    {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "matches": 1,
+      "accuratePasses": 724,
+      "totalPasses": 783,
+      "passPct": 92.5
+    },
     {
       "teamId": "624",
       "name": "Algeria",
@@ -1620,6 +1630,16 @@
       "passPct": 78.1
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "matches": 1,
+      "accuratePasses": 195,
+      "totalPasses": 250,
+      "passPct": 78
+    },
+    {
       "teamId": "469",
       "name": "Iran",
       "abbr": "IRN",
@@ -1786,6 +1806,14 @@
       "red": 0
     },
     {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "206",
       "name": "Canada",
       "abbr": "CAN",
@@ -1918,6 +1946,14 @@
       "name": "Austria",
       "abbr": "AUT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "yellow": 1,
       "red": 0
     }
