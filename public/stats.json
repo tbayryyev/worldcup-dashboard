@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-17T21:02:57.628Z",
-  "matchesPlayed": 21,
-  "totalGoals": 64,
+  "generatedAt": "2026-06-17T22:56:41.211Z",
+  "matchesPlayed": 22,
+  "totalGoals": 70,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -36,6 +36,15 @@
       "teamName": "United States",
       "teamAbbr": "USA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Harry Kane",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "goals": 2,
       "assists": 0
     },
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 1,
       "assists": 0
-    },
-    {
-      "name": "João Neves",
-      "teamId": "482",
-      "teamName": "Portugal",
-      "teamAbbr": "POR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "goals": 1,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -411,6 +411,15 @@
       "assists": 1
     },
     {
+      "name": "Bukayo Saka",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Christian Pulisic",
       "teamId": "660",
       "teamName": "United States",
@@ -425,6 +434,24 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "name": "Declan Rice",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
+      "name": "Elliot Anderson",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "goals": 0,
       "assists": 1
     },
@@ -474,6 +501,15 @@
       "assists": 1
     },
     {
+      "name": "Ivan Perisic",
+      "teamId": "477",
+      "teamName": "Croatia",
+      "teamAbbr": "CRO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Julio Enciso",
       "teamId": "210",
       "teamName": "Paraguay",
@@ -506,42 +542,6 @@
       "teamName": "Sweden",
       "teamAbbr": "SWE",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Malik Tillman",
-      "teamId": "660",
-      "teamName": "United States",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Martin Ødegaard",
-      "teamId": "464",
-      "teamName": "Norway",
-      "teamAbbr": "NOR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Michael Olise",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Mohamed Salah",
-      "teamId": "2620",
-      "teamName": "Egypt",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "goals": 0,
       "assists": 1
     }
@@ -834,6 +834,17 @@
       "goalDifference": 3
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "group": "Group L",
+      "played": 1,
+      "goalsFor": 4,
+      "goalsAgainst": 2,
+      "goalDifference": 2
+    },
+    {
       "teamId": "202",
       "name": "Argentina",
       "abbr": "ARG",
@@ -942,6 +953,17 @@
       "goalsFor": 2,
       "goalsAgainst": 2,
       "goalDifference": 0
+    },
+    {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "group": "Group L",
+      "played": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 4,
+      "goalDifference": -2
     },
     {
       "teamId": "580",
@@ -1219,21 +1241,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "group": "Group L",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "teamId": "2659",
+      "name": "Panama",
+      "abbr": "PAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
       "group": "Group L",
       "played": 0,
       "goalsFor": 0,
@@ -1245,17 +1256,6 @@
       "name": "Ghana",
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "group": "Group L",
-      "played": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "2659",
-      "name": "Panama",
-      "abbr": "PAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
       "group": "Group L",
       "played": 0,
       "goalsFor": 0,
@@ -1470,6 +1470,16 @@
       "passPct": 86.2
     },
     {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "matches": 1,
+      "accuratePasses": 380,
+      "totalPasses": 442,
+      "passPct": 86
+    },
+    {
       "teamId": "459",
       "name": "Belgium",
       "abbr": "BEL",
@@ -1478,6 +1488,16 @@
       "accuratePasses": 391,
       "totalPasses": 455,
       "passPct": 85.9
+    },
+    {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "matches": 1,
+      "accuratePasses": 406,
+      "totalPasses": 473,
+      "passPct": 85.8
     },
     {
       "teamId": "654",
@@ -1620,6 +1640,16 @@
       "passPct": 78.7
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "matches": 1,
+      "accuratePasses": 195,
+      "totalPasses": 249,
+      "passPct": 78.3
+    },
+    {
       "teamId": "466",
       "name": "Sweden",
       "abbr": "SWE",
@@ -1628,16 +1658,6 @@
       "accuratePasses": 278,
       "totalPasses": 356,
       "passPct": 78.1
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "matches": 1,
-      "accuratePasses": 195,
-      "totalPasses": 250,
-      "passPct": 78
     },
     {
       "teamId": "469",
