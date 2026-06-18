@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T05:15:39.048Z",
+  "generatedAt": "2026-06-18T09:53:02.036Z",
   "matchesPlayed": 24,
   "totalGoals": 75,
   "topScorers": [
@@ -1525,9 +1525,9 @@
       "abbr": "COL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "matches": 1,
-      "accuratePasses": 446,
-      "totalPasses": 521,
-      "passPct": 85.6
+      "accuratePasses": 444,
+      "totalPasses": 519,
+      "passPct": 85.5
     },
     {
       "teamId": "2654",
@@ -1705,9 +1705,9 @@
       "abbr": "UZB",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
       "matches": 1,
-      "accuratePasses": 242,
-      "totalPasses": 318,
-      "passPct": 76.1
+      "accuratePasses": 243,
+      "totalPasses": 319,
+      "passPct": 76.2
     },
     {
       "teamId": "628",
