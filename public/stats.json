@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-18T16:27:41.877Z",
-  "matchesPlayed": 24,
-  "totalGoals": 75,
+  "generatedAt": "2026-06-18T19:02:12.830Z",
+  "matchesPlayed": 25,
+  "totalGoals": 77,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -384,6 +384,15 @@
       "assists": 1
     },
     {
+      "name": "Alexandr Sojka",
+      "teamId": "450",
+      "teamName": "Czechia",
+      "teamAbbr": "CZE",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "goals": 0,
+      "assists": 1
+    },
+    {
       "name": "Amir Al-Ammari",
       "teamId": "4375",
       "teamName": "Iraq",
@@ -535,15 +544,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "goals": 0,
       "assists": 1
-    },
-    {
-      "name": "Ivan Perisic",
-      "teamId": "477",
-      "teamName": "Croatia",
-      "teamAbbr": "CRO",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "goals": 0,
-      "assists": 1
     }
   ],
   "playerDiscipline": [
@@ -578,6 +578,14 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "yellow": 0,
       "red": 1
+    },
+    {
+      "name": "Teboho Mokoena",
+      "teamId": "467",
+      "teamAbbr": "RSA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "yellow": 2,
+      "red": 0
     },
     {
       "name": "Aaron Hickey",
@@ -778,14 +786,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "yellow": 1,
       "red": 0
-    },
-    {
-      "name": "Jovo Lukic",
-      "teamId": "452",
-      "teamAbbr": "BIH",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "yellow": 1,
-      "red": 0
     }
   ],
   "teamGoals": [
@@ -966,6 +966,17 @@
       "goalDifference": 0
     },
     {
+      "teamId": "450",
+      "name": "Czechia",
+      "abbr": "CZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "group": "Group A",
+      "played": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 3,
+      "goalDifference": -1
+    },
+    {
       "teamId": "477",
       "name": "Croatia",
       "abbr": "CRO",
@@ -1142,15 +1153,15 @@
       "goalDifference": 0
     },
     {
-      "teamId": "450",
-      "name": "Czechia",
-      "abbr": "CZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "teamId": "467",
+      "name": "South Africa",
+      "abbr": "RSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
       "group": "Group A",
-      "played": 1,
+      "played": 2,
       "goalsFor": 1,
-      "goalsAgainst": 2,
-      "goalDifference": -1
+      "goalsAgainst": 3,
+      "goalDifference": -2
     },
     {
       "teamId": "654",
@@ -1283,17 +1294,6 @@
       "goalsFor": 0,
       "goalsAgainst": 1,
       "goalDifference": -1
-    },
-    {
-      "teamId": "467",
-      "name": "South Africa",
-      "abbr": "RSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "group": "Group A",
-      "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 2,
-      "goalDifference": -2
     },
     {
       "teamId": "465",
@@ -1438,6 +1438,16 @@
       "accuratePasses": 449,
       "totalPasses": 514,
       "passPct": 87.4
+    },
+    {
+      "teamId": "467",
+      "name": "South Africa",
+      "abbr": "RSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "matches": 2,
+      "accuratePasses": 780,
+      "totalPasses": 897,
+      "passPct": 87
     },
     {
       "teamId": "481",
@@ -1606,8 +1616,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
       "matches": 1,
       "accuratePasses": 292,
-      "totalPasses": 351,
-      "passPct": 83.2
+      "totalPasses": 352,
+      "passPct": 83
     },
     {
       "teamId": "11678",
@@ -1628,16 +1638,6 @@
       "accuratePasses": 307,
       "totalPasses": 374,
       "passPct": 82.1
-    },
-    {
-      "teamId": "467",
-      "name": "South Africa",
-      "abbr": "RSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "matches": 1,
-      "accuratePasses": 272,
-      "totalPasses": 334,
-      "passPct": 81.4
     },
     {
       "teamId": "2620",
@@ -1710,6 +1710,16 @@
       "passPct": 76.2
     },
     {
+      "teamId": "450",
+      "name": "Czechia",
+      "abbr": "CZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "matches": 2,
+      "accuratePasses": 500,
+      "totalPasses": 666,
+      "passPct": 75.1
+    },
+    {
       "teamId": "628",
       "name": "Australia",
       "abbr": "AUS",
@@ -1780,16 +1790,6 @@
       "passPct": 71.9
     },
     {
-      "teamId": "450",
-      "name": "Czechia",
-      "abbr": "CZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "matches": 1,
-      "accuratePasses": 230,
-      "totalPasses": 327,
-      "passPct": 70.3
-    },
-    {
       "teamId": "452",
       "name": "Bosnia-Herzegovina",
       "abbr": "BIH",
@@ -1806,7 +1806,7 @@
       "name": "South Africa",
       "abbr": "RSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "yellow": 2,
+      "yellow": 4,
       "red": 2
     },
     {
@@ -1926,6 +1926,14 @@
       "name": "South Korea",
       "abbr": "KOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "450",
+      "name": "Czechia",
+      "abbr": "CZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
       "yellow": 1,
       "red": 0
     },
