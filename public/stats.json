@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T22:56:41.211Z",
+  "generatedAt": "2026-06-18T00:16:23.696Z",
   "matchesPlayed": 22,
   "totalGoals": 70,
   "topScorers": [
@@ -1241,10 +1241,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "2659",
-      "name": "Panama",
-      "abbr": "PAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "teamId": "4469",
+      "name": "Ghana",
+      "abbr": "GHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
       "group": "Group L",
       "played": 0,
       "goalsFor": 0,
@@ -1252,10 +1252,10 @@
       "goalDifference": 0
     },
     {
-      "teamId": "4469",
-      "name": "Ghana",
-      "abbr": "GHA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "teamId": "2659",
+      "name": "Panama",
+      "abbr": "PAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
       "group": "Group L",
       "played": 0,
       "goalsFor": 0,
