@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T20:13:57.993Z",
-  "matchesPlayed": 28,
-  "totalGoals": 89,
+  "generatedAt": "2026-06-19T21:43:34.030Z",
+  "matchesPlayed": 29,
+  "totalGoals": 91,
   "topScorers": [
     {
       "name": "Jonathan David",
@@ -119,6 +119,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 1,
       "assists": 2
+    },
+    {
+      "name": "Alex Freeman",
+      "teamId": "660",
+      "teamName": "United States",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "goals": 1,
+      "assists": 1
     },
     {
       "name": "Breel Embolo",
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
       "goals": 1,
       "assists": 0
-    },
-    {
-      "name": "Crysencio Summerville",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 1,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -319,6 +319,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 0,
       "assists": 2
+    },
+    {
+      "name": "Alex Freeman",
+      "teamId": "660",
+      "teamName": "United States",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "goals": 1,
+      "assists": 1
     },
     {
       "name": "Breel Embolo",
@@ -398,15 +407,6 @@
       "teamName": "France",
       "teamAbbr": "FRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Alex Freeman",
-      "teamId": "660",
-      "teamName": "United States",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "goals": 0,
       "assists": 1
     },
@@ -652,6 +652,14 @@
       "red": 0
     },
     {
+      "name": "Alessandro Circati",
+      "teamId": "628",
+      "teamAbbr": "AUS",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Alex Arce",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -672,6 +680,14 @@
       "teamId": "452",
       "teamAbbr": "BIH",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "name": "Antonee Robinson",
+      "teamId": "660",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "yellow": 1,
       "red": 0
     },
@@ -732,6 +748,14 @@
       "red": 0
     },
     {
+      "name": "Chris Richards",
+      "teamId": "660",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Crysencio Summerville",
       "teamId": "449",
       "teamAbbr": "NED",
@@ -762,30 +786,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "yellow": 1,
       "red": 0
-    },
-    {
-      "name": "Edin Dzeko",
-      "teamId": "452",
-      "teamAbbr": "BIH",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Ehsan Hajsafi",
-      "teamId": "469",
-      "teamAbbr": "IRN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Ermedin Demirovic",
-      "teamId": "452",
-      "teamAbbr": "BIH",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "yellow": 1,
-      "red": 0
     }
   ],
   "teamGoals": [
@@ -812,6 +812,17 @@
       "goalDifference": 6
     },
     {
+      "teamId": "660",
+      "name": "United States",
+      "abbr": "USA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "group": "Group D",
+      "played": 2,
+      "goalsFor": 6,
+      "goalsAgainst": 1,
+      "goalDifference": 5
+    },
+    {
       "teamId": "466",
       "name": "Sweden",
       "abbr": "SWE",
@@ -831,17 +842,6 @@
       "played": 2,
       "goalsFor": 5,
       "goalsAgainst": 2,
-      "goalDifference": 3
-    },
-    {
-      "teamId": "660",
-      "name": "United States",
-      "abbr": "USA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "group": "Group D",
-      "played": 1,
-      "goalsFor": 4,
-      "goalsAgainst": 1,
       "goalDifference": 3
     },
     {
@@ -922,22 +922,22 @@
       "goalDifference": 2
     },
     {
-      "teamId": "628",
-      "name": "Australia",
-      "abbr": "AUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "group": "Group D",
-      "played": 1,
-      "goalsFor": 2,
-      "goalsAgainst": 0,
-      "goalDifference": 2
-    },
-    {
       "teamId": "451",
       "name": "South Korea",
       "abbr": "KOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
       "group": "Group A",
+      "played": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0
+    },
+    {
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "group": "Group D",
       "played": 2,
       "goalsFor": 2,
       "goalsAgainst": 2,
@@ -1564,10 +1564,10 @@
       "name": "United States",
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "matches": 1,
-      "accuratePasses": 509,
-      "totalPasses": 598,
-      "passPct": 85.1
+      "matches": 2,
+      "accuratePasses": 954,
+      "totalPasses": 1122,
+      "passPct": 85
     },
     {
       "teamId": "4789",
@@ -1730,16 +1730,6 @@
       "passPct": 75.1
     },
     {
-      "teamId": "628",
-      "name": "Australia",
-      "abbr": "AUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "matches": 1,
-      "accuratePasses": 201,
-      "totalPasses": 271,
-      "passPct": 74.2
-    },
-    {
       "teamId": "2597",
       "name": "Cape Verde",
       "abbr": "CPV",
@@ -1777,6 +1767,16 @@
       "matches": 1,
       "accuratePasses": 232,
       "totalPasses": 319,
+      "passPct": 72.7
+    },
+    {
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "matches": 2,
+      "accuratePasses": 421,
+      "totalPasses": 579,
       "passPct": 72.7
     },
     {
@@ -1826,18 +1826,18 @@
       "red": 1
     },
     {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "yellow": 1,
-      "red": 1
-    },
-    {
       "teamId": "660",
       "name": "United States",
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "yellow": 4,
+      "red": 1
+    },
+    {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "yellow": 1,
       "red": 1
     },
@@ -1847,6 +1847,14 @@
       "abbr": "PAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "yellow": 5,
+      "red": 0
+    },
+    {
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "yellow": 4,
       "red": 0
     },
     {
