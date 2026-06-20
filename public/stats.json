@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-20T00:06:55.797Z",
-  "matchesPlayed": 30,
-  "totalGoals": 92,
+  "generatedAt": "2026-06-20T04:50:39.933Z",
+  "matchesPlayed": 31,
+  "totalGoals": 95,
   "topScorers": [
     {
       "name": "Jonathan David",
@@ -20,6 +20,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 3,
       "assists": 0
+    },
+    {
+      "name": "Vinícius Júnior",
+      "teamId": "205",
+      "teamName": "Brazil",
+      "teamAbbr": "BRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "goals": 2,
+      "assists": 1
     },
     {
       "name": "Cyle Larin",
@@ -99,6 +108,15 @@
       "teamName": "France",
       "teamAbbr": "FRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Matheus Cunha",
+      "teamId": "205",
+      "teamName": "Brazil",
+      "teamAbbr": "BRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "goals": 2,
       "assists": 0
     },
@@ -254,24 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "goals": 1,
       "assists": 0
-    },
-    {
-      "name": "Bradley Barcola",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 1,
-      "assists": 0
-    },
-    {
-      "name": "Caleb Yirenkyi",
-      "teamId": "4469",
-      "teamName": "Ghana",
-      "teamAbbr": "GHA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "goals": 1,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -328,6 +328,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 0,
       "assists": 2
+    },
+    {
+      "name": "Vinícius Júnior",
+      "teamId": "205",
+      "teamName": "Brazil",
+      "teamAbbr": "BRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "goals": 2,
+      "assists": 1
     },
     {
       "name": "Alex Freeman",
@@ -535,15 +544,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 0,
       "assists": 1
-    },
-    {
-      "name": "Gustavo Puerta",
-      "teamId": "208",
-      "teamName": "Colombia",
-      "teamAbbr": "COL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "goals": 0,
-      "assists": 1
     }
   ],
   "playerDiscipline": [
@@ -724,6 +724,14 @@
       "red": 0
     },
     {
+      "name": "Carlens Arcus",
+      "teamId": "2654",
+      "teamAbbr": "HAI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Carlos Harvey",
       "teamId": "2659",
       "teamAbbr": "PAN",
@@ -772,18 +780,10 @@
       "red": 0
     },
     {
-      "name": "Denis Zakaria",
-      "teamId": "475",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Derek Cornelius",
-      "teamId": "206",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "name": "Danley Jean Jacques",
+      "teamId": "2654",
+      "teamAbbr": "HAI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "yellow": 1,
       "red": 0
     }
@@ -842,6 +842,17 @@
       "played": 2,
       "goalsFor": 5,
       "goalsAgainst": 2,
+      "goalDifference": 3
+    },
+    {
+      "teamId": "205",
+      "name": "Brazil",
+      "abbr": "BRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "group": "Group C",
+      "played": 2,
+      "goalsFor": 4,
+      "goalsAgainst": 1,
       "goalDifference": 3
     },
     {
@@ -1060,17 +1071,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
       "group": "Group C",
       "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "205",
-      "name": "Brazil",
-      "abbr": "BRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "group": "Group C",
-      "played": 1,
       "goalsFor": 1,
       "goalsAgainst": 1,
       "goalDifference": 0
@@ -1263,17 +1263,6 @@
       "goalDifference": 0
     },
     {
-      "teamId": "2654",
-      "name": "Haiti",
-      "abbr": "HAI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
-      "group": "Group C",
-      "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 1,
-      "goalDifference": -1
-    },
-    {
       "teamId": "209",
       "name": "Ecuador",
       "abbr": "ECU",
@@ -1316,6 +1305,17 @@
       "goalsFor": 0,
       "goalsAgainst": 3,
       "goalDifference": -3
+    },
+    {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "group": "Group C",
+      "played": 2,
+      "goalsFor": 0,
+      "goalsAgainst": 4,
+      "goalDifference": -4
     }
   ],
   "teamPassing": [
@@ -1400,16 +1400,6 @@
       "passPct": 88.4
     },
     {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "matches": 2,
-      "accuratePasses": 1020,
-      "totalPasses": 1157,
-      "passPct": 88.2
-    },
-    {
       "teamId": "212",
       "name": "Uruguay",
       "abbr": "URU",
@@ -1418,6 +1408,16 @@
       "accuratePasses": 540,
       "totalPasses": 612,
       "passPct": 88.2
+    },
+    {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "matches": 2,
+      "accuratePasses": 1019,
+      "totalPasses": 1156,
+      "passPct": 88.1
     },
     {
       "teamId": "478",
@@ -1434,10 +1434,10 @@
       "name": "Brazil",
       "abbr": "BRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "matches": 1,
-      "accuratePasses": 449,
-      "totalPasses": 514,
-      "passPct": 87.4
+      "matches": 2,
+      "accuratePasses": 911,
+      "totalPasses": 1039,
+      "passPct": 87.7
     },
     {
       "teamId": "467",
@@ -1540,16 +1540,6 @@
       "passPct": 85.5
     },
     {
-      "teamId": "2654",
-      "name": "Haiti",
-      "abbr": "HAI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
-      "matches": 1,
-      "accuratePasses": 367,
-      "totalPasses": 431,
-      "passPct": 85.2
-    },
-    {
       "teamId": "209",
       "name": "Ecuador",
       "abbr": "ECU",
@@ -1565,8 +1555,8 @@
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "matches": 2,
-      "accuratePasses": 954,
-      "totalPasses": 1122,
+      "accuratePasses": 953,
+      "totalPasses": 1121,
       "passPct": 85
     },
     {
@@ -1588,6 +1578,16 @@
       "accuratePasses": 376,
       "totalPasses": 446,
       "passPct": 84.3
+    },
+    {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "matches": 2,
+      "accuratePasses": 698,
+      "totalPasses": 830,
+      "passPct": 84.1
     },
     {
       "teamId": "474",
@@ -1616,8 +1616,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
       "matches": 2,
       "accuratePasses": 695,
-      "totalPasses": 829,
-      "passPct": 83.8
+      "totalPasses": 830,
+      "passPct": 83.7
     },
     {
       "teamId": "206",
@@ -1770,16 +1770,6 @@
       "passPct": 72.7
     },
     {
-      "teamId": "628",
-      "name": "Australia",
-      "abbr": "AUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "matches": 2,
-      "accuratePasses": 421,
-      "totalPasses": 579,
-      "passPct": 72.7
-    },
-    {
       "teamId": "2917",
       "name": "Jordan",
       "abbr": "JOR",
@@ -1788,6 +1778,16 @@
       "accuratePasses": 241,
       "totalPasses": 332,
       "passPct": 72.6
+    },
+    {
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "matches": 2,
+      "accuratePasses": 420,
+      "totalPasses": 581,
+      "passPct": 72.3
     },
     {
       "teamId": "4398",
@@ -1850,6 +1850,14 @@
       "red": 0
     },
     {
+      "teamId": "2654",
+      "name": "Haiti",
+      "abbr": "HAI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
+      "yellow": 4,
+      "red": 0
+    },
+    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
@@ -1882,6 +1890,14 @@
       "red": 0
     },
     {
+      "teamId": "205",
+      "name": "Brazil",
+      "abbr": "BRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "449",
       "name": "Netherlands",
       "abbr": "NED",
@@ -1910,14 +1926,6 @@
       "name": "Switzerland",
       "abbr": "SUI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "205",
-      "name": "Brazil",
-      "abbr": "BRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "yellow": 2,
       "red": 0
     },
@@ -1958,14 +1966,6 @@
       "name": "Morocco",
       "abbr": "MAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "2654",
-      "name": "Haiti",
-      "abbr": "HAI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "yellow": 1,
       "red": 0
     },
