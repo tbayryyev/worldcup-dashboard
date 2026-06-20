@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T19:20:52.834Z",
+  "generatedAt": "2026-06-20T20:49:27.119Z",
   "matchesPlayed": 33,
   "totalGoals": 102,
   "topScorers": [
@@ -1395,9 +1395,9 @@
       "abbr": "NED",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "matches": 2,
-      "accuratePasses": 860,
+      "accuratePasses": 861,
       "totalPasses": 974,
-      "passPct": 88.3
+      "passPct": 88.4
     },
     {
       "teamId": "212",
@@ -1655,9 +1655,9 @@
       "abbr": "SWE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
       "matches": 2,
-      "accuratePasses": 639,
-      "totalPasses": 780,
-      "passPct": 81.9
+      "accuratePasses": 640,
+      "totalPasses": 779,
+      "passPct": 82.2
     },
     {
       "teamId": "2620",
