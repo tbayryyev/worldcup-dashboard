@@ -622,6 +622,21 @@ function mapHeadToHead(
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
+// ESPN reports the goals/assists leaders with a verbose displayValue such as
+// "Matches: 2, Goals: 2" — a games-played count plus the actual stat. Every
+// other category (shots, passes, saves) is already a bare number. Reduce both
+// to just the headline number: prefer the count tied to the goal/assist keyword
+// (order-independent), otherwise take the lone number as-is.
+function leaderValue(displayValue: string): string {
+  if (!displayValue) return displayValue;
+  const tied = displayValue.match(
+    /(\d+)\s*(?:goals?|assists?)\b|(?:goals?|assists?)\D*?(\d+)/i,
+  );
+  if (tied) return tied[1] ?? tied[2];
+  const nums = displayValue.match(/\d+(?:\.\d+)?/g);
+  return nums ? nums[nums.length - 1] : displayValue;
+}
+
 function mapLeaders(raw: RawLeaderTeam[] | undefined): TeamLeaders[] {
   if (!raw) return [];
   return raw
@@ -639,7 +654,7 @@ function mapLeaders(raw: RawLeaderTeam[] | undefined): TeamLeaders[] {
               cat.name ??
               "",
             player: top.athlete.displayName,
-            value: top.displayValue ?? "",
+            value: leaderValue(top.displayValue ?? ""),
           };
         })
         .filter((x): x is LeaderItem => x !== null),
