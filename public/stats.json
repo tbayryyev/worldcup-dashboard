@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-21T20:11:55.544Z",
-  "matchesPlayed": 37,
+  "generatedAt": "2026-06-21T21:52:57.336Z",
+  "matchesPlayed": 38,
   "totalGoals": 113,
   "topScorers": [
     {
@@ -580,6 +580,14 @@
       "red": 1
     },
     {
+      "name": "Nathan Ngoy",
+      "teamId": "459",
+      "teamAbbr": "BEL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "yellow": 0,
+      "red": 1
+    },
+    {
       "name": "Sphephelo Sithole",
       "teamId": "467",
       "teamAbbr": "RSA",
@@ -776,14 +784,6 @@
       "teamId": "660",
       "teamAbbr": "USA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Crysencio Summerville",
-      "teamId": "449",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "yellow": 1,
       "red": 0
     }
@@ -1010,21 +1010,21 @@
       "goalDifference": 0
     },
     {
-      "teamId": "2666",
-      "name": "New Zealand",
-      "abbr": "NZL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "teamId": "469",
+      "name": "Iran",
+      "abbr": "IRN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "group": "Group G",
-      "played": 1,
+      "played": 2,
       "goalsFor": 2,
       "goalsAgainst": 2,
       "goalDifference": 0
     },
     {
-      "teamId": "469",
-      "name": "Iran",
-      "abbr": "IRN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "teamId": "2666",
+      "name": "New Zealand",
+      "abbr": "NZL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
       "group": "Group G",
       "played": 1,
       "goalsFor": 2,
@@ -1103,7 +1103,7 @@
       "abbr": "BEL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "group": "Group G",
-      "played": 1,
+      "played": 2,
       "goalsFor": 1,
       "goalsAgainst": 1,
       "goalDifference": 0
@@ -1346,7 +1346,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "matches": 2,
       "accuratePasses": 1402,
-      "totalPasses": 1525,
+      "totalPasses": 1526,
       "passPct": 91.9
     },
     {
@@ -1514,9 +1514,9 @@
       "name": "Belgium",
       "abbr": "BEL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "matches": 1,
-      "accuratePasses": 391,
-      "totalPasses": 455,
+      "matches": 2,
+      "accuratePasses": 925,
+      "totalPasses": 1077,
       "passPct": 85.9
     },
     {
@@ -1705,19 +1705,9 @@
       "abbr": "KSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
       "matches": 2,
-      "accuratePasses": 528,
+      "accuratePasses": 530,
       "totalPasses": 686,
-      "passPct": 77
-    },
-    {
-      "teamId": "469",
-      "name": "Iran",
-      "abbr": "IRN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "matches": 1,
-      "accuratePasses": 314,
-      "totalPasses": 409,
-      "passPct": 76.8
+      "passPct": 77.3
     },
     {
       "teamId": "2570",
@@ -1728,6 +1718,16 @@
       "accuratePasses": 243,
       "totalPasses": 319,
       "passPct": 76.2
+    },
+    {
+      "teamId": "469",
+      "name": "Iran",
+      "abbr": "IRN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "matches": 2,
+      "accuratePasses": 512,
+      "totalPasses": 677,
+      "passPct": 75.6
     },
     {
       "teamId": "450",
@@ -1839,6 +1839,14 @@
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "yellow": 4,
+      "red": 1
+    },
+    {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "yellow": 3,
       "red": 1
     },
     {
@@ -1978,10 +1986,10 @@
       "red": 0
     },
     {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "teamId": "469",
+      "name": "Iran",
+      "abbr": "IRN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "yellow": 2,
       "red": 0
     },
@@ -2030,14 +2038,6 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "469",
-      "name": "Iran",
-      "abbr": "IRN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "yellow": 1,
       "red": 0
     },
