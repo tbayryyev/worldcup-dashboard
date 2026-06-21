@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T03:47:56.684Z",
-  "matchesPlayed": 35,
-  "totalGoals": 105,
+  "generatedAt": "2026-06-21T08:27:25.205Z",
+  "matchesPlayed": 36,
+  "totalGoals": 109,
   "topScorers": [
     {
       "name": "Deniz Undav",
@@ -29,6 +29,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 3,
       "assists": 0
+    },
+    {
+      "name": "Ayase Ueda",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "goals": 2,
+      "assists": 1
     },
     {
       "name": "Cody Gakpo",
@@ -72,6 +81,15 @@
       "teamName": "Canada",
       "teamAbbr": "CAN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Daichi Kamada",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 2,
       "assists": 0
     },
@@ -211,6 +229,15 @@
       "assists": 1
     },
     {
+      "name": "Keito Nakamura",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "goals": 1,
+      "assists": 1
+    },
+    {
       "name": "Luis Díaz",
       "teamId": "208",
       "teamName": "Colombia",
@@ -245,33 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "goals": 1,
       "assists": 1
-    },
-    {
-      "name": "Rubén Vargas",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Viktor Gyökeres",
-      "teamId": "466",
-      "teamName": "Sweden",
-      "teamAbbr": "SWE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Abbosbek Fayzullaev",
-      "teamId": "2570",
-      "teamName": "Uzbekistan",
-      "teamAbbr": "UZB",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
-      "goals": 1,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -348,6 +348,15 @@
       "assists": 2
     },
     {
+      "name": "Ayase Ueda",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
       "name": "Cody Gakpo",
       "teamId": "449",
       "teamName": "Netherlands",
@@ -407,6 +416,15 @@
       "teamName": "South Korea",
       "teamAbbr": "KOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "goals": 1,
+      "assists": 1
+    },
+    {
+      "name": "Keito Nakamura",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 1,
       "assists": 1
     },
@@ -524,24 +542,6 @@
       "teamName": "England",
       "teamAbbr": "ENG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Christian Pulisic",
-      "teamId": "660",
-      "teamName": "United States",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "goals": 0,
-      "assists": 1
-    },
-    {
-      "name": "Cucho Hernández",
-      "teamId": "208",
-      "teamName": "Colombia",
-      "teamAbbr": "COL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "goals": 0,
       "assists": 1
     }
@@ -834,6 +834,17 @@
       "goalDifference": 5
     },
     {
+      "teamId": "627",
+      "name": "Japan",
+      "abbr": "JPN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "group": "Group F",
+      "played": 2,
+      "goalsFor": 6,
+      "goalsAgainst": 2,
+      "goalDifference": 4
+    },
+    {
       "teamId": "466",
       "name": "Sweden",
       "abbr": "SWE",
@@ -983,17 +994,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
       "group": "Group E",
       "played": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "627",
-      "name": "Japan",
-      "abbr": "JPN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "group": "Group F",
-      "played": 1,
       "goalsFor": 2,
       "goalsAgainst": 2,
       "goalDifference": 0
@@ -1208,17 +1208,6 @@
       "goalDifference": -3
     },
     {
-      "teamId": "659",
-      "name": "Tunisia",
-      "abbr": "TUN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-      "group": "Group F",
-      "played": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 5,
-      "goalDifference": -4
-    },
-    {
       "teamId": "4398",
       "name": "Qatar",
       "abbr": "QAT",
@@ -1239,6 +1228,17 @@
       "goalsFor": 1,
       "goalsAgainst": 7,
       "goalDifference": -6
+    },
+    {
+      "teamId": "659",
+      "name": "Tunisia",
+      "abbr": "TUN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
+      "group": "Group F",
+      "played": 2,
+      "goalsFor": 1,
+      "goalsAgainst": 9,
+      "goalDifference": -8
     },
     {
       "teamId": "164",
@@ -1420,6 +1420,16 @@
       "passPct": 88.1
     },
     {
+      "teamId": "209",
+      "name": "Ecuador",
+      "abbr": "ECU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "matches": 2,
+      "accuratePasses": 1000,
+      "totalPasses": 1136,
+      "passPct": 88
+    },
+    {
       "teamId": "481",
       "name": "Germany",
       "abbr": "GER",
@@ -1428,16 +1438,6 @@
       "accuratePasses": 1109,
       "totalPasses": 1261,
       "passPct": 87.9
-    },
-    {
-      "teamId": "209",
-      "name": "Ecuador",
-      "abbr": "ECU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "matches": 2,
-      "accuratePasses": 998,
-      "totalPasses": 1137,
-      "passPct": 87.8
     },
     {
       "teamId": "478",
@@ -1458,6 +1458,16 @@
       "accuratePasses": 911,
       "totalPasses": 1039,
       "passPct": 87.7
+    },
+    {
+      "teamId": "627",
+      "name": "Japan",
+      "abbr": "JPN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
+      "matches": 2,
+      "accuratePasses": 807,
+      "totalPasses": 923,
+      "passPct": 87.4
     },
     {
       "teamId": "467",
@@ -1600,16 +1610,6 @@
       "passPct": 84
     },
     {
-      "teamId": "627",
-      "name": "Japan",
-      "abbr": "JPN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "matches": 1,
-      "accuratePasses": 286,
-      "totalPasses": 341,
-      "passPct": 83.9
-    },
-    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
@@ -1674,10 +1674,10 @@
       "name": "Tunisia",
       "abbr": "TUN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-      "matches": 1,
-      "accuratePasses": 292,
-      "totalPasses": 371,
-      "passPct": 78.7
+      "matches": 2,
+      "accuratePasses": 576,
+      "totalPasses": 724,
+      "passPct": 79.6
     },
     {
       "teamId": "2850",
@@ -1695,9 +1695,9 @@
       "abbr": "CUW",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
       "matches": 2,
-      "accuratePasses": 440,
-      "totalPasses": 569,
-      "passPct": 77.3
+      "accuratePasses": 441,
+      "totalPasses": 570,
+      "passPct": 77.4
     },
     {
       "teamId": "469",
