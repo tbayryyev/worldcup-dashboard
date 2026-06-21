@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-21T08:27:25.205Z",
+  "generatedAt": "2026-06-21T11:31:15.172Z",
   "matchesPlayed": 36,
   "totalGoals": 109,
   "topScorers": [
@@ -1466,8 +1466,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "matches": 2,
       "accuratePasses": 807,
-      "totalPasses": 923,
-      "passPct": 87.4
+      "totalPasses": 924,
+      "passPct": 87.3
     },
     {
       "teamId": "467",
@@ -1676,8 +1676,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
       "matches": 2,
       "accuratePasses": 576,
-      "totalPasses": 724,
-      "passPct": 79.6
+      "totalPasses": 725,
+      "passPct": 79.4
     },
     {
       "teamId": "2850",
