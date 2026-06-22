@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-21T23:09:37.802Z",
-  "matchesPlayed": 38,
-  "totalGoals": 113,
+  "generatedAt": "2026-06-22T02:01:32.709Z",
+  "matchesPlayed": 39,
+  "totalGoals": 117,
   "topScorers": [
     {
       "name": "Deniz Undav",
@@ -54,6 +54,15 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
+      "name": "Maxi Araújo",
+      "teamId": "212",
+      "teamName": "Uruguay",
+      "teamAbbr": "URU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
       "goals": 2,
       "assists": 1
     },
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "goals": 1,
       "assists": 1
-    },
-    {
-      "name": "Nathaniel Brown",
-      "teamId": "481",
-      "teamName": "Germany",
-      "teamAbbr": "GER",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "goals": 1,
-      "assists": 1
     }
   ],
   "topAssisters": [
@@ -371,6 +371,15 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
+      "name": "Maxi Araújo",
+      "teamId": "212",
+      "teamName": "Uruguay",
+      "teamAbbr": "URU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
       "goals": 2,
       "assists": 1
     },
@@ -535,15 +544,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 0,
       "assists": 1
-    },
-    {
-      "name": "Brandon Thomas-Asante",
-      "teamId": "4469",
-      "teamName": "Ghana",
-      "teamAbbr": "GHA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "goals": 0,
-      "assists": 1
     }
   ],
   "playerDiscipline": [
@@ -618,6 +618,14 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "yellow": 0,
       "red": 1
+    },
+    {
+      "name": "Sidny Lopes Cabral",
+      "teamId": "2597",
+      "teamAbbr": "CPV",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "yellow": 2,
+      "red": 0
     },
     {
       "name": "Teboho Mokoena",
@@ -776,14 +784,6 @@
       "teamId": "2850",
       "teamAbbr": "COD",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Chris Richards",
-      "teamId": "660",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "yellow": 1,
       "red": 0
     }
@@ -966,6 +966,17 @@
       "goalDifference": 2
     },
     {
+      "teamId": "212",
+      "name": "Uruguay",
+      "abbr": "URU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "group": "Group H",
+      "played": 2,
+      "goalsFor": 3,
+      "goalsAgainst": 3,
+      "goalDifference": 0
+    },
+    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -1027,6 +1038,17 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
       "group": "Group G",
       "played": 1,
+      "goalsFor": 2,
+      "goalsAgainst": 2,
+      "goalDifference": 0
+    },
+    {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "group": "Group H",
+      "played": 2,
       "goalsFor": 2,
       "goalsAgainst": 2,
       "goalDifference": 0
@@ -1114,17 +1136,6 @@
       "abbr": "EGY",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "group": "Group G",
-      "played": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "212",
-      "name": "Uruguay",
-      "abbr": "URU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-      "group": "Group H",
       "played": 1,
       "goalsFor": 1,
       "goalsAgainst": 1,
@@ -1250,17 +1261,6 @@
       "goalsFor": 1,
       "goalsAgainst": 9,
       "goalDifference": -8
-    },
-    {
-      "teamId": "2597",
-      "name": "Cape Verde",
-      "abbr": "CPV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "group": "Group H",
-      "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0
     },
     {
       "teamId": "209",
@@ -1400,16 +1400,6 @@
       "passPct": 88.5
     },
     {
-      "teamId": "212",
-      "name": "Uruguay",
-      "abbr": "URU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-      "matches": 1,
-      "accuratePasses": 540,
-      "totalPasses": 612,
-      "passPct": 88.2
-    },
-    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -1515,8 +1505,8 @@
       "abbr": "BEL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "matches": 2,
-      "accuratePasses": 925,
-      "totalPasses": 1077,
+      "accuratePasses": 924,
+      "totalPasses": 1076,
       "passPct": 85.9
     },
     {
@@ -1558,6 +1548,16 @@
       "accuratePasses": 444,
       "totalPasses": 519,
       "passPct": 85.5
+    },
+    {
+      "teamId": "212",
+      "name": "Uruguay",
+      "abbr": "URU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "matches": 2,
+      "accuratePasses": 959,
+      "totalPasses": 1123,
+      "passPct": 85.4
     },
     {
       "teamId": "660",
@@ -1726,8 +1726,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "matches": 2,
       "accuratePasses": 512,
-      "totalPasses": 677,
-      "passPct": 75.6
+      "totalPasses": 679,
+      "passPct": 75.4
     },
     {
       "teamId": "450",
@@ -1744,10 +1744,10 @@
       "name": "Cape Verde",
       "abbr": "CPV",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "matches": 1,
-      "accuratePasses": 205,
-      "totalPasses": 278,
-      "passPct": 73.7
+      "matches": 2,
+      "accuratePasses": 410,
+      "totalPasses": 555,
+      "passPct": 73.9
     },
     {
       "teamId": "452",
@@ -1938,6 +1938,14 @@
       "red": 0
     },
     {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "655",
       "name": "Saudi Arabia",
       "abbr": "KSA",
@@ -1986,6 +1994,14 @@
       "red": 0
     },
     {
+      "teamId": "212",
+      "name": "Uruguay",
+      "abbr": "URU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "teamId": "469",
       "name": "Iran",
       "abbr": "IRN",
@@ -2022,14 +2038,6 @@
       "name": "Tunisia",
       "abbr": "TUN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tun.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "2597",
-      "name": "Cape Verde",
-      "abbr": "CPV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
       "yellow": 1,
       "red": 0
     },
