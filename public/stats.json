@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T21:30:43.323Z",
+  "generatedAt": "2026-06-22T23:17:06.323Z",
   "matchesPlayed": 41,
   "totalGoals": 123,
   "topScorers": [
@@ -1375,8 +1375,8 @@
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "matches": 2,
-      "accuratePasses": 997,
-      "totalPasses": 1114,
+      "accuratePasses": 998,
+      "totalPasses": 1115,
       "passPct": 89.5
     },
     {
@@ -1595,8 +1595,8 @@
       "abbr": "AUT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
       "matches": 2,
-      "accuratePasses": 887,
-      "totalPasses": 1047,
+      "accuratePasses": 888,
+      "totalPasses": 1048,
       "passPct": 84.7
     },
     {
