@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-23T21:44:28.046Z",
-  "matchesPlayed": 45,
+  "generatedAt": "2026-06-23T23:06:28.869Z",
+  "matchesPlayed": 46,
   "totalGoals": 139,
   "topScorers": [
     {
@@ -949,7 +949,7 @@
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "group": "Group L",
-      "played": 1,
+      "played": 2,
       "goalsFor": 4,
       "goalsAgainst": 2,
       "goalDifference": 2
@@ -1158,7 +1158,7 @@
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
       "group": "Group L",
-      "played": 1,
+      "played": 2,
       "goalsFor": 1,
       "goalsAgainst": 0,
       "goalDifference": 1
@@ -1370,6 +1370,16 @@
       "passPct": 89.6
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "matches": 2,
+      "accuratePasses": 992,
+      "totalPasses": 1107,
+      "passPct": 89.6
+    },
+    {
       "teamId": "202",
       "name": "Argentina",
       "abbr": "ARG",
@@ -1510,16 +1520,6 @@
       "passPct": 85.9
     },
     {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "matches": 1,
-      "accuratePasses": 406,
-      "totalPasses": 474,
-      "passPct": 85.7
-    },
-    {
       "teamId": "451",
       "name": "South Korea",
       "abbr": "KOR",
@@ -1640,16 +1640,6 @@
       "passPct": 83.5
     },
     {
-      "teamId": "4469",
-      "name": "Ghana",
-      "abbr": "GHA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "matches": 1,
-      "accuratePasses": 292,
-      "totalPasses": 352,
-      "passPct": 83
-    },
-    {
       "teamId": "2666",
       "name": "New Zealand",
       "abbr": "NZL",
@@ -1670,6 +1660,16 @@
       "passPct": 81.8
     },
     {
+      "teamId": "4469",
+      "name": "Ghana",
+      "abbr": "GHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "matches": 2,
+      "accuratePasses": 420,
+      "totalPasses": 525,
+      "passPct": 80
+    },
+    {
       "teamId": "659",
       "name": "Tunisia",
       "abbr": "TUN",
@@ -1680,16 +1680,6 @@
       "passPct": 79.4
     },
     {
-      "teamId": "2570",
-      "name": "Uzbekistan",
-      "abbr": "UZB",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
-      "matches": 2,
-      "accuratePasses": 505,
-      "totalPasses": 644,
-      "passPct": 78.4
-    },
-    {
       "teamId": "2850",
       "name": "Congo DR",
       "abbr": "COD",
@@ -1698,6 +1688,16 @@
       "accuratePasses": 195,
       "totalPasses": 249,
       "passPct": 78.3
+    },
+    {
+      "teamId": "2570",
+      "name": "Uzbekistan",
+      "abbr": "UZB",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "matches": 2,
+      "accuratePasses": 505,
+      "totalPasses": 646,
+      "passPct": 78.2
     },
     {
       "teamId": "11678",
@@ -2042,6 +2042,14 @@
       "red": 0
     },
     {
+      "teamId": "4469",
+      "name": "Ghana",
+      "abbr": "GHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -2114,10 +2122,10 @@
       "red": 0
     },
     {
-      "teamId": "4469",
-      "name": "Ghana",
-      "abbr": "GHA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 1,
       "red": 0
     },
