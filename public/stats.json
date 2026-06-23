@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-23T01:29:43.553Z",
-  "matchesPlayed": 42,
-  "totalGoals": 126,
+  "generatedAt": "2026-06-23T05:46:55.307Z",
+  "matchesPlayed": 44,
+  "totalGoals": 134,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -10,6 +10,15 @@
       "teamAbbr": "ARG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 5,
+      "assists": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 4,
       "assists": 0
     },
     {
@@ -130,15 +139,6 @@
       "assists": 0
     },
     {
-      "name": "Erling Haaland",
-      "teamId": "464",
-      "teamName": "Norway",
-      "teamAbbr": "NOR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
       "name": "Folarin Balogun",
       "teamId": "660",
       "teamName": "United States",
@@ -162,6 +162,15 @@
       "teamName": "Morocco",
       "teamAbbr": "MAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "teamId": "654",
+      "teamName": "Senegal",
+      "teamAbbr": "SEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "goals": 2,
       "assists": 0
     },
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 1,
       "assists": 1
-    },
-    {
-      "name": "Luis Díaz",
-      "teamId": "208",
-      "teamName": "Colombia",
-      "teamAbbr": "COL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "goals": 1,
-      "assists": 1
     }
   ],
   "topAssisters": [
@@ -353,6 +353,15 @@
       "teamName": "Paraguay",
       "teamAbbr": "PAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
+      "name": "Martin Ødegaard",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "goals": 0,
       "assists": 2
     },
@@ -534,15 +543,6 @@
       "teamAbbr": "SWE",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
       "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Adrien Rabiot",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 0,
       "assists": 1
     }
   ],
@@ -823,6 +823,17 @@
       "goalDifference": 4
     },
     {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "group": "Group I",
+      "played": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 3,
+      "goalDifference": 4
+    },
+    {
       "teamId": "660",
       "name": "United States",
       "abbr": "USA",
@@ -911,17 +922,6 @@
       "goalDifference": 3
     },
     {
-      "teamId": "464",
-      "name": "Norway",
-      "abbr": "NOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "group": "Group I",
-      "played": 1,
-      "goalsFor": 4,
-      "goalsAgainst": 1,
-      "goalDifference": 3
-    },
-    {
       "teamId": "2620",
       "name": "Egypt",
       "abbr": "EGY",
@@ -997,6 +997,17 @@
       "goalsFor": 3,
       "goalsAgainst": 5,
       "goalDifference": -2
+    },
+    {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "group": "Group I",
+      "played": 2,
+      "goalsFor": 3,
+      "goalsAgainst": 6,
+      "goalDifference": -3
     },
     {
       "teamId": "2869",
@@ -1087,6 +1098,17 @@
       "goalDifference": -2
     },
     {
+      "teamId": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "group": "Group J",
+      "played": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 4,
+      "goalDifference": -2
+    },
+    {
       "teamId": "477",
       "name": "Croatia",
       "abbr": "CRO",
@@ -1103,6 +1125,17 @@
       "abbr": "BIH",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
       "group": "Group B",
+      "played": 2,
+      "goalsFor": 2,
+      "goalsAgainst": 5,
+      "goalDifference": -3
+    },
+    {
+      "teamId": "2917",
+      "name": "Jordan",
+      "abbr": "JOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+      "group": "Group J",
       "played": 2,
       "goalsFor": 2,
       "goalsAgainst": 5,
@@ -1170,28 +1203,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
       "group": "Group A",
       "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 3,
-      "goalDifference": -2
-    },
-    {
-      "teamId": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "group": "Group I",
-      "played": 1,
-      "goalsFor": 1,
-      "goalsAgainst": 3,
-      "goalDifference": -2
-    },
-    {
-      "teamId": "2917",
-      "name": "Jordan",
-      "abbr": "JOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
-      "group": "Group J",
-      "played": 1,
       "goalsFor": 1,
       "goalsAgainst": 3,
       "goalDifference": -2
@@ -1296,17 +1307,6 @@
       "goalDifference": -3
     },
     {
-      "teamId": "624",
-      "name": "Algeria",
-      "abbr": "ALG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "group": "Group J",
-      "played": 1,
-      "goalsFor": 0,
-      "goalsAgainst": 3,
-      "goalDifference": -3
-    },
-    {
       "teamId": "2654",
       "name": "Haiti",
       "abbr": "HAI",
@@ -1330,16 +1330,6 @@
       "passPct": 92.5
     },
     {
-      "teamId": "624",
-      "name": "Algeria",
-      "abbr": "ALG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "matches": 1,
-      "accuratePasses": 563,
-      "totalPasses": 609,
-      "passPct": 92.4
-    },
-    {
       "teamId": "164",
       "name": "Spain",
       "abbr": "ESP",
@@ -1348,6 +1338,16 @@
       "accuratePasses": 1402,
       "totalPasses": 1526,
       "passPct": 91.9
+    },
+    {
+      "teamId": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "matches": 2,
+      "accuratePasses": 1123,
+      "totalPasses": 1249,
+      "passPct": 89.9
     },
     {
       "teamId": "475",
@@ -1380,23 +1380,13 @@
       "passPct": 89.5
     },
     {
-      "teamId": "464",
-      "name": "Norway",
-      "abbr": "NOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "matches": 1,
-      "accuratePasses": 477,
-      "totalPasses": 537,
-      "passPct": 88.8
-    },
-    {
       "teamId": "478",
       "name": "France",
       "abbr": "FRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "matches": 2,
-      "accuratePasses": 1044,
-      "totalPasses": 1177,
+      "accuratePasses": 1045,
+      "totalPasses": 1178,
       "passPct": 88.7
     },
     {
@@ -1470,6 +1460,16 @@
       "passPct": 87
     },
     {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "matches": 2,
+      "accuratePasses": 860,
+      "totalPasses": 991,
+      "passPct": 86.8
+    },
+    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -1510,16 +1510,6 @@
       "passPct": 85.9
     },
     {
-      "teamId": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "matches": 1,
-      "accuratePasses": 430,
-      "totalPasses": 502,
-      "passPct": 85.7
-    },
-    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -1558,6 +1548,16 @@
       "accuratePasses": 444,
       "totalPasses": 519,
       "passPct": 85.5
+    },
+    {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "matches": 2,
+      "accuratePasses": 759,
+      "totalPasses": 890,
+      "passPct": 85.3
     },
     {
       "teamId": "660",
@@ -1615,9 +1615,9 @@
       "abbr": "IRQ",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "matches": 2,
-      "accuratePasses": 685,
-      "totalPasses": 817,
-      "passPct": 83.8
+      "accuratePasses": 684,
+      "totalPasses": 815,
+      "passPct": 83.9
     },
     {
       "teamId": "580",
@@ -1760,16 +1760,6 @@
       "passPct": 73.4
     },
     {
-      "teamId": "2917",
-      "name": "Jordan",
-      "abbr": "JOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
-      "matches": 1,
-      "accuratePasses": 241,
-      "totalPasses": 332,
-      "passPct": 72.6
-    },
-    {
       "teamId": "628",
       "name": "Australia",
       "abbr": "AUS",
@@ -1777,6 +1767,16 @@
       "matches": 2,
       "accuratePasses": 420,
       "totalPasses": 581,
+      "passPct": 72.3
+    },
+    {
+      "teamId": "2917",
+      "name": "Jordan",
+      "abbr": "JOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
+      "matches": 2,
+      "accuratePasses": 421,
+      "totalPasses": 582,
       "passPct": 72.3
     },
     {
@@ -2078,6 +2078,22 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "2917",
+      "name": "Jordan",
+      "abbr": "JOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jor.png",
       "yellow": 1,
       "red": 0
     },
