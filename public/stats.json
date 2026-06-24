@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-24T19:10:04.471Z",
-  "matchesPlayed": 48,
-  "totalGoals": 141,
+  "generatedAt": "2026-06-24T21:09:35.421Z",
+  "matchesPlayed": 50,
+  "totalGoals": 148,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -38,6 +38,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 3,
       "assists": 2
+    },
+    {
+      "name": "Johan Manzambi",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 3,
+      "assists": 1
     },
     {
       "name": "Jonathan David",
@@ -90,6 +99,15 @@
       "teamName": "Spain",
       "teamAbbr": "ESP",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
+      "name": "Rubén Vargas",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 2,
       "assists": 1
     },
@@ -157,6 +175,15 @@
       "assists": 0
     },
     {
+      "name": "Ermin Mahmic",
+      "teamId": "452",
+      "teamName": "Bosnia-Herzegovina",
+      "teamAbbr": "BIH",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
       "name": "Folarin Balogun",
       "teamId": "660",
       "teamName": "United States",
@@ -189,15 +216,6 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
-      "name": "Johan Manzambi",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 2,
       "assists": 0
     },
@@ -238,6 +256,15 @@
       "assists": 3
     },
     {
+      "name": "Breel Embolo",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 1,
+      "assists": 2
+    },
+    {
       "name": "Mohamed Salah",
       "teamId": "2620",
       "teamName": "Egypt",
@@ -245,33 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "goals": 1,
       "assists": 2
-    },
-    {
-      "name": "Alex Freeman",
-      "teamId": "660",
-      "teamName": "United States",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Breel Embolo",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Felix Nmecha",
-      "teamId": "481",
-      "teamName": "Germany",
-      "teamAbbr": "GER",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "goals": 1,
-      "assists": 1
     }
   ],
   "topAssisters": [
@@ -303,11 +303,29 @@
       "assists": 2
     },
     {
+      "name": "Breel Embolo",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 1,
+      "assists": 2
+    },
+    {
       "name": "Mohamed Salah",
       "teamId": "2620",
       "teamName": "Egypt",
       "teamAbbr": "EGY",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "goals": 1,
+      "assists": 2
+    },
+    {
+      "name": "Nathan Saliba",
+      "teamId": "206",
+      "teamName": "Canada",
+      "teamAbbr": "CAN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "goals": 1,
       "assists": 2
     },
@@ -375,6 +393,15 @@
       "assists": 2
     },
     {
+      "name": "Johan Manzambi",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 3,
+      "assists": 1
+    },
+    {
       "name": "Ayase Ueda",
       "teamId": "627",
       "teamName": "Japan",
@@ -420,6 +447,15 @@
       "assists": 1
     },
     {
+      "name": "Rubén Vargas",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
       "name": "Vinícius Júnior",
       "teamId": "205",
       "teamName": "Brazil",
@@ -434,15 +470,6 @@
       "teamName": "United States",
       "teamAbbr": "USA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Breel Embolo",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 1,
       "assists": 1
     },
@@ -492,15 +519,6 @@
       "assists": 1
     },
     {
-      "name": "Nathan Saliba",
-      "teamId": "206",
-      "teamName": "Canada",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
       "name": "Nathaniel Brown",
       "teamId": "481",
       "teamName": "Germany",
@@ -519,29 +537,11 @@
       "assists": 1
     },
     {
-      "name": "Ramin Rezaeian",
-      "teamId": "469",
-      "teamName": "Iran",
-      "teamAbbr": "IRN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Rubén Vargas",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Viktor Gyökeres",
-      "teamId": "466",
-      "teamName": "Sweden",
-      "teamAbbr": "SWE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+      "name": "Promise David",
+      "teamId": "206",
+      "teamName": "Canada",
+      "teamAbbr": "CAN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "goals": 1,
       "assists": 1
     }
@@ -620,6 +620,14 @@
       "red": 1
     },
     {
+      "name": "Ahmed Fathy",
+      "teamId": "4398",
+      "teamAbbr": "QAT",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Sidny Lopes Cabral",
       "teamId": "2597",
       "teamAbbr": "CPV",
@@ -656,14 +664,6 @@
       "teamId": "655",
       "teamAbbr": "KSA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Ahmed Fathy",
-      "teamId": "4398",
-      "teamAbbr": "QAT",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
       "yellow": 1,
       "red": 0
     },
@@ -806,10 +806,21 @@
       "abbr": "CAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "group": "Group B",
-      "played": 2,
+      "played": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 3,
+      "goalDifference": 5
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "group": "Group B",
+      "played": 3,
       "goalsFor": 7,
-      "goalsAgainst": 1,
-      "goalDifference": 6
+      "goalsAgainst": 3,
+      "goalDifference": 4
     },
     {
       "teamId": "449",
@@ -900,15 +911,15 @@
       "goalDifference": 5
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "teamId": "452",
+      "name": "Bosnia-Herzegovina",
+      "abbr": "BIH",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
       "group": "Group B",
-      "played": 2,
+      "played": 3,
       "goalsFor": 5,
-      "goalsAgainst": 2,
-      "goalDifference": 3
+      "goalsAgainst": 6,
+      "goalDifference": -1
     },
     {
       "teamId": "164",
@@ -1131,17 +1142,6 @@
       "goalDifference": -2
     },
     {
-      "teamId": "452",
-      "name": "Bosnia-Herzegovina",
-      "abbr": "BIH",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "group": "Group B",
-      "played": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 5,
-      "goalDifference": -3
-    },
-    {
       "teamId": "2917",
       "name": "Jordan",
       "abbr": "JOR",
@@ -1151,6 +1151,17 @@
       "goalsFor": 2,
       "goalsAgainst": 5,
       "goalDifference": -3
+    },
+    {
+      "teamId": "4398",
+      "name": "Qatar",
+      "abbr": "QAT",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "group": "Group B",
+      "played": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 10,
+      "goalDifference": -8
     },
     {
       "teamId": "4469",
@@ -1217,17 +1228,6 @@
       "goalsFor": 1,
       "goalsAgainst": 5,
       "goalDifference": -4
-    },
-    {
-      "teamId": "4398",
-      "name": "Qatar",
-      "abbr": "QAT",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
-      "group": "Group B",
-      "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 7,
-      "goalDifference": -6
     },
     {
       "teamId": "11678",
@@ -1350,16 +1350,6 @@
       "passPct": 89.9
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 2,
-      "accuratePasses": 1043,
-      "totalPasses": 1162,
-      "passPct": 89.8
-    },
-    {
       "teamId": "465",
       "name": "Türkiye",
       "abbr": "TUR",
@@ -1418,6 +1408,16 @@
       "accuratePasses": 1019,
       "totalPasses": 1156,
       "passPct": 88.1
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 3,
+      "accuratePasses": 1410,
+      "totalPasses": 1603,
+      "passPct": 88
     },
     {
       "teamId": "209",
@@ -1620,16 +1620,6 @@
       "passPct": 83.7
     },
     {
-      "teamId": "206",
-      "name": "Canada",
-      "abbr": "CAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "matches": 2,
-      "accuratePasses": 825,
-      "totalPasses": 988,
-      "passPct": 83.5
-    },
-    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -1638,6 +1628,16 @@
       "accuratePasses": 780,
       "totalPasses": 935,
       "passPct": 83.4
+    },
+    {
+      "teamId": "206",
+      "name": "Canada",
+      "abbr": "CAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "matches": 3,
+      "accuratePasses": 1096,
+      "totalPasses": 1327,
+      "passPct": 82.6
     },
     {
       "teamId": "2666",
@@ -1668,6 +1668,16 @@
       "accuratePasses": 419,
       "totalPasses": 524,
       "passPct": 80
+    },
+    {
+      "teamId": "452",
+      "name": "Bosnia-Herzegovina",
+      "abbr": "BIH",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "matches": 3,
+      "accuratePasses": 912,
+      "totalPasses": 1142,
+      "passPct": 79.9
     },
     {
       "teamId": "659",
@@ -1710,6 +1720,16 @@
       "passPct": 77.3
     },
     {
+      "teamId": "4398",
+      "name": "Qatar",
+      "abbr": "QAT",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "matches": 3,
+      "accuratePasses": 674,
+      "totalPasses": 874,
+      "passPct": 77.1
+    },
+    {
       "teamId": "2850",
       "name": "Congo DR",
       "abbr": "COD",
@@ -1750,16 +1770,6 @@
       "passPct": 73.7
     },
     {
-      "teamId": "452",
-      "name": "Bosnia-Herzegovina",
-      "abbr": "BIH",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "matches": 2,
-      "accuratePasses": 459,
-      "totalPasses": 625,
-      "passPct": 73.4
-    },
-    {
       "teamId": "2917",
       "name": "Jordan",
       "abbr": "JOR",
@@ -1778,16 +1788,6 @@
       "accuratePasses": 420,
       "totalPasses": 581,
       "passPct": 72.3
-    },
-    {
-      "teamId": "4398",
-      "name": "Qatar",
-      "abbr": "QAT",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
-      "matches": 2,
-      "accuratePasses": 304,
-      "totalPasses": 440,
-      "passPct": 69.1
     },
     {
       "teamId": "210",
@@ -1814,8 +1814,16 @@
       "name": "Qatar",
       "abbr": "QAT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
-      "yellow": 3,
+      "yellow": 4,
       "red": 2
+    },
+    {
+      "teamId": "452",
+      "name": "Bosnia-Herzegovina",
+      "abbr": "BIH",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "yellow": 6,
+      "red": 1
     },
     {
       "teamId": "210",
@@ -1823,14 +1831,6 @@
       "abbr": "PAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "yellow": 6,
-      "red": 1
-    },
-    {
-      "teamId": "452",
-      "name": "Bosnia-Herzegovina",
-      "abbr": "BIH",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "yellow": 5,
       "red": 1
     },
     {
@@ -1856,6 +1856,14 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "yellow": 1,
       "red": 1
+    },
+    {
+      "teamId": "206",
+      "name": "Canada",
+      "abbr": "CAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "yellow": 5,
+      "red": 0
     },
     {
       "teamId": "11678",
@@ -1906,10 +1914,10 @@
       "red": 0
     },
     {
-      "teamId": "206",
-      "name": "Canada",
-      "abbr": "CAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "yellow": 3,
       "red": 0
     },
@@ -1991,14 +1999,6 @@
       "abbr": "COL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 2,
       "red": 0
     },
     {
