@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-23T23:06:28.869Z",
-  "matchesPlayed": 46,
-  "totalGoals": 139,
+  "generatedAt": "2026-06-24T01:24:27.423Z",
+  "matchesPlayed": 47,
+  "totalGoals": 140,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -999,6 +999,17 @@
       "goalDifference": 0
     },
     {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "group": "Group L",
+      "played": 2,
+      "goalsFor": 3,
+      "goalsAgainst": 4,
+      "goalDifference": -1
+    },
+    {
       "teamId": "2666",
       "name": "New Zealand",
       "abbr": "NZL",
@@ -1115,17 +1126,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "group": "Group J",
       "played": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 4,
-      "goalDifference": -2
-    },
-    {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "group": "Group L",
-      "played": 1,
       "goalsFor": 2,
       "goalsAgainst": 4,
       "goalDifference": -2
@@ -1290,10 +1290,10 @@
       "abbr": "PAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
       "group": "Group L",
-      "played": 1,
+      "played": 2,
       "goalsFor": 0,
-      "goalsAgainst": 1,
-      "goalDifference": -1
+      "goalsAgainst": 2,
+      "goalDifference": -2
     },
     {
       "teamId": "465",
@@ -1480,16 +1480,6 @@
       "passPct": 86.8
     },
     {
-      "teamId": "2659",
-      "name": "Panama",
-      "abbr": "PAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
-      "matches": 1,
-      "accuratePasses": 503,
-      "totalPasses": 583,
-      "passPct": 86.3
-    },
-    {
       "teamId": "203",
       "name": "Mexico",
       "abbr": "MEX",
@@ -1498,16 +1488,6 @@
       "accuratePasses": 816,
       "totalPasses": 947,
       "passPct": 86.2
-    },
-    {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "matches": 1,
-      "accuratePasses": 381,
-      "totalPasses": 443,
-      "passPct": 86
     },
     {
       "teamId": "459",
@@ -1568,6 +1548,16 @@
       "accuratePasses": 953,
       "totalPasses": 1121,
       "passPct": 85
+    },
+    {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "matches": 2,
+      "accuratePasses": 813,
+      "totalPasses": 958,
+      "passPct": 84.9
     },
     {
       "teamId": "4789",
@@ -1640,6 +1630,16 @@
       "passPct": 83.5
     },
     {
+      "teamId": "2659",
+      "name": "Panama",
+      "abbr": "PAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "matches": 2,
+      "accuratePasses": 781,
+      "totalPasses": 940,
+      "passPct": 83.1
+    },
+    {
       "teamId": "2666",
       "name": "New Zealand",
       "abbr": "NZL",
@@ -1665,8 +1665,8 @@
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
       "matches": 2,
-      "accuratePasses": 420,
-      "totalPasses": 525,
+      "accuratePasses": 419,
+      "totalPasses": 524,
       "passPct": 80
     },
     {
@@ -1978,6 +1978,14 @@
       "red": 0
     },
     {
+      "teamId": "2659",
+      "name": "Panama",
+      "abbr": "PAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "475",
       "name": "Switzerland",
       "abbr": "SUI",
@@ -2050,14 +2058,6 @@
       "red": 0
     },
     {
-      "teamId": "2659",
-      "name": "Panama",
-      "abbr": "PAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
       "teamId": "2570",
       "name": "Uzbekistan",
       "abbr": "UZB",
@@ -2126,6 +2126,14 @@
       "name": "England",
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
       "yellow": 1,
       "red": 0
     },
