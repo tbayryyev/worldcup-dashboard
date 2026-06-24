@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T05:34:42.408Z",
+  "generatedAt": "2026-06-24T09:22:34.414Z",
   "matchesPlayed": 48,
   "totalGoals": 141,
   "topScorers": [
@@ -1486,8 +1486,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "matches": 2,
       "accuratePasses": 917,
-      "totalPasses": 1059,
-      "passPct": 86.6
+      "totalPasses": 1060,
+      "passPct": 86.5
     },
     {
       "teamId": "203",
@@ -1715,9 +1715,9 @@
       "abbr": "COD",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "matches": 2,
-      "accuratePasses": 419,
+      "accuratePasses": 421,
       "totalPasses": 548,
-      "passPct": 76.5
+      "passPct": 76.8
     },
     {
       "teamId": "469",
