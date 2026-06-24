@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-24T21:09:35.421Z",
+  "generatedAt": "2026-06-24T22:46:14.201Z",
   "matchesPlayed": 50,
   "totalGoals": 148,
   "topScorers": [
@@ -1675,8 +1675,8 @@
       "abbr": "BIH",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
       "matches": 3,
-      "accuratePasses": 912,
-      "totalPasses": 1142,
+      "accuratePasses": 911,
+      "totalPasses": 1140,
       "passPct": 79.9
     },
     {
@@ -1725,9 +1725,9 @@
       "abbr": "QAT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
       "matches": 3,
-      "accuratePasses": 674,
+      "accuratePasses": 675,
       "totalPasses": 874,
-      "passPct": 77.1
+      "passPct": 77.2
     },
     {
       "teamId": "2850",
