@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-25T04:44:10.237Z",
+  "generatedAt": "2026-06-25T08:20:52.617Z",
   "matchesPlayed": 54,
   "totalGoals": 161,
   "topScorers": [
@@ -1465,9 +1465,9 @@
       "abbr": "KOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
       "matches": 3,
-      "accuratePasses": 1600,
-      "totalPasses": 1839,
-      "passPct": 87
+      "accuratePasses": 1598,
+      "totalPasses": 1838,
+      "passPct": 86.9
     },
     {
       "teamId": "654",
@@ -1505,9 +1505,9 @@
       "abbr": "MEX",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "matches": 3,
-      "accuratePasses": 1147,
-      "totalPasses": 1335,
-      "passPct": 85.9
+      "accuratePasses": 1146,
+      "totalPasses": 1333,
+      "passPct": 86
     },
     {
       "teamId": "459",
@@ -1520,16 +1520,6 @@
       "passPct": 85.9
     },
     {
-      "teamId": "467",
-      "name": "South Africa",
-      "abbr": "RSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "matches": 3,
-      "accuratePasses": 1057,
-      "totalPasses": 1235,
-      "passPct": 85.6
-    },
-    {
       "teamId": "212",
       "name": "Uruguay",
       "abbr": "URU",
@@ -1538,6 +1528,16 @@
       "accuratePasses": 960,
       "totalPasses": 1123,
       "passPct": 85.5
+    },
+    {
+      "teamId": "467",
+      "name": "South Africa",
+      "abbr": "RSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "matches": 3,
+      "accuratePasses": 1057,
+      "totalPasses": 1237,
+      "passPct": 85.4
     },
     {
       "teamId": "464",
@@ -1695,9 +1695,9 @@
       "abbr": "CZE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
       "matches": 3,
-      "accuratePasses": 834,
+      "accuratePasses": 835,
       "totalPasses": 1066,
-      "passPct": 78.2
+      "passPct": 78.3
     },
     {
       "teamId": "2570",
