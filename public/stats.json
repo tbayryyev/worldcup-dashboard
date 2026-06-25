@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-25T00:08:14.825Z",
-  "matchesPlayed": 52,
-  "totalGoals": 157,
+  "generatedAt": "2026-06-25T04:44:10.237Z",
+  "matchesPlayed": 54,
+  "totalGoals": 161,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -229,6 +229,15 @@
       "assists": 0
     },
     {
+      "name": "Julián Quiñones",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
       "name": "Kai Havertz",
       "teamId": "481",
       "teamName": "Germany",
@@ -261,15 +270,6 @@
       "teamName": "Switzerland",
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "goals": 1,
-      "assists": 2
-    },
-    {
-      "name": "Mohamed Salah",
-      "teamId": "2620",
-      "teamName": "Egypt",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "goals": 1,
       "assists": 2
     }
@@ -398,6 +398,15 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
+      "name": "Roberto Alvarado",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 0,
       "assists": 2
     },
@@ -533,15 +542,6 @@
       "teamName": "Colombia",
       "teamAbbr": "COL",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "goals": 1,
-      "assists": 1
-    },
-    {
-      "name": "Mostafa Zico",
-      "teamId": "2620",
-      "teamName": "Egypt",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "goals": 1,
       "assists": 1
     }
@@ -732,6 +732,14 @@
       "red": 0
     },
     {
+      "name": "Aubrey Modiba",
+      "teamId": "467",
+      "teamAbbr": "RSA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "yellow": 1,
+      "red": 0
+    },
+    {
       "name": "Bernardo Silva",
       "teamId": "482",
       "teamAbbr": "POR",
@@ -776,14 +784,6 @@
       "teamId": "2659",
       "teamAbbr": "PAN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Casemiro",
-      "teamId": "205",
-      "teamAbbr": "BRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "yellow": 1,
       "red": 0
     }
@@ -854,6 +854,17 @@
       "goalsFor": 7,
       "goalsAgainst": 3,
       "goalDifference": 4
+    },
+    {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "group": "Group A",
+      "played": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 0,
+      "goalDifference": 6
     },
     {
       "teamId": "660",
@@ -988,17 +999,6 @@
       "goalDifference": 2
     },
     {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "group": "Group A",
-      "played": 2,
-      "goalsFor": 3,
-      "goalsAgainst": 0,
-      "goalDifference": 3
-    },
-    {
       "teamId": "212",
       "name": "Uruguay",
       "abbr": "URU",
@@ -1054,17 +1054,6 @@
       "goalDifference": -3
     },
     {
-      "teamId": "451",
-      "name": "South Korea",
-      "abbr": "KOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
-      "group": "Group A",
-      "played": 2,
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "goalDifference": 0
-    },
-    {
       "teamId": "628",
       "name": "Australia",
       "abbr": "AUS",
@@ -1109,12 +1098,23 @@
       "goalDifference": 0
     },
     {
-      "teamId": "450",
-      "name": "Czechia",
-      "abbr": "CZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "teamId": "467",
+      "name": "South Africa",
+      "abbr": "RSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
       "group": "Group A",
-      "played": 2,
+      "played": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 3,
+      "goalDifference": -1
+    },
+    {
+      "teamId": "451",
+      "name": "South Korea",
+      "abbr": "KOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "group": "Group A",
+      "played": 3,
       "goalsFor": 2,
       "goalsAgainst": 3,
       "goalDifference": -1
@@ -1151,6 +1151,17 @@
       "goalsFor": 2,
       "goalsAgainst": 5,
       "goalDifference": -3
+    },
+    {
+      "teamId": "450",
+      "name": "Czechia",
+      "abbr": "CZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "group": "Group A",
+      "played": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 6,
+      "goalDifference": -4
     },
     {
       "teamId": "2654",
@@ -1206,17 +1217,6 @@
       "goalsFor": 1,
       "goalsAgainst": 2,
       "goalDifference": -1
-    },
-    {
-      "teamId": "467",
-      "name": "South Africa",
-      "abbr": "RSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "group": "Group A",
-      "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 3,
-      "goalDifference": -2
     },
     {
       "teamId": "580",
@@ -1356,8 +1356,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "matches": 3,
       "accuratePasses": 1475,
-      "totalPasses": 1646,
-      "passPct": 89.6
+      "totalPasses": 1644,
+      "passPct": 89.7
     },
     {
       "teamId": "465",
@@ -1415,8 +1415,8 @@
       "abbr": "MAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "matches": 3,
-      "accuratePasses": 1498,
-      "totalPasses": 1698,
+      "accuratePasses": 1496,
+      "totalPasses": 1697,
       "passPct": 88.2
     },
     {
@@ -1460,13 +1460,13 @@
       "passPct": 87.3
     },
     {
-      "teamId": "467",
-      "name": "South Africa",
-      "abbr": "RSA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "matches": 2,
-      "accuratePasses": 780,
-      "totalPasses": 897,
+      "teamId": "451",
+      "name": "South Korea",
+      "abbr": "KOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "matches": 3,
+      "accuratePasses": 1600,
+      "totalPasses": 1839,
       "passPct": 87
     },
     {
@@ -1490,23 +1490,23 @@
       "passPct": 86.5
     },
     {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "matches": 2,
-      "accuratePasses": 816,
-      "totalPasses": 947,
-      "passPct": 86.2
-    },
-    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
       "matches": 3,
-      "accuratePasses": 1143,
-      "totalPasses": 1331,
+      "accuratePasses": 1145,
+      "totalPasses": 1330,
+      "passPct": 86.1
+    },
+    {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "matches": 3,
+      "accuratePasses": 1147,
+      "totalPasses": 1335,
       "passPct": 85.9
     },
     {
@@ -1520,14 +1520,14 @@
       "passPct": 85.9
     },
     {
-      "teamId": "451",
-      "name": "South Korea",
-      "abbr": "KOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
-      "matches": 2,
-      "accuratePasses": 957,
-      "totalPasses": 1119,
-      "passPct": 85.5
+      "teamId": "467",
+      "name": "South Africa",
+      "abbr": "RSA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
+      "matches": 3,
+      "accuratePasses": 1057,
+      "totalPasses": 1235,
+      "passPct": 85.6
     },
     {
       "teamId": "212",
@@ -1626,8 +1626,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "matches": 3,
       "accuratePasses": 897,
-      "totalPasses": 1078,
-      "passPct": 83.2
+      "totalPasses": 1077,
+      "passPct": 83.3
     },
     {
       "teamId": "206",
@@ -1690,6 +1690,16 @@
       "passPct": 79.4
     },
     {
+      "teamId": "450",
+      "name": "Czechia",
+      "abbr": "CZE",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
+      "matches": 3,
+      "accuratePasses": 834,
+      "totalPasses": 1066,
+      "passPct": 78.2
+    },
+    {
       "teamId": "2570",
       "name": "Uzbekistan",
       "abbr": "UZB",
@@ -1750,16 +1760,6 @@
       "passPct": 75.4
     },
     {
-      "teamId": "450",
-      "name": "Czechia",
-      "abbr": "CZE",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "matches": 2,
-      "accuratePasses": 502,
-      "totalPasses": 668,
-      "passPct": 75.1
-    },
-    {
       "teamId": "2597",
       "name": "Cape Verde",
       "abbr": "CPV",
@@ -1806,7 +1806,7 @@
       "name": "South Africa",
       "abbr": "RSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "yellow": 4,
+      "yellow": 5,
       "red": 2
     },
     {
@@ -1854,7 +1854,7 @@
       "name": "Mexico",
       "abbr": "MEX",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "yellow": 1,
+      "yellow": 2,
       "red": 1
     },
     {
@@ -1898,6 +1898,14 @@
       "red": 0
     },
     {
+      "teamId": "451",
+      "name": "South Korea",
+      "abbr": "KOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
+      "yellow": 4,
+      "red": 0
+    },
+    {
       "teamId": "628",
       "name": "Australia",
       "abbr": "AUS",
@@ -1911,14 +1919,6 @@
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "yellow": 4,
-      "red": 0
-    },
-    {
-      "teamId": "451",
-      "name": "South Korea",
-      "abbr": "KOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/kors.png",
-      "yellow": 3,
       "red": 0
     },
     {
