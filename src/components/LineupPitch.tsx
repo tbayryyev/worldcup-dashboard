@@ -6,38 +6,38 @@ interface Placed {
   y: number; // 0–100 down the pitch (GK at bottom ~90, attack at top ~12)
 }
 
-// Which horizontal band a position sits in, from goalkeeper (0) to forward (6).
-// Drives back-to-front ordering so players fill the formation rows correctly.
-function lineRank(posRaw: string): number {
-  const p = posRaw.toUpperCase().replace(/[^A-Z]/g, "");
-  if (p.startsWith("G")) return 0;
-  if (p.startsWith("DM") || p.startsWith("CDM")) return 2;
-  if (
-    p.startsWith("CB") ||
-    p.startsWith("CD") ||
-    p.startsWith("SW") ||
-    p.startsWith("LWB") ||
-    p.startsWith("RWB") ||
-    p.startsWith("WB") ||
-    p.startsWith("LB") ||
-    p.startsWith("RB")
-  )
-    return 1;
-  if (p.startsWith("CAM") || p.startsWith("AM")) return 4;
-  if (p.startsWith("LW") || p.startsWith("RW")) return 5;
-  if (p.startsWith("CF") || p.startsWith("ST") || p.startsWith("F")) return 6;
-  return 3; // CM / LM / RM / M
-}
+// Parse an ESPN position abbreviation (e.g. "CD-L", "RB", "CM-R", "RF", "F")
+// into the vertical line it belongs to — goalkeeper (0) to forward (6) — and a
+// signed horizontal score (negative = left, positive = right). ESPN encodes the
+// side either as a suffix ("-L"/"-R") or as a leading L/R on a wide role, so we
+// read both; the score also factors in how wide the role sits (a full-back is
+// nearer the touchline than a centre-back on the same line), which gives a
+// fully-determined left-to-right order within each line.
+function posInfo(posRaw: string): { line: number; x: number } {
+  const up = (posRaw || "").toUpperCase().trim();
+  const suf = up.match(/-([LR])$/);
+  const core = suf ? up.replace(/-[LR]$/, "") : up;
+  const base = core.replace(/[^A-Z]/g, "");
 
-// Left (−1) / centre (0) / right (+1) hint, from the position's side marker.
-function sideScore(posRaw: string): number {
-  const p = posRaw.toUpperCase();
-  if (p.endsWith("-L")) return -1;
-  if (p.endsWith("-R")) return 1;
-  const base = p.replace(/[^A-Z]/g, "");
-  if (/^(LB|LM|LW|LWB)$/.test(base)) return -1;
-  if (/^(RB|RM|RW|RWB)$/.test(base)) return 1;
-  return 0;
+  let side = 0; // -1 left · 0 centre · +1 right
+  if (suf) side = suf[1] === "L" ? -1 : 1;
+  else if (/^(RB|LB|RM|LM|RW|LW|RF|LF|RWB|LWB|RCB|LCB|RCM|LCM)$/.test(base))
+    side = base[0] === "L" ? -1 : 1;
+
+  // Wide roles (full-/wing-backs, wingers, side mids) sit further out than
+  // central roles, so they get a larger magnitude on the same line.
+  const wide = /^(RB|LB|RWB|LWB|RW|LW|RM|LM|WB|W)$/.test(base) ? 2 : 1;
+
+  let line: number;
+  if (base === "G" || base === "GK") line = 0;
+  else if (/^(CB|CD|SW|RB|LB|RWB|LWB|WB|RCB|LCB)$/.test(base)) line = 1;
+  else if (/^(DM|CDM)$/.test(base)) line = 2;
+  else if (/^(CAM|AM)$/.test(base)) line = 4;
+  else if (/^(RW|LW|W)$/.test(base)) line = 5;
+  else if (/^(CF|ST|F|RF|LF|SS)$/.test(base)) line = 6;
+  else line = 3; // CM / RM / LM / M and anything unrecognised
+
+  return { line, x: side * wide };
 }
 
 function shortName(name: string): string {
@@ -45,15 +45,36 @@ function shortName(name: string): string {
   return parts.length > 1 ? parts[parts.length - 1] : name;
 }
 
+const PITCH_MIN = 12; // leftmost player centre (%)
+const PITCH_MAX = 88; // rightmost player centre (%)
+
+// Turn a row's horizontal role scores (−2 wide-left … 0 centre … +2 wide-right)
+// into pitch percentages, so a central role (x≈0, e.g. a lone "F") sits in the
+// middle and a full-back hugs the touchline — rather than just spreading the
+// row out evenly. Any team-mates that would overlap are nudged apart, then the
+// whole row is re-centred so it stays balanced. `xScores` arrives sorted
+// ascending (the caller orders the row left-to-right first).
+function horizontalSpots(xScores: number[]): number[] {
+  const n = xScores.length;
+  if (n === 1) return [50];
+  const SCALE = 19; // one x-unit ≈ 19% of pitch width (so ±2 → the touchlines)
+  const GAP = 18; // minimum spacing between adjacent team-mates
+  const spots = xScores.map((x) => 50 + x * SCALE);
+  for (let i = 1; i < n; i++) {
+    if (spots[i] - spots[i - 1] < GAP) spots[i] = spots[i - 1] + GAP;
+  }
+  const shift = 50 - (spots[0] + spots[n - 1]) / 2;
+  return spots.map((v) => Math.max(PITCH_MIN, Math.min(PITCH_MAX, v + shift)));
+}
+
 function placePlayers(lineup: TeamLineup): Placed[] {
   const starters = lineup.starters;
   if (starters.length === 0) return [];
 
-  const sorted = [...starters].sort(
-    (a, b) => lineRank(a.position) - lineRank(b.position),
-  );
-  const keepers = sorted.filter((p) => lineRank(p.position) === 0);
-  const outfield = sorted.filter((p) => lineRank(p.position) !== 0);
+  const lineOf = (p: LineupPlayer) => posInfo(p.position).line;
+  const sorted = [...starters].sort((a, b) => lineOf(a) - lineOf(b));
+  const keepers = sorted.filter((p) => lineOf(p) === 0);
+  const outfield = sorted.filter((p) => lineOf(p) !== 0);
 
   // Prefer the formation string (e.g. "4-1-4-1") to define the rows; fall back
   // to grouping by line when it's missing or doesn't match the XI.
@@ -76,7 +97,7 @@ function placePlayers(lineup: TeamLineup): Placed[] {
   } else {
     const byRank = new Map<number, LineupPlayer[]>();
     for (const p of outfield) {
-      const r = lineRank(p.position);
+      const r = lineOf(p);
       (byRank.get(r) ?? byRank.set(r, []).get(r)!).push(p);
     }
     [...byRank.keys()]
@@ -94,14 +115,12 @@ function placePlayers(lineup: TeamLineup): Placed[] {
       numRows > 1
         ? yBottom - (r * (yBottom - yTop)) / (numRows - 1)
         : (yBottom + yTop) / 2;
-    const ordered = [...row].sort(
-      (a, b) => sideScore(a.position) - sideScore(b.position),
-    );
-    const n = ordered.length;
-    ordered.forEach((player, i) => {
-      const x = n === 1 ? 50 : 12 + (i * 76) / (n - 1);
-      placed.push({ player, x, y });
+    const ordered = [...row].sort((a, b) => {
+      const dx = posInfo(a.position).x - posInfo(b.position).x;
+      return dx !== 0 ? dx : a.name.localeCompare(b.name);
     });
+    const xs = horizontalSpots(ordered.map((p) => posInfo(p.position).x));
+    ordered.forEach((player, i) => placed.push({ player, x: xs[i], y }));
   });
   return placed;
 }
