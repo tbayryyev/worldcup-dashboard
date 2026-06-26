@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T06:59:25.598Z",
+  "generatedAt": "2026-06-26T10:26:35.997Z",
   "matchesPlayed": 60,
   "totalGoals": 177,
   "topScorers": [
@@ -1480,6 +1480,16 @@
       "passPct": 86.6
     },
     {
+      "teamId": "465",
+      "name": "Türkiye",
+      "abbr": "TUR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
+      "matches": 3,
+      "accuratePasses": 1529,
+      "totalPasses": 1767,
+      "passPct": 86.5
+    },
+    {
       "teamId": "208",
       "name": "Colombia",
       "abbr": "COL",
@@ -1488,16 +1498,6 @@
       "accuratePasses": 917,
       "totalPasses": 1060,
       "passPct": 86.5
-    },
-    {
-      "teamId": "465",
-      "name": "Türkiye",
-      "abbr": "TUR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
-      "matches": 3,
-      "accuratePasses": 1527,
-      "totalPasses": 1768,
-      "passPct": 86.4
     },
     {
       "teamId": "580",
@@ -1575,8 +1575,8 @@
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "matches": 3,
-      "accuratePasses": 1350,
-      "totalPasses": 1590,
+      "accuratePasses": 1351,
+      "totalPasses": 1592,
       "passPct": 84.9
     },
     {
