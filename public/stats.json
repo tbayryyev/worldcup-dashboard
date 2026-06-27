@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T22:44:13.906Z",
+  "generatedAt": "2026-06-27T00:03:39.648Z",
   "matchesPlayed": 62,
   "totalGoals": 187,
   "topScorers": [
@@ -1435,9 +1435,9 @@
       "abbr": "SEN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "matches": 3,
-      "accuratePasses": 1378,
+      "accuratePasses": 1377,
       "totalPasses": 1581,
-      "passPct": 87.2
+      "passPct": 87.1
     },
     {
       "teamId": "451",
@@ -1595,7 +1595,7 @@
       "abbr": "NOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "matches": 3,
-      "accuratePasses": 1103,
+      "accuratePasses": 1102,
       "totalPasses": 1311,
       "passPct": 84.1
     },
@@ -1655,8 +1655,8 @@
       "abbr": "IRQ",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "matches": 3,
-      "accuratePasses": 867,
-      "totalPasses": 1080,
+      "accuratePasses": 868,
+      "totalPasses": 1081,
       "passPct": 80.3
     },
     {
