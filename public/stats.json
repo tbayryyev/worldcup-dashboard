@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T04:33:34.394Z",
-  "matchesPlayed": 64,
-  "totalGoals": 188,
+  "generatedAt": "2026-06-27T07:47:06.654Z",
+  "matchesPlayed": 66,
+  "totalGoals": 196,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -81,6 +81,15 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 3,
+      "assists": 0
+    },
+    {
+      "name": "Elijah Just",
+      "teamId": "2666",
+      "teamName": "New Zealand",
+      "teamAbbr": "NZL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
       "goals": 3,
       "assists": 0
     },
@@ -166,6 +175,15 @@
       "assists": 1
     },
     {
+      "name": "Ramin Rezaeian",
+      "teamId": "469",
+      "teamName": "Iran",
+      "teamAbbr": "IRN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
       "name": "Rubén Vargas",
       "teamId": "475",
       "teamName": "Switzerland",
@@ -220,15 +238,6 @@
       "assists": 0
     },
     {
-      "name": "Elijah Just",
-      "teamId": "2666",
-      "teamName": "New Zealand",
-      "teamAbbr": "NZL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
       "name": "Ermin Mahmic",
       "teamId": "452",
       "teamName": "Bosnia-Herzegovina",
@@ -261,15 +270,6 @@
       "teamName": "Mexico",
       "teamAbbr": "MEX",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
-      "name": "Kai Havertz",
-      "teamId": "481",
-      "teamName": "Germany",
-      "teamAbbr": "GER",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 2,
       "assists": 0
     }
@@ -676,6 +676,22 @@
       "red": 0
     },
     {
+      "name": "Mohanad Lashin",
+      "teamId": "2620",
+      "teamAbbr": "EGY",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
+      "name": "Saeid Ezatolahi",
+      "teamId": "469",
+      "teamAbbr": "IRN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Sidny Lopes Cabral",
       "teamId": "2597",
       "teamAbbr": "CPV",
@@ -768,22 +784,6 @@
       "teamId": "164",
       "teamAbbr": "ESP",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Alistair Johnston",
-      "teamId": "206",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Amar Dedic",
-      "teamId": "452",
-      "teamAbbr": "BIH",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
       "yellow": 1,
       "red": 0
     }
@@ -933,6 +933,17 @@
       "goalDifference": 5
     },
     {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "group": "Group G",
+      "played": 3,
+      "goalsFor": 6,
+      "goalsAgainst": 2,
+      "goalDifference": 4
+    },
+    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -964,6 +975,17 @@
       "goalsFor": 5,
       "goalsAgainst": 0,
       "goalDifference": 5
+    },
+    {
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "group": "Group G",
+      "played": 3,
+      "goalsFor": 5,
+      "goalsAgainst": 3,
+      "goalDifference": 2
     },
     {
       "teamId": "452",
@@ -999,17 +1021,6 @@
       "goalDifference": 2
     },
     {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "group": "Group G",
-      "played": 2,
-      "goalsFor": 4,
-      "goalsAgainst": 2,
-      "goalDifference": 2
-    },
-    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -1019,6 +1030,28 @@
       "goalsFor": 4,
       "goalsAgainst": 2,
       "goalDifference": 2
+    },
+    {
+      "teamId": "2666",
+      "name": "New Zealand",
+      "abbr": "NZL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "group": "Group G",
+      "played": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 10,
+      "goalDifference": -6
+    },
+    {
+      "teamId": "469",
+      "name": "Iran",
+      "abbr": "IRN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "group": "Group G",
+      "played": 3,
+      "goalsFor": 3,
+      "goalsAgainst": 3,
+      "goalDifference": 0
     },
     {
       "teamId": "474",
@@ -1065,17 +1098,6 @@
       "goalDifference": -2
     },
     {
-      "teamId": "2666",
-      "name": "New Zealand",
-      "abbr": "NZL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "group": "Group G",
-      "played": 2,
-      "goalsFor": 3,
-      "goalsAgainst": 5,
-      "goalDifference": -2
-    },
-    {
       "teamId": "628",
       "name": "Australia",
       "abbr": "AUS",
@@ -1093,17 +1115,6 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
       "group": "Group E",
       "played": 3,
-      "goalsFor": 2,
-      "goalsAgainst": 2,
-      "goalDifference": 0
-    },
-    {
-      "teamId": "469",
-      "name": "Iran",
-      "abbr": "IRN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "group": "Group G",
-      "played": 2,
       "goalsFor": 2,
       "goalsAgainst": 2,
       "goalDifference": 0
@@ -1230,17 +1241,6 @@
       "goalDifference": 1
     },
     {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "group": "Group G",
-      "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 1,
-      "goalDifference": 0
-    },
-    {
       "teamId": "2850",
       "name": "Congo DR",
       "abbr": "COD",
@@ -1336,7 +1336,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "matches": 3,
       "accuratePasses": 1955,
-      "totalPasses": 2149,
+      "totalPasses": 2148,
       "passPct": 91
     },
     {
@@ -1480,6 +1480,16 @@
       "passPct": 86.6
     },
     {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "matches": 3,
+      "accuratePasses": 1386,
+      "totalPasses": 1601,
+      "passPct": 86.6
+    },
+    {
       "teamId": "465",
       "name": "Türkiye",
       "abbr": "TUR",
@@ -1520,14 +1530,14 @@
       "passPct": 86
     },
     {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "matches": 2,
-      "accuratePasses": 924,
-      "totalPasses": 1076,
-      "passPct": 85.9
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "matches": 3,
+      "accuratePasses": 1295,
+      "totalPasses": 1511,
+      "passPct": 85.7
     },
     {
       "teamId": "467",
@@ -1558,16 +1568,6 @@
       "accuratePasses": 1351,
       "totalPasses": 1592,
       "passPct": 84.9
-    },
-    {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "matches": 2,
-      "accuratePasses": 783,
-      "totalPasses": 924,
-      "passPct": 84.7
     },
     {
       "teamId": "474",
@@ -1620,6 +1620,16 @@
       "passPct": 83.3
     },
     {
+      "teamId": "2666",
+      "name": "New Zealand",
+      "abbr": "NZL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "matches": 3,
+      "accuratePasses": 1082,
+      "totalPasses": 1303,
+      "passPct": 83
+    },
+    {
       "teamId": "206",
       "name": "Canada",
       "abbr": "CAN",
@@ -1628,16 +1638,6 @@
       "accuratePasses": 1096,
       "totalPasses": 1327,
       "passPct": 82.6
-    },
-    {
-      "teamId": "2666",
-      "name": "New Zealand",
-      "abbr": "NZL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "matches": 2,
-      "accuratePasses": 713,
-      "totalPasses": 867,
-      "passPct": 82.2
     },
     {
       "teamId": "466",
@@ -1690,16 +1690,6 @@
       "passPct": 79.6
     },
     {
-      "teamId": "2597",
-      "name": "Cape Verde",
-      "abbr": "CPV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "matches": 3,
-      "accuratePasses": 795,
-      "totalPasses": 1008,
-      "passPct": 78.9
-    },
-    {
       "teamId": "659",
       "name": "Tunisia",
       "abbr": "TUN",
@@ -1715,9 +1705,19 @@
       "abbr": "KSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
       "matches": 3,
-      "accuratePasses": 885,
-      "totalPasses": 1128,
-      "passPct": 78.5
+      "accuratePasses": 889,
+      "totalPasses": 1130,
+      "passPct": 78.7
+    },
+    {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "matches": 3,
+      "accuratePasses": 791,
+      "totalPasses": 1007,
+      "passPct": 78.6
     },
     {
       "teamId": "450",
@@ -1774,10 +1774,10 @@
       "name": "Iran",
       "abbr": "IRN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "matches": 2,
-      "accuratePasses": 512,
-      "totalPasses": 679,
-      "passPct": 75.4
+      "matches": 3,
+      "accuratePasses": 793,
+      "totalPasses": 1046,
+      "passPct": 75.8
     },
     {
       "teamId": "2917",
@@ -1890,10 +1890,26 @@
       "red": 0
     },
     {
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
       "teamId": "655",
       "name": "Saudi Arabia",
       "abbr": "KSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
+      "teamId": "469",
+      "name": "Iran",
+      "abbr": "IRN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "yellow": 6,
       "red": 0
     },
@@ -1970,6 +1986,14 @@
       "red": 0
     },
     {
+      "teamId": "2666",
+      "name": "New Zealand",
+      "abbr": "NZL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "yellow": 4,
+      "red": 0
+    },
+    {
       "teamId": "482",
       "name": "Portugal",
       "abbr": "POR",
@@ -1990,14 +2014,6 @@
       "name": "Netherlands",
       "abbr": "NED",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "yellow": 3,
       "red": 0
     },
@@ -2038,22 +2054,6 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "469",
-      "name": "Iran",
-      "abbr": "IRN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "2666",
-      "name": "New Zealand",
-      "abbr": "NZL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
       "yellow": 2,
       "red": 0
     },
