@@ -1,11 +1,34 @@
 "use client";
 
 import Link from "next/link";
+import { useMemo, useState } from "react";
 import { useFavorites } from "@/hooks/useFavorites";
 import { FavoriteButton } from "@/components/FavoriteButton";
 import { teamHistory } from "@/lib/teamInfo";
 import { fifaRanking } from "@/lib/fifaRanking";
 import type { TeamListItem } from "@/lib/espn";
+
+type SortKey = "alpha" | "fifa" | "titles";
+
+const SORTS: { key: SortKey; label: string }[] = [
+  { key: "alpha", label: "A–Z" },
+  { key: "fifa", label: "FIFA Rank" },
+  { key: "titles", label: "Titles" },
+];
+
+// Comparator per sort mode. FIFA rank sorts best-first (unranked teams last);
+// titles sorts most-first, breaking ties by FIFA rank then name so the order is
+// always stable.
+function comparator(key: SortKey) {
+  const rankOf = (t: TeamListItem) => fifaRanking(t.id)?.rank ?? Infinity;
+  return (a: TeamListItem, b: TeamListItem) => {
+    if (key === "alpha") return a.name.localeCompare(b.name);
+    if (key === "fifa") return rankOf(a) - rankOf(b) || a.name.localeCompare(b.name);
+    const ta = teamHistory(a.id)?.titles ?? 0;
+    const tb = teamHistory(b.id)?.titles ?? 0;
+    return tb - ta || rankOf(a) - rankOf(b) || a.name.localeCompare(b.name);
+  };
+}
 
 function TeamCard({ team }: { team: TeamListItem }) {
   const h = teamHistory(team.id);
@@ -46,10 +69,39 @@ function TeamCard({ team }: { team: TeamListItem }) {
 
 export function TeamsBrowser({ teams }: { teams: TeamListItem[] }) {
   const { favs, ready } = useFavorites();
-  const favTeams = ready ? teams.filter((t) => favs.includes(t.id)) : [];
+  const [sort, setSort] = useState<SortKey>("alpha");
+
+  const sorted = useMemo(
+    () => [...teams].sort(comparator(sort)),
+    [teams, sort],
+  );
+  const favTeams = ready ? sorted.filter((t) => favs.includes(t.id)) : [];
 
   return (
     <>
+      <div className="mb-6 flex items-center gap-2">
+        <span className="text-xs font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+          Sort by
+        </span>
+        <div className="inline-flex rounded-lg border border-zinc-200 bg-white p-0.5 dark:border-zinc-800 dark:bg-zinc-900">
+          {SORTS.map(({ key, label }) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => setSort(key)}
+              aria-pressed={sort === key}
+              className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
+                sort === key
+                  ? "bg-zinc-100 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100"
+                  : "text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-100"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {favTeams.length > 0 && (
         <section className="mb-8">
           <h2 className="mb-3 flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
@@ -64,7 +116,7 @@ export function TeamsBrowser({ teams }: { teams: TeamListItem[] }) {
       )}
 
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
-        {teams.map((t) => (
+        {sorted.map((t) => (
           <TeamCard key={t.id} team={t} />
         ))}
       </div>
