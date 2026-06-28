@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T23:33:48.917Z",
-  "matchesPlayed": 68,
-  "totalGoals": 201,
+  "generatedAt": "2026-06-28T03:28:53.864Z",
+  "matchesPlayed": 70,
+  "totalGoals": 205,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -126,6 +126,15 @@
       "teamName": "Brazil",
       "teamAbbr": "BRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "goals": 3,
+      "assists": 0
+    },
+    {
+      "name": "Yoane Wissa",
+      "teamId": "2850",
+      "teamName": "Congo DR",
+      "teamAbbr": "COD",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "goals": 3,
       "assists": 0
     },
@@ -261,15 +270,6 @@
       "teamName": "Bosnia-Herzegovina",
       "teamAbbr": "BIH",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
-      "name": "Folarin Balogun",
-      "teamId": "660",
-      "teamName": "United States",
-      "teamAbbr": "USA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "goals": 2,
       "assists": 0
     }
@@ -636,6 +636,14 @@
       "red": 1
     },
     {
+      "name": "Abdukodir Khusanov",
+      "teamId": "2570",
+      "teamAbbr": "UZB",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Ahmed Fathy",
       "teamId": "4398",
       "teamAbbr": "QAT",
@@ -720,14 +728,6 @@
       "teamId": "654",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Abdukodir Khusanov",
-      "teamId": "2570",
-      "teamAbbr": "UZB",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
       "yellow": 1,
       "red": 0
     },
@@ -927,7 +927,7 @@
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "group": "Group K",
-      "played": 2,
+      "played": 3,
       "goalsFor": 6,
       "goalsAgainst": 1,
       "goalDifference": 5
@@ -1026,7 +1026,7 @@
       "abbr": "COL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "group": "Group K",
-      "played": 2,
+      "played": 3,
       "goalsFor": 4,
       "goalsAgainst": 1,
       "goalDifference": 3
@@ -1041,6 +1041,17 @@
       "goalsFor": 4,
       "goalsAgainst": 2,
       "goalDifference": 2
+    },
+    {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "group": "Group K",
+      "played": 3,
+      "goalsFor": 4,
+      "goalsAgainst": 3,
+      "goalDifference": 1
     },
     {
       "teamId": "2666",
@@ -1230,6 +1241,17 @@
       "goalDifference": -8
     },
     {
+      "teamId": "2570",
+      "name": "Uzbekistan",
+      "abbr": "UZB",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "group": "Group K",
+      "played": 3,
+      "goalsFor": 2,
+      "goalsAgainst": 11,
+      "goalDifference": -9
+    },
+    {
       "teamId": "659",
       "name": "Tunisia",
       "abbr": "TUN",
@@ -1239,17 +1261,6 @@
       "goalsFor": 2,
       "goalsAgainst": 12,
       "goalDifference": -10
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "group": "Group K",
-      "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 2,
-      "goalDifference": -1
     },
     {
       "teamId": "580",
@@ -1272,17 +1283,6 @@
       "goalsFor": 1,
       "goalsAgainst": 5,
       "goalDifference": -4
-    },
-    {
-      "teamId": "2570",
-      "name": "Uzbekistan",
-      "abbr": "UZB",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
-      "group": "Group K",
-      "played": 2,
-      "goalsFor": 1,
-      "goalsAgainst": 8,
-      "goalDifference": -7
     },
     {
       "teamId": "11678",
@@ -1324,9 +1324,9 @@
       "name": "Portugal",
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "matches": 2,
-      "accuratePasses": 1285,
-      "totalPasses": 1407,
+      "matches": 3,
+      "accuratePasses": 1690,
+      "totalPasses": 1852,
       "passPct": 91.3
     },
     {
@@ -1385,9 +1385,9 @@
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "matches": 3,
-      "accuratePasses": 1484,
-      "totalPasses": 1664,
-      "passPct": 89.2
+      "accuratePasses": 1482,
+      "totalPasses": 1665,
+      "passPct": 89
     },
     {
       "teamId": "2869",
@@ -1430,12 +1430,22 @@
       "passPct": 87.7
     },
     {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "matches": 3,
+      "accuratePasses": 1402,
+      "totalPasses": 1605,
+      "passPct": 87.4
+    },
+    {
       "teamId": "477",
       "name": "Croatia",
       "abbr": "CRO",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
       "matches": 3,
-      "accuratePasses": 1291,
+      "accuratePasses": 1290,
       "totalPasses": 1478,
       "passPct": 87.3
     },
@@ -1507,16 +1517,6 @@
       "matches": 3,
       "accuratePasses": 1529,
       "totalPasses": 1767,
-      "passPct": 86.5
-    },
-    {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "matches": 2,
-      "accuratePasses": 917,
-      "totalPasses": 1060,
       "passPct": 86.5
     },
     {
@@ -1645,8 +1645,8 @@
       "abbr": "PAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/pan.png",
       "matches": 3,
-      "accuratePasses": 981,
-      "totalPasses": 1202,
+      "accuratePasses": 982,
+      "totalPasses": 1203,
       "passPct": 81.6
     },
     {
@@ -1688,6 +1688,16 @@
       "accuratePasses": 736,
       "totalPasses": 925,
       "passPct": 79.6
+    },
+    {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "matches": 3,
+      "accuratePasses": 822,
+      "totalPasses": 1035,
+      "passPct": 79.4
     },
     {
       "teamId": "659",
@@ -1734,10 +1744,10 @@
       "name": "Uzbekistan",
       "abbr": "UZB",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
-      "matches": 2,
-      "accuratePasses": 505,
-      "totalPasses": 646,
-      "passPct": 78.2
+      "matches": 3,
+      "accuratePasses": 774,
+      "totalPasses": 1001,
+      "passPct": 77.3
     },
     {
       "teamId": "4398",
@@ -1748,16 +1758,6 @@
       "accuratePasses": 675,
       "totalPasses": 874,
       "passPct": 77.2
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "matches": 2,
-      "accuratePasses": 421,
-      "totalPasses": 548,
-      "passPct": 76.8
     },
     {
       "teamId": "628",
@@ -1962,6 +1962,14 @@
       "red": 0
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "yellow": 5,
+      "red": 0
+    },
+    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -2010,6 +2018,22 @@
       "red": 0
     },
     {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "yellow": 4,
+      "red": 0
+    },
+    {
+      "teamId": "2570",
+      "name": "Uzbekistan",
+      "abbr": "UZB",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
+      "yellow": 4,
+      "red": 0
+    },
+    {
       "teamId": "475",
       "name": "Switzerland",
       "abbr": "SUI",
@@ -2038,14 +2062,6 @@
       "name": "Ghana",
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "yellow": 3,
       "red": 0
     },
@@ -2082,14 +2098,6 @@
       "red": 0
     },
     {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -2102,14 +2110,6 @@
       "name": "Croatia",
       "abbr": "CRO",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "2570",
-      "name": "Uzbekistan",
-      "abbr": "UZB",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
       "yellow": 2,
       "red": 0
     },
