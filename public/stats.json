@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-28T20:11:03.418Z",
-  "matchesPlayed": 72,
-  "totalGoals": 215,
+  "generatedAt": "2026-06-28T21:36:59.924Z",
+  "matchesPlayed": 73,
+  "totalGoals": 216,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -1564,10 +1564,10 @@
       "name": "South Africa",
       "abbr": "RSA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
-      "matches": 3,
-      "accuratePasses": 1057,
-      "totalPasses": 1237,
-      "passPct": 85.4
+      "matches": 4,
+      "accuratePasses": 1523,
+      "totalPasses": 1787,
+      "passPct": 85.2
     },
     {
       "teamId": "660",
@@ -1634,10 +1634,10 @@
       "name": "Canada",
       "abbr": "CAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "matches": 3,
-      "accuratePasses": 1096,
-      "totalPasses": 1327,
-      "passPct": 82.6
+      "matches": 4,
+      "accuratePasses": 1394,
+      "totalPasses": 1708,
+      "passPct": 81.6
     },
     {
       "teamId": "2659",
@@ -1874,6 +1874,14 @@
       "red": 1
     },
     {
+      "teamId": "206",
+      "name": "Canada",
+      "abbr": "CAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "yellow": 7,
+      "red": 0
+    },
+    {
       "teamId": "2654",
       "name": "Haiti",
       "abbr": "HAI",
@@ -1911,14 +1919,6 @@
       "abbr": "IRN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
       "yellow": 6,
-      "red": 0
-    },
-    {
-      "teamId": "206",
-      "name": "Canada",
-      "abbr": "CAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "yellow": 5,
       "red": 0
     },
     {
