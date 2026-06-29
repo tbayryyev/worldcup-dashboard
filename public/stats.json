@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T21:23:19.067Z",
+  "generatedAt": "2026-06-29T22:36:02.173Z",
   "matchesPlayed": 74,
   "totalGoals": 219,
   "topScorers": [
@@ -1535,8 +1535,8 @@
       "abbr": "JPN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "matches": 4,
-      "accuratePasses": 1446,
-      "totalPasses": 1684,
+      "accuratePasses": 1445,
+      "totalPasses": 1682,
       "passPct": 85.9
     },
     {
