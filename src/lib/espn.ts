@@ -137,7 +137,26 @@ export interface MatchDetail {
   headToHead: H2HGame[];
   leaders: TeamLeaders[];
   commentary: CommentaryItem[]; // chronological (oldest first)
+  odds: BettingOdds | null; // pre-match betting lines, when ESPN exposes them
   fetchedAt: string;
+}
+
+// Betting lines from ESPN's pickcenter (a single sportsbook, e.g. DraftKings).
+// Moneylines are American odds; home/away map to the match's home/away sides.
+export interface MoneylineSide {
+  moneyLine: number | null;
+  favorite: boolean;
+}
+export interface BettingOdds {
+  provider: string; // sportsbook name
+  details: string | null; // e.g. "BRA -0.5"
+  spread: number | null;
+  overUnder: number | null;
+  overOdds: number | null;
+  underOdds: number | null;
+  home: MoneylineSide;
+  away: MoneylineSide;
+  drawMoneyLine: number | null;
 }
 
 export interface MatchVenue {
@@ -359,6 +378,25 @@ interface RawSummary {
   headToHeadGames?: { team?: { id?: string }; events?: RawH2HEvent[] }[];
   leaders?: RawLeaderTeam[];
   commentary?: RawCommentary[];
+  pickcenter?: RawPickCenter[];
+}
+
+interface RawTeamOdds {
+  favorite?: boolean;
+  moneyLine?: number;
+  teamId?: string;
+}
+
+interface RawPickCenter {
+  provider?: { name?: string; priority?: number };
+  details?: string;
+  spread?: number;
+  overUnder?: number;
+  overOdds?: number;
+  underOdds?: number;
+  homeTeamOdds?: RawTeamOdds;
+  awayTeamOdds?: RawTeamOdds;
+  drawOdds?: { moneyLine?: number };
 }
 
 interface RawStat {
@@ -858,8 +896,46 @@ export async function fetchSummary(eventId: string): Promise<MatchDetail | null>
     headToHead: mapHeadToHead(raw.headToHeadGames),
     leaders: mapLeaders(raw.leaders),
     commentary: mapCommentary(raw.commentary),
+    odds: mapOdds(raw.pickcenter),
     fetchedAt: new Date().toISOString(),
   };
+}
+
+// Pull the top-priority sportsbook line out of pickcenter. Moneylines arrive as
+// American odds (sometimes as floats like 260.0), so we round to whole numbers.
+// Returns null unless there's at least a moneyline or a total worth showing.
+function mapOdds(pc: RawPickCenter[] | undefined): BettingOdds | null {
+  if (!pc || pc.length === 0) return null;
+  const o =
+    [...pc].sort(
+      (a, b) => (a.provider?.priority ?? 99) - (b.provider?.priority ?? 99),
+    )[0] ?? pc[0];
+  const num = (v: number | undefined): number | null =>
+    typeof v === "number" && Number.isFinite(v) ? v : null;
+  const ml = (v: number | undefined): number | null => {
+    const n = num(v);
+    return n === null ? null : Math.round(n);
+  };
+  const side = (t: RawTeamOdds | undefined): MoneylineSide => ({
+    moneyLine: ml(t?.moneyLine),
+    favorite: Boolean(t?.favorite),
+  });
+  const odds: BettingOdds = {
+    provider: o.provider?.name ?? "",
+    details: o.details ?? null,
+    spread: num(o.spread),
+    overUnder: num(o.overUnder),
+    overOdds: ml(o.overOdds),
+    underOdds: ml(o.underOdds),
+    home: side(o.homeTeamOdds),
+    away: side(o.awayTeamOdds),
+    drawMoneyLine: ml(o.drawOdds?.moneyLine),
+  };
+  const hasLine =
+    odds.home.moneyLine !== null ||
+    odds.away.moneyLine !== null ||
+    odds.overUnder !== null;
+  return hasLine ? odds : null;
 }
 
 /**

@@ -16,6 +16,19 @@ import {
   type TeamStats,
 } from "@/lib/espn";
 
+// American odds → "+450" / "-135" / "—". ESPN sends moneylines as American odds.
+function american(n: number | null): string {
+  if (n === null) return "—";
+  return n > 0 ? `+${n}` : String(n);
+}
+
+// American odds → implied win probability (incl. the bookmaker's margin).
+function impliedPct(n: number | null): string | null {
+  if (n === null) return null;
+  const p = n > 0 ? 100 / (n + 100) : -n / (-n + 100);
+  return `${Math.round(p * 100)}%`;
+}
+
 function formatTime(ms: number | undefined): string {
   if (!ms) return "";
   return new Date(ms).toLocaleTimeString(undefined, {
@@ -440,6 +453,115 @@ function Lineups({ match }: { match: MatchDetail }) {
   );
 }
 
+function MoneylineCell({
+  label,
+  odds,
+  favorite,
+}: {
+  label: string;
+  odds: number | null;
+  favorite?: boolean;
+}) {
+  const pct = impliedPct(odds);
+  return (
+    <div
+      className={`flex flex-col items-center rounded-lg border px-2 py-3 text-center ${
+        favorite
+          ? "border-emerald-500/40 bg-emerald-500/10"
+          : "border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950"
+      }`}
+    >
+      <span className="truncate text-[11px] font-medium uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        {label}
+      </span>
+      <span className="mt-1 text-lg font-bold tabular-nums text-zinc-900 dark:text-zinc-50">
+        {american(odds)}
+      </span>
+      {pct && <span className="text-[10px] text-zinc-400">{pct}</span>}
+    </div>
+  );
+}
+
+function Odds({ match }: { match: MatchDetail }) {
+  const o = match.odds;
+  if (!o) return null;
+  const ou = o.overUnder;
+  return (
+    <section className="mt-8">
+      <h2 className="mb-3 flex items-center justify-between text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+        <span>Betting Odds</span>
+        {o.provider && (
+          <span className="text-[11px] font-normal normal-case text-zinc-400">
+            via {o.provider}
+          </span>
+        )}
+      </h2>
+
+      <div className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+        {/* 3-way moneyline */}
+        <div className="text-[11px] font-medium uppercase tracking-wide text-zinc-400">
+          Moneyline
+        </div>
+        <div className="mt-2 grid grid-cols-3 gap-2">
+          <MoneylineCell
+            label={match.home.abbreviation || "Home"}
+            odds={o.home.moneyLine}
+            favorite={o.home.favorite}
+          />
+          <MoneylineCell label="Draw" odds={o.drawMoneyLine} />
+          <MoneylineCell
+            label={match.away.abbreviation || "Away"}
+            odds={o.away.moneyLine}
+            favorite={o.away.favorite}
+          />
+        </div>
+
+        {/* Over/under + spread */}
+        {(ou !== null || o.details) && (
+          <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {ou !== null && (
+              <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3 dark:border-zinc-800 dark:bg-zinc-950">
+                <div className="text-[11px] font-medium uppercase tracking-wide text-zinc-400">
+                  Total goals · O/U {ou}
+                </div>
+                <div className="mt-1.5 flex items-center gap-4 text-sm">
+                  <span className="text-zinc-700 dark:text-zinc-300">
+                    Over{" "}
+                    <span className="font-bold tabular-nums text-zinc-900 dark:text-zinc-50">
+                      {american(o.overOdds)}
+                    </span>
+                  </span>
+                  <span className="text-zinc-700 dark:text-zinc-300">
+                    Under{" "}
+                    <span className="font-bold tabular-nums text-zinc-900 dark:text-zinc-50">
+                      {american(o.underOdds)}
+                    </span>
+                  </span>
+                </div>
+              </div>
+            )}
+            {o.details && (
+              <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3 dark:border-zinc-800 dark:bg-zinc-950">
+                <div className="text-[11px] font-medium uppercase tracking-wide text-zinc-400">
+                  Spread
+                </div>
+                <div className="mt-1.5 text-sm font-bold tabular-nums text-zinc-900 dark:text-zinc-50">
+                  {o.details}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        <p className="mt-3 text-[11px] text-zinc-400">
+          Odds shown for informational purposes and may be delayed. Percentages
+          are implied probabilities including the bookmaker margin.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function MatchInfoBar({ match }: { match: MatchDetail }) {
   const bits: { label: string; value: string }[] = [];
   if (match.venue) {
@@ -621,6 +743,7 @@ export function MatchDetailView({
         </div>
 
         <MatchInfoBar match={match} />
+        <Odds match={match} />
         <MatchEvents match={match} />
         <MatchStats match={match} />
         <Leaders match={match} />
