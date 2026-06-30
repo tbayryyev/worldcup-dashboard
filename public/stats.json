@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T00:01:00.569Z",
-  "matchesPlayed": 75,
-  "totalGoals": 221,
+  "generatedAt": "2026-06-30T04:43:19.849Z",
+  "matchesPlayed": 76,
+  "totalGoals": 223,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -56,6 +56,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 3,
       "assists": 2
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 3,
+      "assists": 1
     },
     {
       "name": "Ismaïla Sarr",
@@ -148,29 +157,20 @@
       "assists": 0
     },
     {
-      "name": "Ayase Ueda",
-      "teamId": "627",
-      "teamName": "Japan",
-      "teamAbbr": "JPN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Cody Gakpo",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
       "name": "Crysencio Summerville",
       "teamId": "449",
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 2,
+      "assists": 2
+    },
+    {
+      "name": "Ayase Ueda",
+      "teamId": "627",
+      "teamName": "Japan",
+      "teamAbbr": "JPN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 2,
       "assists": 1
     },
@@ -327,6 +327,15 @@
       "teamAbbr": "GER",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "goals": 3,
+      "assists": 2
+    },
+    {
+      "name": "Crysencio Summerville",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 2,
       "assists": 2
     },
     {
@@ -501,6 +510,15 @@
       "assists": 1
     },
     {
+      "name": "Cody Gakpo",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 3,
+      "assists": 1
+    },
+    {
       "name": "Ismaïla Sarr",
       "teamId": "654",
       "teamName": "Senegal",
@@ -524,24 +542,6 @@
       "teamName": "Japan",
       "teamAbbr": "JPN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Cody Gakpo",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Crysencio Summerville",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 2,
       "assists": 1
     }
@@ -692,6 +692,14 @@
       "red": 0
     },
     {
+      "name": "Issa Diop",
+      "teamId": "2869",
+      "teamAbbr": "MAR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Juninho Bacuna",
       "teamId": "11678",
       "teamAbbr": "CUW",
@@ -776,14 +784,6 @@
       "teamId": "209",
       "teamAbbr": "ECU",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Aleksandar Pavlovic",
-      "teamId": "481",
-      "teamAbbr": "GER",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "yellow": 1,
       "red": 0
     }
@@ -1370,14 +1370,14 @@
       "passPct": 90.3
     },
     {
-      "teamId": "449",
-      "name": "Netherlands",
-      "abbr": "NED",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "matches": 3,
-      "accuratePasses": 1463,
-      "totalPasses": 1620,
-      "passPct": 90.3
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "matches": 4,
+      "accuratePasses": 2296,
+      "totalPasses": 2575,
+      "passPct": 89.2
     },
     {
       "teamId": "448",
@@ -1395,19 +1395,19 @@
       "abbr": "GER",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
       "matches": 4,
-      "accuratePasses": 2345,
-      "totalPasses": 2652,
+      "accuratePasses": 2351,
+      "totalPasses": 2658,
       "passPct": 88.4
     },
     {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "matches": 3,
-      "accuratePasses": 1496,
-      "totalPasses": 1697,
-      "passPct": 88.2
+      "teamId": "449",
+      "name": "Netherlands",
+      "abbr": "NED",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "matches": 4,
+      "accuratePasses": 1756,
+      "totalPasses": 1993,
+      "passPct": 88.1
     },
     {
       "teamId": "475",
@@ -1795,8 +1795,8 @@
       "abbr": "PAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "matches": 4,
-      "accuratePasses": 819,
-      "totalPasses": 1180,
+      "accuratePasses": 818,
+      "totalPasses": 1178,
       "passPct": 69.4
     }
   ],
@@ -2090,6 +2090,14 @@
       "red": 0
     },
     {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "teamId": "465",
       "name": "Türkiye",
       "abbr": "TUR",
@@ -2142,14 +2150,6 @@
       "name": "Czechia",
       "abbr": "CZE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cze.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "yellow": 1,
       "red": 0
     },
