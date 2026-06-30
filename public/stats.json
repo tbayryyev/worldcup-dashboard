@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T18:18:52.649Z",
-  "matchesPlayed": 76,
-  "totalGoals": 223,
+  "generatedAt": "2026-06-30T20:28:31.960Z",
+  "matchesPlayed": 77,
+  "totalGoals": 226,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -10,6 +10,15 @@
       "teamAbbr": "ARG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 6,
+      "assists": 0
+    },
+    {
+      "name": "Erling Haaland",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 5,
       "assists": 0
     },
     {
@@ -38,15 +47,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "goals": 4,
       "assists": 1
-    },
-    {
-      "name": "Erling Haaland",
-      "teamId": "464",
-      "teamName": "Norway",
-      "teamAbbr": "NOR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "goals": 4,
-      "assists": 0
     },
     {
       "name": "Deniz Undav",
@@ -202,6 +202,15 @@
       "assists": 1
     },
     {
+      "name": "Nicolas Pépé",
+      "teamId": "4789",
+      "teamName": "Ivory Coast",
+      "teamAbbr": "CIV",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
       "name": "Pape Gueye",
       "teamId": "654",
       "teamName": "Senegal",
@@ -238,6 +247,15 @@
       "assists": 1
     },
     {
+      "name": "Amad Diallo",
+      "teamId": "4789",
+      "teamName": "Ivory Coast",
+      "teamAbbr": "CIV",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "goals": 2,
+      "assists": 0
+    },
+    {
       "name": "Anthony Elanga",
       "teamId": "466",
       "teamName": "Sweden",
@@ -252,24 +270,6 @@
       "teamName": "Portugal",
       "teamAbbr": "POR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
-      "name": "Cyle Larin",
-      "teamId": "206",
-      "teamName": "Canada",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "goals": 2,
-      "assists": 0
-    },
-    {
-      "name": "Daichi Kamada",
-      "teamId": "627",
-      "teamName": "Japan",
-      "teamAbbr": "JPN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 2,
       "assists": 0
     }
@@ -299,6 +299,15 @@
       "teamName": "Germany",
       "teamAbbr": "GER",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "goals": 0,
+      "assists": 3
+    },
+    {
+      "name": "Martin Ødegaard",
+      "teamId": "464",
+      "teamName": "Norway",
+      "teamAbbr": "NOR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "goals": 0,
       "assists": 3
     },
@@ -465,7 +474,7 @@
       "assists": 2
     },
     {
-      "name": "Martin Ødegaard",
+      "name": "Patrick Berg",
       "teamId": "464",
       "teamName": "Norway",
       "teamAbbr": "NOR",
@@ -534,15 +543,6 @@
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 3,
-      "assists": 1
-    },
-    {
-      "name": "Ayase Ueda",
-      "teamId": "627",
-      "teamName": "Japan",
-      "teamAbbr": "JPN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
-      "goals": 2,
       "assists": 1
     }
   ],
@@ -1470,16 +1470,6 @@
       "passPct": 86.9
     },
     {
-      "teamId": "4789",
-      "name": "Ivory Coast",
-      "abbr": "CIV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "matches": 3,
-      "accuratePasses": 1322,
-      "totalPasses": 1525,
-      "passPct": 86.7
-    },
-    {
       "teamId": "209",
       "name": "Ecuador",
       "abbr": "ECU",
@@ -1508,6 +1498,16 @@
       "accuratePasses": 1529,
       "totalPasses": 1767,
       "passPct": 86.5
+    },
+    {
+      "teamId": "4789",
+      "name": "Ivory Coast",
+      "abbr": "CIV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
+      "matches": 4,
+      "accuratePasses": 1661,
+      "totalPasses": 1926,
+      "passPct": 86.2
     },
     {
       "teamId": "580",
@@ -1570,6 +1570,16 @@
       "passPct": 85
     },
     {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "matches": 4,
+      "accuratePasses": 1517,
+      "totalPasses": 1784,
+      "passPct": 85
+    },
+    {
       "teamId": "660",
       "name": "United States",
       "abbr": "USA",
@@ -1578,16 +1588,6 @@
       "accuratePasses": 1351,
       "totalPasses": 1592,
       "passPct": 84.9
-    },
-    {
-      "teamId": "464",
-      "name": "Norway",
-      "abbr": "NOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "matches": 3,
-      "accuratePasses": 1102,
-      "totalPasses": 1311,
-      "passPct": 84.1
     },
     {
       "teamId": "4469",
@@ -2122,6 +2122,14 @@
       "red": 0
     },
     {
+      "teamId": "464",
+      "name": "Norway",
+      "abbr": "NOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "teamId": "202",
       "name": "Argentina",
       "abbr": "ARG",
@@ -2166,14 +2174,6 @@
       "name": "France",
       "abbr": "FRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "464",
-      "name": "Norway",
-      "abbr": "NOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "yellow": 1,
       "red": 0
     },
