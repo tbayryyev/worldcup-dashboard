@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T21:58:39.781Z",
-  "matchesPlayed": 80,
-  "totalGoals": 234,
+  "generatedAt": "2026-07-01T23:20:06.067Z",
+  "matchesPlayed": 81,
+  "totalGoals": 239,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -49,6 +49,15 @@
       "assists": 2
     },
     {
+      "name": "Ismaïla Sarr",
+      "teamId": "654",
+      "teamName": "Senegal",
+      "teamAbbr": "SEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 4,
+      "assists": 1
+    },
+    {
       "name": "Vinícius Júnior",
       "teamId": "205",
       "teamName": "Brazil",
@@ -72,15 +81,6 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 3,
-      "assists": 1
-    },
-    {
-      "name": "Ismaïla Sarr",
-      "teamId": "654",
-      "teamName": "Senegal",
-      "teamAbbr": "SEN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "goals": 3,
       "assists": 1
     },
@@ -202,6 +202,15 @@
       "assists": 1
     },
     {
+      "name": "Leandro Trossard",
+      "teamId": "459",
+      "teamName": "Belgium",
+      "teamAbbr": "BEL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "goals": 2,
+      "assists": 1
+    },
+    {
       "name": "Maxi Araújo",
       "teamId": "212",
       "teamName": "Uruguay",
@@ -256,22 +265,13 @@
       "assists": 1
     },
     {
-      "name": "Rubén Vargas",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "name": "Romelu Lukaku",
+      "teamId": "459",
+      "teamName": "Belgium",
+      "teamAbbr": "BEL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "goals": 2,
       "assists": 1
-    },
-    {
-      "name": "Amad Diallo",
-      "teamId": "4789",
-      "teamName": "Ivory Coast",
-      "teamAbbr": "CIV",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "goals": 2,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -519,6 +519,15 @@
       "assists": 2
     },
     {
+      "name": "Ismaïla Sarr",
+      "teamId": "654",
+      "teamName": "Senegal",
+      "teamAbbr": "SEN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 4,
+      "assists": 1
+    },
+    {
       "name": "Vinícius Júnior",
       "teamId": "205",
       "teamName": "Brazil",
@@ -533,15 +542,6 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 3,
-      "assists": 1
-    },
-    {
-      "name": "Ismaïla Sarr",
-      "teamId": "654",
-      "teamName": "Senegal",
-      "teamAbbr": "SEN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "goals": 3,
       "assists": 1
     }
@@ -1450,16 +1450,6 @@
       "passPct": 87.3
     },
     {
-      "teamId": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "matches": 3,
-      "accuratePasses": 1377,
-      "totalPasses": 1581,
-      "passPct": 87.1
-    },
-    {
       "teamId": "451",
       "name": "South Korea",
       "abbr": "KOR",
@@ -1468,16 +1458,6 @@
       "accuratePasses": 1598,
       "totalPasses": 1838,
       "passPct": 86.9
-    },
-    {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "matches": 3,
-      "accuratePasses": 1386,
-      "totalPasses": 1601,
-      "passPct": 86.6
     },
     {
       "teamId": "465",
@@ -1490,6 +1470,16 @@
       "passPct": 86.5
     },
     {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "matches": 4,
+      "accuratePasses": 1988,
+      "totalPasses": 2300,
+      "passPct": 86.4
+    },
+    {
       "teamId": "4789",
       "name": "Ivory Coast",
       "abbr": "CIV",
@@ -1497,6 +1487,16 @@
       "matches": 4,
       "accuratePasses": 1661,
       "totalPasses": 1926,
+      "passPct": 86.2
+    },
+    {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "matches": 4,
+      "accuratePasses": 1913,
+      "totalPasses": 2220,
       "passPct": 86.2
     },
     {
@@ -1858,19 +1858,19 @@
       "red": 1
     },
     {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "yellow": 4,
+      "red": 1
+    },
+    {
       "teamId": "4375",
       "name": "Iraq",
       "abbr": "IRQ",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "yellow": 4,
-      "red": 1
-    },
-    {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "yellow": 3,
       "red": 1
     },
     {
@@ -2082,6 +2082,14 @@
       "red": 0
     },
     {
+      "teamId": "654",
+      "name": "Senegal",
+      "abbr": "SEN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -2118,14 +2126,6 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "654",
-      "name": "Senegal",
-      "abbr": "SEN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "yellow": 2,
       "red": 0
     },
