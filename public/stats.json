@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T01:39:09.945Z",
-  "matchesPlayed": 78,
-  "totalGoals": 229,
+  "generatedAt": "2026-07-01T06:24:02.121Z",
+  "matchesPlayed": 79,
+  "totalGoals": 231,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -81,6 +81,15 @@
       "teamName": "Switzerland",
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 3,
+      "assists": 1
+    },
+    {
+      "name": "Julián Quiñones",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 3,
       "assists": 1
     },
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
       "goals": 2,
       "assists": 0
-    },
-    {
-      "name": "Anthony Elanga",
-      "teamId": "466",
-      "teamName": "Sweden",
-      "teamAbbr": "SWE",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "goals": 2,
-      "assists": 0
     }
   ],
   "topAssisters": [
@@ -317,6 +317,15 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 0,
+      "assists": 3
+    },
+    {
+      "name": "Roberto Alvarado",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 0,
       "assists": 3
     },
@@ -492,15 +501,6 @@
       "assists": 2
     },
     {
-      "name": "Roberto Alvarado",
-      "teamId": "203",
-      "teamName": "Mexico",
-      "teamAbbr": "MEX",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "goals": 0,
-      "assists": 2
-    },
-    {
       "name": "Ryan Gravenberch",
       "teamId": "449",
       "teamName": "Netherlands",
@@ -552,6 +552,14 @@
       "teamId": "210",
       "teamAbbr": "PAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+      "yellow": 1,
+      "red": 1
+    },
+    {
+      "name": "Piero Hincapié",
+      "teamId": "209",
+      "teamAbbr": "ECU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
       "yellow": 1,
       "red": 1
     },
@@ -648,6 +656,14 @@
       "teamId": "4398",
       "teamAbbr": "QAT",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/qat.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
+      "name": "Alan Franco",
+      "teamId": "209",
+      "teamAbbr": "ECU",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
       "yellow": 2,
       "red": 0
     },
@@ -768,22 +784,6 @@
       "teamId": "655",
       "teamAbbr": "KSA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Ahmed Fatouh",
-      "teamId": "2620",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Alan Franco",
-      "teamId": "209",
-      "teamAbbr": "ECU",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
       "yellow": 1,
       "red": 0
     }
@@ -1470,16 +1470,6 @@
       "passPct": 86.9
     },
     {
-      "teamId": "209",
-      "name": "Ecuador",
-      "abbr": "ECU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "matches": 3,
-      "accuratePasses": 1312,
-      "totalPasses": 1514,
-      "passPct": 86.7
-    },
-    {
       "teamId": "459",
       "name": "Belgium",
       "abbr": "BEL",
@@ -1520,13 +1510,13 @@
       "passPct": 86.1
     },
     {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "matches": 3,
-      "accuratePasses": 1146,
-      "totalPasses": 1333,
+      "teamId": "209",
+      "name": "Ecuador",
+      "abbr": "ECU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "matches": 4,
+      "accuratePasses": 1653,
+      "totalPasses": 1922,
       "passPct": 86
     },
     {
@@ -1588,6 +1578,16 @@
       "accuratePasses": 1351,
       "totalPasses": 1592,
       "passPct": 84.9
+    },
+    {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "matches": 4,
+      "accuratePasses": 1395,
+      "totalPasses": 1652,
+      "passPct": 84.4
     },
     {
       "teamId": "4469",
@@ -1826,6 +1826,14 @@
       "red": 1
     },
     {
+      "teamId": "209",
+      "name": "Ecuador",
+      "abbr": "ECU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "yellow": 8,
+      "red": 1
+    },
+    {
       "teamId": "452",
       "name": "Bosnia-Herzegovina",
       "abbr": "BIH",
@@ -1942,14 +1950,6 @@
       "name": "Australia",
       "abbr": "AUS",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "yellow": 5,
-      "red": 0
-    },
-    {
-      "teamId": "209",
-      "name": "Ecuador",
-      "abbr": "ECU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
       "yellow": 5,
       "red": 0
     },
