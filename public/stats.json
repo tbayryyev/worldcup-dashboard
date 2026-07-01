@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T16:05:06.000Z",
-  "matchesPlayed": 79,
-  "totalGoals": 231,
+  "generatedAt": "2026-07-01T18:23:49.842Z",
+  "matchesPlayed": 80,
+  "totalGoals": 234,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -27,6 +27,15 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 5,
+      "assists": 0
+    },
+    {
+      "name": "Harry Kane",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "goals": 5,
       "assists": 0
     },
@@ -108,15 +117,6 @@
       "teamName": "New Zealand",
       "teamAbbr": "NZL",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "goals": 3,
-      "assists": 0
-    },
-    {
-      "name": "Harry Kane",
-      "teamId": "448",
-      "teamName": "England",
-      "teamAbbr": "ENG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "goals": 3,
       "assists": 0
     },
@@ -420,6 +420,15 @@
       "assists": 2
     },
     {
+      "name": "Anthony Gordon",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
       "name": "Brahim Díaz",
       "teamId": "2869",
       "teamName": "Morocco",
@@ -533,15 +542,6 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "goals": 3,
-      "assists": 1
-    },
-    {
-      "name": "Johan Manzambi",
-      "teamId": "475",
-      "teamName": "Switzerland",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 3,
       "assists": 1
     }
@@ -740,6 +740,14 @@
       "red": 0
     },
     {
+      "name": "Noah Sadiki",
+      "teamId": "2850",
+      "teamAbbr": "COD",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Saeid Ezatolahi",
       "teamId": "469",
       "teamAbbr": "IRN",
@@ -776,14 +784,6 @@
       "teamId": "654",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Abdulelah Al-Amri",
-      "teamId": "655",
-      "teamAbbr": "KSA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ksa.png",
       "yellow": 1,
       "red": 0
     }
@@ -1370,6 +1370,16 @@
       "passPct": 90.3
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "matches": 4,
+      "accuratePasses": 1950,
+      "totalPasses": 2182,
+      "passPct": 89.4
+    },
+    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -1378,16 +1388,6 @@
       "accuratePasses": 2297,
       "totalPasses": 2576,
       "passPct": 89.2
-    },
-    {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "matches": 3,
-      "accuratePasses": 1482,
-      "totalPasses": 1665,
-      "passPct": 89
     },
     {
       "teamId": "481",
@@ -1566,7 +1566,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "matches": 4,
       "accuratePasses": 1517,
-      "totalPasses": 1784,
+      "totalPasses": 1785,
       "passPct": 85
     },
     {
@@ -1670,6 +1670,16 @@
       "passPct": 80.3
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "matches": 4,
+      "accuratePasses": 1120,
+      "totalPasses": 1398,
+      "passPct": 80.1
+    },
+    {
       "teamId": "452",
       "name": "Bosnia-Herzegovina",
       "abbr": "BIH",
@@ -1688,16 +1698,6 @@
       "accuratePasses": 736,
       "totalPasses": 925,
       "passPct": 79.6
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "matches": 3,
-      "accuratePasses": 821,
-      "totalPasses": 1033,
-      "passPct": 79.5
     },
     {
       "teamId": "659",
@@ -1938,6 +1938,14 @@
       "red": 0
     },
     {
+      "teamId": "2850",
+      "name": "Congo DR",
+      "abbr": "COD",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
@@ -1958,14 +1966,6 @@
       "name": "Sweden",
       "abbr": "SWE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
-      "yellow": 5,
-      "red": 0
-    },
-    {
-      "teamId": "2850",
-      "name": "Congo DR",
-      "abbr": "COD",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "yellow": 5,
       "red": 0
     },
@@ -2082,6 +2082,14 @@
       "red": 0
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "4469",
       "name": "Ghana",
       "abbr": "GHA",
@@ -2134,14 +2142,6 @@
       "name": "Argentina",
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 2,
       "red": 0
     },
