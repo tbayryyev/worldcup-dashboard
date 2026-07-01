@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T06:24:02.121Z",
+  "generatedAt": "2026-07-01T10:29:20.660Z",
   "matchesPlayed": 79,
   "totalGoals": 231,
   "topScorers": [
@@ -1510,16 +1510,6 @@
       "passPct": 86.1
     },
     {
-      "teamId": "209",
-      "name": "Ecuador",
-      "abbr": "ECU",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
-      "matches": 4,
-      "accuratePasses": 1653,
-      "totalPasses": 1922,
-      "passPct": 86
-    },
-    {
       "teamId": "627",
       "name": "Japan",
       "abbr": "JPN",
@@ -1527,6 +1517,16 @@
       "matches": 4,
       "accuratePasses": 1445,
       "totalPasses": 1682,
+      "passPct": 85.9
+    },
+    {
+      "teamId": "209",
+      "name": "Ecuador",
+      "abbr": "ECU",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ecu.png",
+      "matches": 4,
+      "accuratePasses": 1653,
+      "totalPasses": 1924,
       "passPct": 85.9
     },
     {
@@ -1585,9 +1585,9 @@
       "abbr": "MEX",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "matches": 4,
-      "accuratePasses": 1395,
-      "totalPasses": 1652,
-      "passPct": 84.4
+      "accuratePasses": 1394,
+      "totalPasses": 1649,
+      "passPct": 84.5
     },
     {
       "teamId": "4469",
