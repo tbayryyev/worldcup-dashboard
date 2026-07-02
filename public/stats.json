@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T01:31:42.376Z",
-  "matchesPlayed": 81,
-  "totalGoals": 239,
+  "generatedAt": "2026-07-02T05:56:47.442Z",
+  "matchesPlayed": 82,
+  "totalGoals": 241,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -117,6 +117,15 @@
       "teamName": "New Zealand",
       "teamAbbr": "NZL",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
+      "goals": 3,
+      "assists": 0
+    },
+    {
+      "name": "Folarin Balogun",
+      "teamId": "660",
+      "teamName": "United States",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
       "goals": 3,
       "assists": 0
     },
@@ -261,15 +270,6 @@
       "teamName": "Algeria",
       "teamAbbr": "ALG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Romelu Lukaku",
-      "teamId": "459",
-      "teamName": "Belgium",
-      "teamAbbr": "BEL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "goals": 2,
       "assists": 1
     }
@@ -548,6 +548,14 @@
   ],
   "playerDiscipline": [
     {
+      "name": "Folarin Balogun",
+      "teamId": "660",
+      "teamAbbr": "USA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "yellow": 1,
+      "red": 1
+    },
+    {
       "name": "Miguel Almirón",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -776,14 +784,6 @@
       "teamId": "580",
       "teamAbbr": "SCO",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "name": "Abdoulaye Seck",
-      "teamId": "654",
-      "teamAbbr": "SEN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "yellow": 1,
       "red": 0
     }
@@ -1476,7 +1476,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "matches": 4,
       "accuratePasses": 1988,
-      "totalPasses": 2300,
+      "totalPasses": 2302,
       "passPct": 86.4
     },
     {
@@ -1574,10 +1574,10 @@
       "name": "United States",
       "abbr": "USA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "matches": 3,
-      "accuratePasses": 1351,
-      "totalPasses": 1592,
-      "passPct": 84.9
+      "matches": 4,
+      "accuratePasses": 1700,
+      "totalPasses": 2007,
+      "passPct": 84.7
     },
     {
       "teamId": "203",
@@ -1660,6 +1660,16 @@
       "passPct": 80.5
     },
     {
+      "teamId": "452",
+      "name": "Bosnia-Herzegovina",
+      "abbr": "BIH",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
+      "matches": 4,
+      "accuratePasses": 1276,
+      "totalPasses": 1587,
+      "passPct": 80.4
+    },
+    {
       "teamId": "4375",
       "name": "Iraq",
       "abbr": "IRQ",
@@ -1678,16 +1688,6 @@
       "accuratePasses": 1120,
       "totalPasses": 1398,
       "passPct": 80.1
-    },
-    {
-      "teamId": "452",
-      "name": "Bosnia-Herzegovina",
-      "abbr": "BIH",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "matches": 3,
-      "accuratePasses": 911,
-      "totalPasses": 1140,
-      "passPct": 79.9
     },
     {
       "teamId": "11678",
@@ -1810,6 +1810,14 @@
       "red": 2
     },
     {
+      "teamId": "660",
+      "name": "United States",
+      "abbr": "USA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "yellow": 5,
+      "red": 2
+    },
+    {
       "teamId": "4398",
       "name": "Qatar",
       "abbr": "QAT",
@@ -1838,15 +1846,7 @@
       "name": "Bosnia-Herzegovina",
       "abbr": "BIH",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bih.png",
-      "yellow": 6,
-      "red": 1
-    },
-    {
-      "teamId": "660",
-      "name": "United States",
-      "abbr": "USA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
-      "yellow": 5,
+      "yellow": 7,
       "red": 1
     },
     {
