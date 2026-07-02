@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T20:01:21.869Z",
-  "matchesPlayed": 82,
-  "totalGoals": 241,
+  "generatedAt": "2026-07-02T21:43:12.383Z",
+  "matchesPlayed": 83,
+  "totalGoals": 244,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -54,6 +54,15 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 4,
+      "assists": 1
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "teamId": "164",
+      "teamName": "Spain",
+      "teamAbbr": "ESP",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 4,
       "assists": 1
     },
@@ -225,15 +234,6 @@
       "teamName": "Uruguay",
       "teamAbbr": "URU",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "teamId": "164",
-      "teamName": "Spain",
-      "teamAbbr": "ESP",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 2,
       "assists": 1
     },
@@ -501,6 +501,15 @@
       "assists": 2
     },
     {
+      "name": "Marc Cucurella",
+      "teamId": "164",
+      "teamName": "Spain",
+      "teamAbbr": "ESP",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
       "name": "Patrick Berg",
       "teamId": "464",
       "teamName": "Norway",
@@ -528,21 +537,12 @@
       "assists": 1
     },
     {
-      "name": "Vinícius Júnior",
-      "teamId": "205",
-      "teamName": "Brazil",
-      "teamAbbr": "BRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+      "name": "Mikel Oyarzabal",
+      "teamId": "164",
+      "teamName": "Spain",
+      "teamAbbr": "ESP",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 4,
-      "assists": 1
-    },
-    {
-      "name": "Cody Gakpo",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 3,
       "assists": 1
     }
   ],
@@ -772,19 +772,19 @@
       "red": 0
     },
     {
+      "name": "Stefan Posch",
+      "teamId": "474",
+      "teamAbbr": "AUT",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Teboho Mokoena",
       "teamId": "467",
       "teamAbbr": "RSA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
       "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Aaron Hickey",
-      "teamId": "580",
-      "teamAbbr": "SCO",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sco.png",
-      "yellow": 1,
       "red": 0
     }
   ],
@@ -1344,10 +1344,10 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 3,
-      "accuratePasses": 1955,
-      "totalPasses": 2148,
-      "passPct": 91
+      "matches": 4,
+      "accuratePasses": 2525,
+      "totalPasses": 2777,
+      "passPct": 90.9
     },
     {
       "teamId": "202",
@@ -1540,16 +1540,6 @@
       "passPct": 85.7
     },
     {
-      "teamId": "474",
-      "name": "Austria",
-      "abbr": "AUT",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-      "matches": 3,
-      "accuratePasses": 1234,
-      "totalPasses": 1444,
-      "passPct": 85.5
-    },
-    {
       "teamId": "467",
       "name": "South Africa",
       "abbr": "RSA",
@@ -1568,6 +1558,16 @@
       "accuratePasses": 1517,
       "totalPasses": 1785,
       "passPct": 85
+    },
+    {
+      "teamId": "474",
+      "name": "Austria",
+      "abbr": "AUT",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "matches": 4,
+      "accuratePasses": 1518,
+      "totalPasses": 1790,
+      "passPct": 84.8
     },
     {
       "teamId": "660",
@@ -1970,6 +1970,14 @@
       "red": 0
     },
     {
+      "teamId": "474",
+      "name": "Austria",
+      "abbr": "AUT",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
+      "yellow": 5,
+      "red": 0
+    },
+    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -2014,14 +2022,6 @@
       "name": "New Zealand",
       "abbr": "NZL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "yellow": 4,
-      "red": 0
-    },
-    {
-      "teamId": "474",
-      "name": "Austria",
-      "abbr": "AUT",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
       "yellow": 4,
       "red": 0
     },
