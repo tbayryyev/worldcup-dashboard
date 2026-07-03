@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T20:12:29.809Z",
-  "matchesPlayed": 85,
-  "totalGoals": 249,
+  "generatedAt": "2026-07-03T21:39:35.578Z",
+  "matchesPlayed": 86,
+  "totalGoals": 251,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -1534,10 +1534,10 @@
       "name": "Egypt",
       "abbr": "EGY",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "matches": 3,
-      "accuratePasses": 1296,
-      "totalPasses": 1513,
-      "passPct": 85.7
+      "matches": 4,
+      "accuratePasses": 1910,
+      "totalPasses": 2236,
+      "passPct": 85.4
     },
     {
       "teamId": "467",
@@ -1740,6 +1740,16 @@
       "passPct": 78.3
     },
     {
+      "teamId": "628",
+      "name": "Australia",
+      "abbr": "AUS",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+      "matches": 4,
+      "accuratePasses": 1262,
+      "totalPasses": 1625,
+      "passPct": 77.7
+    },
+    {
       "teamId": "2570",
       "name": "Uzbekistan",
       "abbr": "UZB",
@@ -1758,16 +1768,6 @@
       "accuratePasses": 675,
       "totalPasses": 874,
       "passPct": 77.2
-    },
-    {
-      "teamId": "628",
-      "name": "Australia",
-      "abbr": "AUS",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-      "matches": 3,
-      "accuratePasses": 858,
-      "totalPasses": 1118,
-      "passPct": 76.7
     },
     {
       "teamId": "469",
@@ -1882,6 +1882,14 @@
       "red": 1
     },
     {
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "yellow": 8,
+      "red": 0
+    },
+    {
       "teamId": "206",
       "name": "Canada",
       "abbr": "CAN",
@@ -1911,14 +1919,6 @@
       "abbr": "CUW",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
       "yellow": 7,
-      "red": 0
-    },
-    {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "yellow": 6,
       "red": 0
     },
     {
