@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T05:12:05.511Z",
+  "generatedAt": "2026-07-03T08:33:19.331Z",
   "matchesPlayed": 85,
   "totalGoals": 249,
   "topScorers": [
@@ -1365,8 +1365,8 @@
       "abbr": "ALG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "matches": 4,
-      "accuratePasses": 2305,
-      "totalPasses": 2565,
+      "accuratePasses": 2308,
+      "totalPasses": 2567,
       "passPct": 89.9
     },
     {
@@ -1456,7 +1456,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "matches": 4,
       "accuratePasses": 1767,
-      "totalPasses": 2042,
+      "totalPasses": 2043,
       "passPct": 86.5
     },
     {
