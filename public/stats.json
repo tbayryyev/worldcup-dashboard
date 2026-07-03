@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T01:09:00.688Z",
-  "matchesPlayed": 83,
-  "totalGoals": 244,
+  "generatedAt": "2026-07-03T05:12:05.511Z",
+  "matchesPlayed": 85,
+  "totalGoals": 249,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -85,20 +85,20 @@
       "assists": 2
     },
     {
-      "name": "Cody Gakpo",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 3,
-      "assists": 1
-    },
-    {
       "name": "Johan Manzambi",
       "teamId": "475",
       "teamName": "Switzerland",
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 3,
+      "assists": 2
+    },
+    {
+      "name": "Cody Gakpo",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 3,
       "assists": 1
     },
@@ -117,6 +117,15 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 3,
+      "assists": 0
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "teamId": "482",
+      "teamName": "Portugal",
+      "teamAbbr": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "goals": 3,
       "assists": 0
     },
@@ -182,6 +191,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "goals": 3,
       "assists": 0
+    },
+    {
+      "name": "Breel Embolo",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 2,
+      "assists": 2
     },
     {
       "name": "Crysencio Summerville",
@@ -252,24 +270,6 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Ramin Rezaeian",
-      "teamId": "469",
-      "teamName": "Iran",
-      "teamAbbr": "IRN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Riyad Mahrez",
-      "teamId": "624",
-      "teamName": "Algeria",
-      "teamAbbr": "ALG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "goals": 2,
       "assists": 1
     }
@@ -357,12 +357,12 @@
       "assists": 2
     },
     {
-      "name": "Crysencio Summerville",
-      "teamId": "449",
-      "teamName": "Netherlands",
-      "teamAbbr": "NED",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 2,
+      "name": "Johan Manzambi",
+      "teamId": "475",
+      "teamName": "Switzerland",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "goals": 3,
       "assists": 2
     },
     {
@@ -371,7 +371,16 @@
       "teamName": "Switzerland",
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "goals": 1,
+      "goals": 2,
+      "assists": 2
+    },
+    {
+      "name": "Crysencio Summerville",
+      "teamId": "449",
+      "teamName": "Netherlands",
+      "teamAbbr": "NED",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 2,
       "assists": 2
     },
     {
@@ -533,15 +542,6 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "goals": 4,
-      "assists": 1
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "teamId": "164",
-      "teamName": "Spain",
-      "teamAbbr": "ESP",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 4,
       "assists": 1
     }
@@ -724,6 +724,14 @@
       "red": 0
     },
     {
+      "name": "Ivan Perisic",
+      "teamId": "477",
+      "teamAbbr": "CRO",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Juninho Bacuna",
       "teamId": "11678",
       "teamAbbr": "CUW",
@@ -776,14 +784,6 @@
       "teamId": "474",
       "teamAbbr": "AUT",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Teboho Mokoena",
-      "teamId": "467",
-      "teamAbbr": "RSA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rsa.png",
       "yellow": 2,
       "red": 0
     }
@@ -1320,23 +1320,13 @@
   ],
   "teamPassing": [
     {
-      "teamId": "624",
-      "name": "Algeria",
-      "abbr": "ALG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "matches": 3,
-      "accuratePasses": 1830,
-      "totalPasses": 2004,
-      "passPct": 91.3
-    },
-    {
       "teamId": "482",
       "name": "Portugal",
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "matches": 3,
-      "accuratePasses": 1690,
-      "totalPasses": 1853,
+      "matches": 4,
+      "accuratePasses": 2223,
+      "totalPasses": 2438,
       "passPct": 91.2
     },
     {
@@ -1368,6 +1358,16 @@
       "accuratePasses": 2100,
       "totalPasses": 2326,
       "passPct": 90.3
+    },
+    {
+      "teamId": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
+      "matches": 4,
+      "accuratePasses": 2305,
+      "totalPasses": 2565,
+      "passPct": 89.9
     },
     {
       "teamId": "448",
@@ -1410,16 +1410,6 @@
       "passPct": 88.1
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 3,
-      "accuratePasses": 1412,
-      "totalPasses": 1605,
-      "passPct": 88
-    },
-    {
       "teamId": "478",
       "name": "France",
       "abbr": "FRA",
@@ -1440,16 +1430,6 @@
       "passPct": 87.4
     },
     {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "matches": 3,
-      "accuratePasses": 1290,
-      "totalPasses": 1478,
-      "passPct": 87.3
-    },
-    {
       "teamId": "451",
       "name": "South Korea",
       "abbr": "KOR",
@@ -1458,6 +1438,26 @@
       "accuratePasses": 1598,
       "totalPasses": 1838,
       "passPct": 86.9
+    },
+    {
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
+      "matches": 4,
+      "accuratePasses": 1602,
+      "totalPasses": 1848,
+      "passPct": 86.7
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 4,
+      "accuratePasses": 1767,
+      "totalPasses": 2042,
+      "passPct": 86.5
     },
     {
       "teamId": "465",
@@ -1978,6 +1978,14 @@
       "red": 0
     },
     {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "yellow": 5,
+      "red": 0
+    },
+    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -2034,10 +2042,10 @@
       "red": 0
     },
     {
-      "teamId": "482",
-      "name": "Portugal",
-      "abbr": "POR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "teamId": "477",
+      "name": "Croatia",
+      "abbr": "CRO",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
       "yellow": 4,
       "red": 0
     },
@@ -2086,6 +2094,14 @@
       "name": "Senegal",
       "abbr": "SEN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
+      "teamId": "624",
+      "name": "Algeria",
+      "abbr": "ALG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "yellow": 3,
       "red": 0
     },
@@ -2146,14 +2162,6 @@
       "red": 0
     },
     {
-      "teamId": "477",
-      "name": "Croatia",
-      "abbr": "CRO",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
       "teamId": "450",
       "name": "Czechia",
       "abbr": "CZE",
@@ -2174,14 +2182,6 @@
       "name": "France",
       "abbr": "FRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "yellow": 1,
-      "red": 0
-    },
-    {
-      "teamId": "624",
-      "name": "Algeria",
-      "abbr": "ALG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
       "yellow": 1,
       "red": 0
     }
