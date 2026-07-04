@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T22:59:03.975Z",
+  "generatedAt": "2026-07-04T00:11:32.691Z",
   "matchesPlayed": 86,
   "totalGoals": 251,
   "topScorers": [
@@ -1535,8 +1535,8 @@
       "abbr": "EGY",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "matches": 4,
-      "accuratePasses": 1910,
-      "totalPasses": 2236,
+      "accuratePasses": 1909,
+      "totalPasses": 2235,
       "passPct": 85.4
     },
     {
@@ -1745,8 +1745,8 @@
       "abbr": "AUS",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
       "matches": 4,
-      "accuratePasses": 1262,
-      "totalPasses": 1625,
+      "accuratePasses": 1261,
+      "totalPasses": 1623,
       "passPct": 77.7
     },
     {
