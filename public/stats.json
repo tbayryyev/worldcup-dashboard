@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-04T18:31:04.017Z",
-  "matchesPlayed": 88,
-  "totalGoals": 257,
+  "generatedAt": "2026-07-04T20:07:19.493Z",
+  "matchesPlayed": 89,
+  "totalGoals": 260,
   "topScorers": [
     {
       "name": "Lionel Messi",
@@ -285,6 +285,15 @@
       "assists": 5
     },
     {
+      "name": "Brahim Díaz",
+      "teamId": "2869",
+      "teamName": "Morocco",
+      "teamAbbr": "MAR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "goals": 0,
+      "assists": 4
+    },
+    {
       "name": "Bruno Guimarães",
       "teamId": "205",
       "teamName": "Brazil",
@@ -384,6 +393,15 @@
       "assists": 2
     },
     {
+      "name": "Achraf Hakimi",
+      "teamId": "2869",
+      "teamName": "Morocco",
+      "teamAbbr": "MAR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "goals": 1,
+      "assists": 2
+    },
+    {
       "name": "Iliman Ndiaye",
       "teamId": "654",
       "teamName": "Senegal",
@@ -434,15 +452,6 @@
       "teamName": "England",
       "teamAbbr": "ENG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 0,
-      "assists": 2
-    },
-    {
-      "name": "Brahim Díaz",
-      "teamId": "2869",
-      "teamName": "Morocco",
-      "teamAbbr": "MAR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "goals": 0,
       "assists": 2
     },
@@ -535,15 +544,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
       "goals": 0,
       "assists": 2
-    },
-    {
-      "name": "Ismaïla Sarr",
-      "teamId": "654",
-      "teamName": "Senegal",
-      "teamAbbr": "SEN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
-      "goals": 4,
-      "assists": 1
     }
   ],
   "playerDiscipline": [
@@ -700,6 +700,14 @@
       "red": 0
     },
     {
+      "name": "Cyle Larin",
+      "teamId": "206",
+      "teamAbbr": "CAN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Danilo",
       "teamId": "205",
       "teamAbbr": "BRA",
@@ -748,6 +756,14 @@
       "red": 0
     },
     {
+      "name": "Luc de Fougerolles",
+      "teamId": "206",
+      "teamAbbr": "CAN",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Matías Galarza",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -768,22 +784,6 @@
       "teamId": "2850",
       "teamAbbr": "COD",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Saeid Ezatolahi",
-      "teamId": "469",
-      "teamAbbr": "IRN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Sidny Lopes Cabral",
-      "teamId": "2597",
-      "teamAbbr": "CPV",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
       "yellow": 2,
       "red": 0
     }
@@ -1380,16 +1380,6 @@
       "passPct": 89.4
     },
     {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "matches": 4,
-      "accuratePasses": 2297,
-      "totalPasses": 2576,
-      "passPct": 89.2
-    },
-    {
       "teamId": "481",
       "name": "Germany",
       "abbr": "GER",
@@ -1408,6 +1398,16 @@
       "accuratePasses": 1934,
       "totalPasses": 2190,
       "passPct": 88.3
+    },
+    {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "matches": 5,
+      "accuratePasses": 2686,
+      "totalPasses": 3048,
+      "passPct": 88.1
     },
     {
       "teamId": "449",
@@ -1630,16 +1630,6 @@
       "passPct": 83
     },
     {
-      "teamId": "206",
-      "name": "Canada",
-      "abbr": "CAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "matches": 4,
-      "accuratePasses": 1394,
-      "totalPasses": 1706,
-      "passPct": 81.7
-    },
-    {
       "teamId": "2659",
       "name": "Panama",
       "abbr": "PAN",
@@ -1658,6 +1648,16 @@
       "accuratePasses": 1200,
       "totalPasses": 1483,
       "passPct": 80.9
+    },
+    {
+      "teamId": "206",
+      "name": "Canada",
+      "abbr": "CAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "matches": 5,
+      "accuratePasses": 1666,
+      "totalPasses": 2064,
+      "passPct": 80.7
     },
     {
       "teamId": "466",
@@ -1882,19 +1882,19 @@
       "red": 1
     },
     {
+      "teamId": "206",
+      "name": "Canada",
+      "abbr": "CAN",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+      "yellow": 11,
+      "red": 0
+    },
+    {
       "teamId": "2620",
       "name": "Egypt",
       "abbr": "EGY",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "yellow": 8,
-      "red": 0
-    },
-    {
-      "teamId": "206",
-      "name": "Canada",
-      "abbr": "CAN",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "yellow": 7,
       "red": 0
     },
     {
@@ -1919,6 +1919,14 @@
       "abbr": "CUW",
       "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
       "yellow": 7,
+      "red": 0
+    },
+    {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "yellow": 6,
       "red": 0
     },
     {
@@ -2127,14 +2135,6 @@
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "yellow": 2,
       "red": 0
     },
     {
