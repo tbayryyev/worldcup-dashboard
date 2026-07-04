@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T21:26:43.326Z",
+  "generatedAt": "2026-07-04T22:27:49.349Z",
   "matchesPlayed": 89,
   "totalGoals": 260,
   "topScorers": [
@@ -1405,8 +1405,8 @@
       "abbr": "MAR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "matches": 5,
-      "accuratePasses": 2686,
-      "totalPasses": 3048,
+      "accuratePasses": 2685,
+      "totalPasses": 3049,
       "passPct": 88.1
     },
     {
@@ -1656,7 +1656,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "matches": 5,
       "accuratePasses": 1666,
-      "totalPasses": 2064,
+      "totalPasses": 2065,
       "passPct": 80.7
     },
     {
