@@ -1,8 +1,17 @@
 {
-  "generatedAt": "2026-07-04T00:11:32.691Z",
-  "matchesPlayed": 86,
-  "totalGoals": 251,
+  "generatedAt": "2026-07-04T04:10:19.494Z",
+  "matchesPlayed": 88,
+  "totalGoals": 257,
   "topScorers": [
+    {
+      "name": "Lionel Messi",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "goals": 7,
+      "assists": 0
+    },
     {
       "name": "Kylian Mbappé",
       "teamId": "478",
@@ -11,15 +20,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "goals": 6,
       "assists": 2
-    },
-    {
-      "name": "Lionel Messi",
-      "teamId": "202",
-      "teamName": "Argentina",
-      "teamAbbr": "ARG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "goals": 6,
-      "assists": 0
     },
     {
       "name": "Erling Haaland",
@@ -684,6 +684,14 @@
       "red": 0
     },
     {
+      "name": "Caleb Yirenkyi",
+      "teamId": "4469",
+      "teamAbbr": "GHA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Casemiro",
       "teamId": "205",
       "teamAbbr": "BRA",
@@ -776,14 +784,6 @@
       "teamId": "2597",
       "teamAbbr": "CPV",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Stefan Posch",
-      "teamId": "474",
-      "teamAbbr": "AUT",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
       "yellow": 2,
       "red": 0
     }
@@ -1344,10 +1344,10 @@
       "name": "Argentina",
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "matches": 3,
-      "accuratePasses": 1735,
-      "totalPasses": 1916,
-      "passPct": 90.6
+      "matches": 4,
+      "accuratePasses": 2514,
+      "totalPasses": 2766,
+      "passPct": 90.9
     },
     {
       "teamId": "205",
@@ -1400,6 +1400,16 @@
       "passPct": 88.4
     },
     {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "matches": 4,
+      "accuratePasses": 1934,
+      "totalPasses": 2190,
+      "passPct": 88.3
+    },
+    {
       "teamId": "449",
       "name": "Netherlands",
       "abbr": "NED",
@@ -1418,16 +1428,6 @@
       "accuratePasses": 2009,
       "totalPasses": 2284,
       "passPct": 88
-    },
-    {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "matches": 3,
-      "accuratePasses": 1402,
-      "totalPasses": 1604,
-      "passPct": 87.4
     },
     {
       "teamId": "451",
@@ -1594,10 +1594,10 @@
       "name": "Ghana",
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "matches": 3,
-      "accuratePasses": 821,
-      "totalPasses": 979,
-      "passPct": 83.9
+      "matches": 4,
+      "accuratePasses": 1134,
+      "totalPasses": 1356,
+      "passPct": 83.6
     },
     {
       "teamId": "212",
@@ -1648,6 +1648,16 @@
       "accuratePasses": 982,
       "totalPasses": 1203,
       "passPct": 81.6
+    },
+    {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+      "matches": 4,
+      "accuratePasses": 1200,
+      "totalPasses": 1483,
+      "passPct": 80.9
     },
     {
       "teamId": "466",
@@ -1718,16 +1728,6 @@
       "accuratePasses": 889,
       "totalPasses": 1130,
       "passPct": 78.7
-    },
-    {
-      "teamId": "2597",
-      "name": "Cape Verde",
-      "abbr": "CPV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "matches": 3,
-      "accuratePasses": 791,
-      "totalPasses": 1007,
-      "passPct": 78.6
     },
     {
       "teamId": "450",
@@ -1946,6 +1946,22 @@
       "red": 0
     },
     {
+      "teamId": "4469",
+      "name": "Ghana",
+      "abbr": "GHA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
       "teamId": "580",
       "name": "Scotland",
       "abbr": "SCO",
@@ -1966,6 +1982,14 @@
       "name": "Sweden",
       "abbr": "SWE",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/swe.png",
+      "yellow": 5,
+      "red": 0
+    },
+    {
+      "teamId": "2597",
+      "name": "Cape Verde",
+      "abbr": "CPV",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
       "yellow": 5,
       "red": 0
     },
@@ -2018,14 +2042,6 @@
       "red": 0
     },
     {
-      "teamId": "2597",
-      "name": "Cape Verde",
-      "abbr": "CPV",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-      "yellow": 4,
-      "red": 0
-    },
-    {
       "teamId": "2666",
       "name": "New Zealand",
       "abbr": "NZL",
@@ -2046,14 +2062,6 @@
       "name": "Croatia",
       "abbr": "CRO",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "yellow": 4,
-      "red": 0
-    },
-    {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "yellow": 4,
       "red": 0
     },
@@ -2098,6 +2106,14 @@
       "red": 0
     },
     {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "624",
       "name": "Algeria",
       "abbr": "ALG",
@@ -2110,14 +2126,6 @@
       "name": "England",
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "4469",
-      "name": "Ghana",
-      "abbr": "GHA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
       "yellow": 3,
       "red": 0
     },
@@ -2150,14 +2158,6 @@
       "name": "Norway",
       "abbr": "NOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "yellow": 2,
       "red": 0
     },
