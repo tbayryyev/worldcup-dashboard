@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T01:14:28.960Z",
-  "matchesPlayed": 91,
-  "totalGoals": 264,
+  "generatedAt": "2026-07-06T05:53:04.534Z",
+  "matchesPlayed": 92,
+  "totalGoals": 269,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -36,8 +36,8 @@
       "teamName": "England",
       "teamAbbr": "ENG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 5,
-      "assists": 0
+      "goals": 6,
+      "assists": 1
     },
     {
       "name": "Ousmane Dembélé",
@@ -54,6 +54,24 @@
       "teamName": "Senegal",
       "teamAbbr": "SEN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
+      "goals": 4,
+      "assists": 1
+    },
+    {
+      "name": "Jude Bellingham",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "goals": 4,
+      "assists": 1
+    },
+    {
+      "name": "Julián Quiñones",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 4,
       "assists": 1
     },
@@ -99,15 +117,6 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "goals": 3,
-      "assists": 1
-    },
-    {
-      "name": "Julián Quiñones",
-      "teamId": "203",
-      "teamName": "Mexico",
-      "teamAbbr": "MEX",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 3,
       "assists": 1
     },
@@ -184,6 +193,15 @@
       "assists": 0
     },
     {
+      "name": "Raúl Jiménez",
+      "teamId": "203",
+      "teamName": "Mexico",
+      "teamAbbr": "MEX",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "goals": 3,
+      "assists": 0
+    },
+    {
       "name": "Yoane Wissa",
       "teamId": "2850",
       "teamName": "Congo DR",
@@ -229,15 +247,6 @@
       "assists": 1
     },
     {
-      "name": "Jude Bellingham",
-      "teamId": "448",
-      "teamName": "England",
-      "teamAbbr": "ENG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
       "name": "Leandro Trossard",
       "teamId": "459",
       "teamName": "Belgium",
@@ -261,15 +270,6 @@
       "teamName": "Ivory Coast",
       "teamAbbr": "CIV",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/civ.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Pape Gueye",
-      "teamId": "654",
-      "teamName": "Senegal",
-      "teamAbbr": "SEN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sen.png",
       "goals": 2,
       "assists": 1
     }
@@ -317,6 +317,15 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+      "goals": 0,
+      "assists": 3
+    },
+    {
+      "name": "Bukayo Saka",
+      "teamId": "448",
+      "teamName": "England",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "goals": 0,
       "assists": 3
     },
@@ -465,15 +474,6 @@
       "assists": 2
     },
     {
-      "name": "Bukayo Saka",
-      "teamId": "448",
-      "teamName": "England",
-      "teamAbbr": "ENG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 0,
-      "assists": 2
-    },
-    {
       "name": "Chris Wood",
       "teamId": "2666",
       "teamName": "New Zealand",
@@ -552,6 +552,14 @@
       "teamId": "660",
       "teamAbbr": "USA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+      "yellow": 1,
+      "red": 1
+    },
+    {
+      "name": "Jarell Quansah",
+      "teamId": "448",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 1,
       "red": 1
     },
@@ -716,6 +724,14 @@
       "red": 0
     },
     {
+      "name": "Declan Rice",
+      "teamId": "448",
+      "teamAbbr": "ENG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Diego Gómez",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -768,22 +784,6 @@
       "teamId": "210",
       "teamAbbr": "PAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Mohanad Lashin",
-      "teamId": "2620",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Noah Sadiki",
-      "teamId": "2850",
-      "teamAbbr": "COD",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/rdc.png",
       "yellow": 2,
       "red": 0
     }
@@ -1370,16 +1370,6 @@
       "passPct": 89.5
     },
     {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "matches": 4,
-      "accuratePasses": 1950,
-      "totalPasses": 2182,
-      "passPct": 89.4
-    },
-    {
       "teamId": "481",
       "name": "Germany",
       "abbr": "GER",
@@ -1387,6 +1377,16 @@
       "matches": 4,
       "accuratePasses": 2351,
       "totalPasses": 2658,
+      "passPct": 88.4
+    },
+    {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "matches": 5,
+      "accuratePasses": 2145,
+      "totalPasses": 2426,
       "passPct": 88.4
     },
     {
@@ -1490,6 +1490,16 @@
       "passPct": 86.4
     },
     {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "matches": 5,
+      "accuratePasses": 1814,
+      "totalPasses": 2104,
+      "passPct": 86.2
+    },
+    {
       "teamId": "4789",
       "name": "Ivory Coast",
       "abbr": "CIV",
@@ -1578,16 +1588,6 @@
       "accuratePasses": 1700,
       "totalPasses": 2007,
       "passPct": 84.7
-    },
-    {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "matches": 4,
-      "accuratePasses": 1394,
-      "totalPasses": 1649,
-      "passPct": 84.5
     },
     {
       "teamId": "4469",
@@ -1850,11 +1850,27 @@
       "red": 1
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "yellow": 7,
+      "red": 1
+    },
+    {
       "teamId": "212",
       "name": "Uruguay",
       "abbr": "URU",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uru.png",
       "yellow": 5,
+      "red": 1
+    },
+    {
+      "teamId": "203",
+      "name": "Mexico",
+      "abbr": "MEX",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+      "yellow": 4,
       "red": 1
     },
     {
@@ -1871,14 +1887,6 @@
       "abbr": "IRQ",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irq.png",
       "yellow": 4,
-      "red": 1
-    },
-    {
-      "teamId": "203",
-      "name": "Mexico",
-      "abbr": "MEX",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "yellow": 2,
       "red": 1
     },
     {
@@ -2134,14 +2142,6 @@
       "name": "Algeria",
       "abbr": "ALG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 3,
       "red": 0
     },
