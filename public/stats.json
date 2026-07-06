@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T19:14:25.867Z",
-  "matchesPlayed": 92,
-  "totalGoals": 269,
+  "generatedAt": "2026-07-06T21:09:36.216Z",
+  "matchesPlayed": 93,
+  "totalGoals": 270,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -692,6 +692,14 @@
       "red": 0
     },
     {
+      "name": "Bernardo Silva",
+      "teamId": "482",
+      "teamAbbr": "POR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Caleb Yirenkyi",
       "teamId": "4469",
       "teamAbbr": "GHA",
@@ -776,14 +784,6 @@
       "teamId": "206",
       "teamAbbr": "CAN",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Matías Galarza",
-      "teamId": "210",
-      "teamAbbr": "PAR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
       "yellow": 2,
       "red": 0
     }
@@ -1320,26 +1320,6 @@
   ],
   "teamPassing": [
     {
-      "teamId": "482",
-      "name": "Portugal",
-      "abbr": "POR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
-      "matches": 4,
-      "accuratePasses": 2223,
-      "totalPasses": 2438,
-      "passPct": 91.2
-    },
-    {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 4,
-      "accuratePasses": 2525,
-      "totalPasses": 2777,
-      "passPct": 90.9
-    },
-    {
       "teamId": "202",
       "name": "Argentina",
       "abbr": "ARG",
@@ -1348,6 +1328,26 @@
       "accuratePasses": 2514,
       "totalPasses": 2766,
       "passPct": 90.9
+    },
+    {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "matches": 5,
+      "accuratePasses": 2992,
+      "totalPasses": 3308,
+      "passPct": 90.4
+    },
+    {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "matches": 5,
+      "accuratePasses": 2580,
+      "totalPasses": 2864,
+      "passPct": 90.1
     },
     {
       "teamId": "624",
@@ -1930,6 +1930,14 @@
       "red": 0
     },
     {
+      "teamId": "482",
+      "name": "Portugal",
+      "abbr": "POR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+      "yellow": 7,
+      "red": 0
+    },
+    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -2014,14 +2022,6 @@
       "name": "Austria",
       "abbr": "AUT",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aut.png",
-      "yellow": 5,
-      "red": 0
-    },
-    {
-      "teamId": "482",
-      "name": "Portugal",
-      "abbr": "POR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "yellow": 5,
       "red": 0
     },
@@ -2122,6 +2122,14 @@
       "red": 0
     },
     {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "teamId": "654",
       "name": "Senegal",
       "abbr": "SEN",
@@ -2150,14 +2158,6 @@
       "name": "Türkiye",
       "abbr": "TUR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/tur.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "yellow": 2,
       "red": 0
     },
