@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T23:06:09.144Z",
+  "generatedAt": "2026-07-06T01:14:28.960Z",
   "matchesPlayed": 91,
   "totalGoals": 264,
   "topScorers": [
@@ -1366,8 +1366,8 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
       "matches": 5,
       "accuratePasses": 2379,
-      "totalPasses": 2655,
-      "passPct": 89.6
+      "totalPasses": 2657,
+      "passPct": 89.5
     },
     {
       "teamId": "448",
@@ -1455,8 +1455,8 @@
       "abbr": "NOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "matches": 5,
-      "accuratePasses": 2134,
-      "totalPasses": 2465,
+      "accuratePasses": 2135,
+      "totalPasses": 2466,
       "passPct": 86.6
     },
     {
