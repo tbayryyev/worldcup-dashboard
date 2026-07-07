@@ -1,8 +1,17 @@
 {
-  "generatedAt": "2026-07-07T16:27:33.432Z",
-  "matchesPlayed": 94,
-  "totalGoals": 275,
+  "generatedAt": "2026-07-07T18:30:03.151Z",
+  "matchesPlayed": 95,
+  "totalGoals": 280,
   "topScorers": [
+    {
+      "name": "Lionel Messi",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "goals": 8,
+      "assists": 1
+    },
     {
       "name": "Kylian Mbappé",
       "teamId": "478",
@@ -18,15 +27,6 @@
       "teamName": "Norway",
       "teamAbbr": "NOR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "goals": 7,
-      "assists": 0
-    },
-    {
-      "name": "Lionel Messi",
-      "teamId": "202",
-      "teamName": "Argentina",
-      "teamAbbr": "ARG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 7,
       "assists": 0
     },
@@ -756,6 +756,14 @@
       "red": 0
     },
     {
+      "name": "Haissem Hassan",
+      "teamId": "2620",
+      "teamAbbr": "EGY",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Issa Diop",
       "teamId": "2869",
       "teamAbbr": "MAR",
@@ -776,14 +784,6 @@
       "teamId": "11678",
       "teamAbbr": "CUW",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Luc de Fougerolles",
-      "teamId": "206",
-      "teamAbbr": "CAN",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "yellow": 2,
       "red": 0
     }
@@ -1324,10 +1324,10 @@
       "name": "Argentina",
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "matches": 4,
-      "accuratePasses": 2514,
-      "totalPasses": 2766,
-      "passPct": 90.9
+      "matches": 5,
+      "accuratePasses": 3055,
+      "totalPasses": 3368,
+      "passPct": 90.7
     },
     {
       "teamId": "164",
@@ -1550,16 +1550,6 @@
       "passPct": 85.5
     },
     {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "matches": 4,
-      "accuratePasses": 1909,
-      "totalPasses": 2235,
-      "passPct": 85.4
-    },
-    {
       "teamId": "660",
       "name": "United States",
       "abbr": "USA",
@@ -1568,6 +1558,16 @@
       "accuratePasses": 2159,
       "totalPasses": 2534,
       "passPct": 85.2
+    },
+    {
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "matches": 5,
+      "accuratePasses": 2198,
+      "totalPasses": 2584,
+      "passPct": 85.1
     },
     {
       "teamId": "467",
@@ -1890,6 +1890,14 @@
       "red": 1
     },
     {
+      "teamId": "2620",
+      "name": "Egypt",
+      "abbr": "EGY",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+      "yellow": 12,
+      "red": 0
+    },
+    {
       "teamId": "206",
       "name": "Canada",
       "abbr": "CAN",
@@ -1902,14 +1910,6 @@
       "name": "Brazil",
       "abbr": "BRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
-      "yellow": 8,
-      "red": 0
-    },
-    {
-      "teamId": "2620",
-      "name": "Egypt",
-      "abbr": "EGY",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "yellow": 8,
       "red": 0
     },
