@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T20:28:11.913Z",
+  "generatedAt": "2026-07-07T21:54:30.966Z",
   "matchesPlayed": 95,
   "totalGoals": 280,
   "topScorers": [
@@ -1575,7 +1575,7 @@
       "abbr": "EGY",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "matches": 5,
-      "accuratePasses": 2197,
+      "accuratePasses": 2196,
       "totalPasses": 2584,
       "passPct": 85
     },
