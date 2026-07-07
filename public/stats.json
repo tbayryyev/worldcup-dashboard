@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-07T22:57:56.201Z",
-  "matchesPlayed": 95,
+  "generatedAt": "2026-07-07T23:59:42.699Z",
+  "matchesPlayed": 96,
   "totalGoals": 280,
   "topScorers": [
     {
@@ -740,6 +740,14 @@
       "red": 0
     },
     {
+      "name": "Denis Zakaria",
+      "teamId": "475",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Diego Gómez",
       "teamId": "210",
       "teamAbbr": "PAR",
@@ -756,6 +764,14 @@
       "red": 0
     },
     {
+      "name": "Granit Xhaka",
+      "teamId": "475",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Haissem Hassan",
       "teamId": "2620",
       "teamAbbr": "EGY",
@@ -768,22 +784,6 @@
       "teamId": "2869",
       "teamAbbr": "MAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Ivan Perisic",
-      "teamId": "477",
-      "teamAbbr": "CRO",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/cro.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Juninho Bacuna",
-      "teamId": "11678",
-      "teamAbbr": "CUW",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
       "yellow": 2,
       "red": 0
     }
@@ -1400,16 +1400,6 @@
       "passPct": 88.3
     },
     {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-      "matches": 4,
-      "accuratePasses": 1934,
-      "totalPasses": 2190,
-      "passPct": 88.3
-    },
-    {
       "teamId": "2869",
       "name": "Morocco",
       "abbr": "MAR",
@@ -1430,6 +1420,16 @@
       "passPct": 88.1
     },
     {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "matches": 5,
+      "accuratePasses": 2388,
+      "totalPasses": 2738,
+      "passPct": 87.2
+    },
+    {
       "teamId": "451",
       "name": "South Korea",
       "abbr": "KOR",
@@ -1438,6 +1438,16 @@
       "accuratePasses": 1598,
       "totalPasses": 1838,
       "passPct": 86.9
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 5,
+      "accuratePasses": 2313,
+      "totalPasses": 2669,
+      "passPct": 86.7
     },
     {
       "teamId": "477",
@@ -1458,16 +1468,6 @@
       "accuratePasses": 2135,
       "totalPasses": 2466,
       "passPct": 86.6
-    },
-    {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 4,
-      "accuratePasses": 1767,
-      "totalPasses": 2043,
-      "passPct": 86.5
     },
     {
       "teamId": "465",
@@ -1914,6 +1914,14 @@
       "red": 0
     },
     {
+      "teamId": "208",
+      "name": "Colombia",
+      "abbr": "COL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "yellow": 8,
+      "red": 0
+    },
+    {
       "teamId": "2654",
       "name": "Haiti",
       "abbr": "HAI",
@@ -1935,6 +1943,14 @@
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
       "yellow": 7,
+      "red": 0
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 6,
       "red": 0
     },
     {
@@ -1974,14 +1990,6 @@
       "name": "Ghana",
       "abbr": "GHA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-      "yellow": 6,
-      "red": 0
-    },
-    {
-      "teamId": "208",
-      "name": "Colombia",
-      "abbr": "COL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "yellow": 6,
       "red": 0
     },
@@ -2095,14 +2103,6 @@
       "abbr": "UZB",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/uzb.png",
       "yellow": 4,
-      "red": 0
-    },
-    {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 3,
       "red": 0
     },
     {
