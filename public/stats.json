@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T23:59:42.699Z",
+  "generatedAt": "2026-07-08T03:34:29.042Z",
   "matchesPlayed": 96,
   "totalGoals": 280,
   "topScorers": [
@@ -1426,7 +1426,7 @@
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
       "matches": 5,
       "accuratePasses": 2388,
-      "totalPasses": 2738,
+      "totalPasses": 2737,
       "passPct": 87.2
     },
     {
@@ -1438,16 +1438,6 @@
       "accuratePasses": 1598,
       "totalPasses": 1838,
       "passPct": 86.9
-    },
-    {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 5,
-      "accuratePasses": 2313,
-      "totalPasses": 2669,
-      "passPct": 86.7
     },
     {
       "teamId": "477",
@@ -1468,6 +1458,16 @@
       "accuratePasses": 2135,
       "totalPasses": 2466,
       "passPct": 86.6
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 5,
+      "accuratePasses": 2314,
+      "totalPasses": 2674,
+      "passPct": 86.5
     },
     {
       "teamId": "465",
