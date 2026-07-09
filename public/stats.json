@@ -1,8 +1,17 @@
 {
-  "generatedAt": "2026-07-09T21:20:21.258Z",
-  "matchesPlayed": 96,
-  "totalGoals": 280,
+  "generatedAt": "2026-07-09T22:49:03.173Z",
+  "matchesPlayed": 97,
+  "totalGoals": 282,
   "topScorers": [
+    {
+      "name": "Kylian Mbappé",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 8,
+      "assists": 3
+    },
     {
       "name": "Lionel Messi",
       "teamId": "202",
@@ -11,15 +20,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 8,
       "assists": 1
-    },
-    {
-      "name": "Kylian Mbappé",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 7,
-      "assists": 2
     },
     {
       "name": "Erling Haaland",
@@ -45,7 +45,7 @@
       "teamName": "France",
       "teamAbbr": "FRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 4,
+      "goals": 5,
       "assists": 2
     },
     {
@@ -303,6 +303,15 @@
       "assists": 4
     },
     {
+      "name": "Kylian Mbappé",
+      "teamId": "478",
+      "teamName": "France",
+      "teamAbbr": "FRA",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "goals": 8,
+      "assists": 3
+    },
+    {
       "name": "Alexander Isak",
       "teamId": "466",
       "teamName": "Sweden",
@@ -357,21 +366,12 @@
       "assists": 3
     },
     {
-      "name": "Kylian Mbappé",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 7,
-      "assists": 2
-    },
-    {
       "name": "Ousmane Dembélé",
       "teamId": "478",
       "teamName": "France",
       "teamAbbr": "FRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 4,
+      "goals": 5,
       "assists": 2
     },
     {
@@ -660,6 +660,14 @@
       "red": 1
     },
     {
+      "name": "Issa Diop",
+      "teamId": "2869",
+      "teamAbbr": "MAR",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "yellow": 3,
+      "red": 0
+    },
+    {
       "name": "Abdukodir Khusanov",
       "teamId": "2570",
       "teamAbbr": "UZB",
@@ -776,14 +784,6 @@
       "teamId": "2620",
       "teamAbbr": "EGY",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Issa Diop",
-      "teamId": "2869",
-      "teamAbbr": "MAR",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "yellow": 2,
       "red": 0
     }
@@ -1380,6 +1380,16 @@
       "passPct": 88.4
     },
     {
+      "teamId": "478",
+      "name": "France",
+      "abbr": "FRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "matches": 6,
+      "accuratePasses": 2951,
+      "totalPasses": 3338,
+      "passPct": 88.4
+    },
+    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -1390,26 +1400,6 @@
       "passPct": 88.4
     },
     {
-      "teamId": "478",
-      "name": "France",
-      "abbr": "FRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "matches": 5,
-      "accuratePasses": 2519,
-      "totalPasses": 2853,
-      "passPct": 88.3
-    },
-    {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
-      "matches": 5,
-      "accuratePasses": 2685,
-      "totalPasses": 3049,
-      "passPct": 88.1
-    },
-    {
       "teamId": "449",
       "name": "Netherlands",
       "abbr": "NED",
@@ -1418,6 +1408,16 @@
       "accuratePasses": 1755,
       "totalPasses": 1991,
       "passPct": 88.1
+    },
+    {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "matches": 6,
+      "accuratePasses": 3137,
+      "totalPasses": 3573,
+      "passPct": 87.8
     },
     {
       "teamId": "208",
@@ -1922,6 +1922,14 @@
       "red": 0
     },
     {
+      "teamId": "2869",
+      "name": "Morocco",
+      "abbr": "MAR",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+      "yellow": 7,
+      "red": 0
+    },
+    {
       "teamId": "2654",
       "name": "Haiti",
       "abbr": "HAI",
@@ -1950,14 +1958,6 @@
       "name": "Switzerland",
       "abbr": "SUI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 6,
-      "red": 0
-    },
-    {
-      "teamId": "2869",
-      "name": "Morocco",
-      "abbr": "MAR",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
       "yellow": 6,
       "red": 0
     },
