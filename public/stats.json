@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-10T20:49:01.378Z",
-  "matchesPlayed": 97,
-  "totalGoals": 282,
+  "generatedAt": "2026-07-10T21:58:43.506Z",
+  "matchesPlayed": 98,
+  "totalGoals": 285,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -110,6 +110,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "goals": 3,
       "assists": 2
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "teamId": "459",
+      "teamName": "Belgium",
+      "teamAbbr": "BEL",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "goals": 3,
+      "assists": 1
     },
     {
       "name": "Cody Gakpo",
@@ -261,15 +270,6 @@
       "teamName": "France",
       "teamAbbr": "FRA",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 2,
-      "assists": 1
-    },
-    {
-      "name": "Charles De Ketelaere",
-      "teamId": "459",
-      "teamName": "Belgium",
-      "teamAbbr": "BEL",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "goals": 2,
       "assists": 1
     }
@@ -1334,10 +1334,10 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 5,
-      "accuratePasses": 2992,
-      "totalPasses": 3307,
-      "passPct": 90.5
+      "matches": 6,
+      "accuratePasses": 3590,
+      "totalPasses": 3972,
+      "passPct": 90.4
     },
     {
       "teamId": "482",
@@ -1540,16 +1540,6 @@
       "passPct": 85.9
     },
     {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
-      "matches": 5,
-      "accuratePasses": 2322,
-      "totalPasses": 2716,
-      "passPct": 85.5
-    },
-    {
       "teamId": "660",
       "name": "United States",
       "abbr": "USA",
@@ -1588,6 +1578,16 @@
       "accuratePasses": 1519,
       "totalPasses": 1791,
       "passPct": 84.8
+    },
+    {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "matches": 6,
+      "accuratePasses": 2566,
+      "totalPasses": 3030,
+      "passPct": 84.7
     },
     {
       "teamId": "4469",
@@ -1858,6 +1858,14 @@
       "red": 1
     },
     {
+      "teamId": "459",
+      "name": "Belgium",
+      "abbr": "BEL",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+      "yellow": 6,
+      "red": 1
+    },
+    {
       "teamId": "212",
       "name": "Uruguay",
       "abbr": "URU",
@@ -1870,14 +1878,6 @@
       "name": "Mexico",
       "abbr": "MEX",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "yellow": 4,
-      "red": 1
-    },
-    {
-      "teamId": "459",
-      "name": "Belgium",
-      "abbr": "BEL",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
       "yellow": 4,
       "red": 1
     },
@@ -2026,6 +2026,14 @@
       "red": 0
     },
     {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "yellow": 5,
+      "red": 0
+    },
+    {
       "teamId": "474",
       "name": "Austria",
       "abbr": "AUT",
@@ -2118,14 +2126,6 @@
       "name": "Netherlands",
       "abbr": "NED",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "yellow": 3,
       "red": 0
     },
