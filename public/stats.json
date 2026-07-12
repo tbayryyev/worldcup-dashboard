@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T04:50:22.823Z",
+  "generatedAt": "2026-07-12T07:27:13.061Z",
   "matchesPlayed": 100,
   "totalGoals": 292,
   "topScorers": [
@@ -1335,8 +1335,8 @@
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "matches": 6,
-      "accuratePasses": 3670,
-      "totalPasses": 4060,
+      "accuratePasses": 3669,
+      "totalPasses": 4059,
       "passPct": 90.4
     },
     {
@@ -1480,16 +1480,6 @@
       "passPct": 86.2
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 6,
-      "accuratePasses": 2713,
-      "totalPasses": 3148,
-      "passPct": 86.2
-    },
-    {
       "teamId": "4789",
       "name": "Ivory Coast",
       "abbr": "CIV",
@@ -1508,6 +1498,16 @@
       "accuratePasses": 1913,
       "totalPasses": 2220,
       "passPct": 86.2
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 6,
+      "accuratePasses": 2712,
+      "totalPasses": 3148,
+      "passPct": 86.1
     },
     {
       "teamId": "580",
