@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T01:02:48.987Z",
-  "matchesPlayed": 99,
-  "totalGoals": 288,
+  "generatedAt": "2026-07-12T04:50:22.823Z",
+  "matchesPlayed": 100,
+  "totalGoals": 292,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -19,7 +19,7 @@
       "teamAbbr": "ARG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 8,
-      "assists": 1
+      "assists": 2
     },
     {
       "name": "Erling Haaland",
@@ -375,6 +375,15 @@
       "assists": 3
     },
     {
+      "name": "Lionel Messi",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "goals": 8,
+      "assists": 2
+    },
+    {
       "name": "Ousmane Dembélé",
       "teamId": "478",
       "teamName": "France",
@@ -535,18 +544,17 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "goals": 0,
       "assists": 2
-    },
-    {
-      "name": "Joshua Kimmich",
-      "teamId": "481",
-      "teamName": "Germany",
-      "teamAbbr": "GER",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
-      "goals": 0,
-      "assists": 2
     }
   ],
   "playerDiscipline": [
+    {
+      "name": "Breel Embolo",
+      "teamId": "475",
+      "teamAbbr": "SUI",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 1,
+      "red": 1
+    },
     {
       "name": "Folarin Balogun",
       "teamId": "660",
@@ -776,14 +784,6 @@
       "teamId": "475",
       "teamAbbr": "SUI",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Haissem Hassan",
-      "teamId": "2620",
-      "teamAbbr": "EGY",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
       "yellow": 2,
       "red": 0
     }
@@ -1320,16 +1320,6 @@
   ],
   "teamPassing": [
     {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "matches": 5,
-      "accuratePasses": 3055,
-      "totalPasses": 3368,
-      "passPct": 90.7
-    },
-    {
       "teamId": "164",
       "name": "Spain",
       "abbr": "ESP",
@@ -1337,6 +1327,16 @@
       "matches": 6,
       "accuratePasses": 3590,
       "totalPasses": 3971,
+      "passPct": 90.4
+    },
+    {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "matches": 6,
+      "accuratePasses": 3670,
+      "totalPasses": 4060,
       "passPct": 90.4
     },
     {
@@ -1375,9 +1375,9 @@
       "abbr": "ENG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "matches": 6,
-      "accuratePasses": 2714,
+      "accuratePasses": 2713,
       "totalPasses": 3054,
-      "passPct": 88.9
+      "passPct": 88.8
     },
     {
       "teamId": "481",
@@ -1450,16 +1450,6 @@
       "passPct": 86.7
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "matches": 5,
-      "accuratePasses": 2314,
-      "totalPasses": 2674,
-      "passPct": 86.5
-    },
-    {
       "teamId": "465",
       "name": "Türkiye",
       "abbr": "TUR",
@@ -1475,8 +1465,8 @@
       "abbr": "NOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
       "matches": 6,
-      "accuratePasses": 2627,
-      "totalPasses": 3042,
+      "accuratePasses": 2629,
+      "totalPasses": 3043,
       "passPct": 86.4
     },
     {
@@ -1487,6 +1477,16 @@
       "matches": 5,
       "accuratePasses": 1812,
       "totalPasses": 2102,
+      "passPct": 86.2
+    },
+    {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "matches": 6,
+      "accuratePasses": 2713,
+      "totalPasses": 3148,
       "passPct": 86.2
     },
     {
@@ -1850,6 +1850,14 @@
       "red": 1
     },
     {
+      "teamId": "475",
+      "name": "Switzerland",
+      "abbr": "SUI",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
+      "yellow": 7,
+      "red": 1
+    },
+    {
       "teamId": "448",
       "name": "England",
       "abbr": "ENG",
@@ -1954,14 +1962,6 @@
       "red": 0
     },
     {
-      "teamId": "475",
-      "name": "Switzerland",
-      "abbr": "SUI",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 6,
-      "red": 0
-    },
-    {
       "teamId": "655",
       "name": "Saudi Arabia",
       "abbr": "KSA",
@@ -1974,6 +1974,14 @@
       "name": "Iran",
       "abbr": "IRN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "yellow": 6,
       "red": 0
     },
@@ -2142,14 +2150,6 @@
       "name": "Norway",
       "abbr": "NOR",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
-      "yellow": 3,
-      "red": 0
-    },
-    {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "yellow": 3,
       "red": 0
     },
