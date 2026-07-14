@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T20:08:01.460Z",
-  "matchesPlayed": 100,
-  "totalGoals": 292,
+  "generatedAt": "2026-07-14T21:30:17.642Z",
+  "matchesPlayed": 101,
+  "totalGoals": 294,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -58,6 +58,15 @@
       "assists": 2
     },
     {
+      "name": "Mikel Oyarzabal",
+      "teamId": "164",
+      "teamName": "Spain",
+      "teamAbbr": "ESP",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "goals": 5,
+      "assists": 1
+    },
+    {
       "name": "Ismaïla Sarr",
       "teamId": "654",
       "teamName": "Senegal",
@@ -72,15 +81,6 @@
       "teamName": "Mexico",
       "teamAbbr": "MEX",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
-      "goals": 4,
-      "assists": 1
-    },
-    {
-      "name": "Mikel Oyarzabal",
-      "teamId": "164",
-      "teamName": "Spain",
-      "teamAbbr": "ESP",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
       "goals": 4,
       "assists": 1
     },
@@ -510,6 +510,15 @@
       "assists": 2
     },
     {
+      "name": "Dani Olmo",
+      "teamId": "164",
+      "teamName": "Spain",
+      "teamAbbr": "ESP",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "goals": 0,
+      "assists": 2
+    },
+    {
       "name": "Denzel Dumfries",
       "teamId": "449",
       "teamName": "Netherlands",
@@ -533,15 +542,6 @@
       "teamName": "Algeria",
       "teamAbbr": "ALG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/alg.png",
-      "goals": 0,
-      "assists": 2
-    },
-    {
-      "name": "Jean-Kévin Duverne",
-      "teamId": "2654",
-      "teamName": "Haiti",
-      "teamAbbr": "HAI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/hai.png",
       "goals": 0,
       "assists": 2
     }
@@ -1320,16 +1320,6 @@
   ],
   "teamPassing": [
     {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 6,
-      "accuratePasses": 3590,
-      "totalPasses": 3971,
-      "passPct": 90.4
-    },
-    {
       "teamId": "202",
       "name": "Argentina",
       "abbr": "ARG",
@@ -1348,6 +1338,16 @@
       "accuratePasses": 2580,
       "totalPasses": 2865,
       "passPct": 90.1
+    },
+    {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "matches": 7,
+      "accuratePasses": 4018,
+      "totalPasses": 4471,
+      "passPct": 89.9
     },
     {
       "teamId": "624",
@@ -1390,16 +1390,6 @@
       "passPct": 88.4
     },
     {
-      "teamId": "478",
-      "name": "France",
-      "abbr": "FRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "matches": 6,
-      "accuratePasses": 2951,
-      "totalPasses": 3339,
-      "passPct": 88.4
-    },
-    {
       "teamId": "449",
       "name": "Netherlands",
       "abbr": "NED",
@@ -1408,6 +1398,16 @@
       "accuratePasses": 1755,
       "totalPasses": 1991,
       "passPct": 88.1
+    },
+    {
+      "teamId": "478",
+      "name": "France",
+      "abbr": "FRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+      "matches": 7,
+      "accuratePasses": 3346,
+      "totalPasses": 3811,
+      "passPct": 87.8
     },
     {
       "teamId": "2869",
@@ -1962,6 +1962,14 @@
       "red": 0
     },
     {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
       "teamId": "655",
       "name": "Saudi Arabia",
       "abbr": "KSA",
@@ -1974,6 +1982,14 @@
       "name": "Iran",
       "abbr": "IRN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/irn.png",
+      "yellow": 6,
+      "red": 0
+    },
+    {
+      "teamId": "478",
+      "name": "France",
+      "abbr": "FRA",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "yellow": 6,
       "red": 0
     },
@@ -2034,14 +2050,6 @@
       "red": 0
     },
     {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "yellow": 5,
-      "red": 0
-    },
-    {
       "teamId": "474",
       "name": "Austria",
       "abbr": "AUT",
@@ -2086,14 +2094,6 @@
       "name": "New Zealand",
       "abbr": "NZL",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nzl.png",
-      "yellow": 4,
-      "red": 0
-    },
-    {
-      "teamId": "478",
-      "name": "France",
-      "abbr": "FRA",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "yellow": 4,
       "red": 0
     },
