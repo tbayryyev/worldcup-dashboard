@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T22:33:17.591Z",
+  "generatedAt": "2026-07-14T23:51:08.207Z",
   "matchesPlayed": 101,
   "totalGoals": 294,
   "topScorers": [
@@ -1340,16 +1340,6 @@
       "passPct": 90.1
     },
     {
-      "teamId": "164",
-      "name": "Spain",
-      "abbr": "ESP",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 7,
-      "accuratePasses": 4018,
-      "totalPasses": 4471,
-      "passPct": 89.9
-    },
-    {
       "teamId": "624",
       "name": "Algeria",
       "abbr": "ALG",
@@ -1358,6 +1348,16 @@
       "accuratePasses": 2308,
       "totalPasses": 2567,
       "passPct": 89.9
+    },
+    {
+      "teamId": "164",
+      "name": "Spain",
+      "abbr": "ESP",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "matches": 7,
+      "accuratePasses": 4017,
+      "totalPasses": 4473,
+      "passPct": 89.8
     },
     {
       "teamId": "205",
