@@ -1,8 +1,17 @@
 {
-  "generatedAt": "2026-07-15T20:31:54.785Z",
-  "matchesPlayed": 101,
-  "totalGoals": 294,
+  "generatedAt": "2026-07-15T21:56:37.689Z",
+  "matchesPlayed": 102,
+  "totalGoals": 297,
   "topScorers": [
+    {
+      "name": "Lionel Messi",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "goals": 8,
+      "assists": 4
+    },
     {
       "name": "Kylian Mbappé",
       "teamId": "478",
@@ -11,15 +20,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "goals": 8,
       "assists": 3
-    },
-    {
-      "name": "Lionel Messi",
-      "teamId": "202",
-      "teamName": "Argentina",
-      "teamAbbr": "ARG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "goals": 8,
-      "assists": 2
     },
     {
       "name": "Erling Haaland",
@@ -126,6 +126,15 @@
       "teamName": "Netherlands",
       "teamAbbr": "NED",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/ned.png",
+      "goals": 3,
+      "assists": 1
+    },
+    {
+      "name": "Lautaro Martínez",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "goals": 3,
       "assists": 1
     },
@@ -263,15 +272,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/jpn.png",
       "goals": 2,
       "assists": 1
-    },
-    {
-      "name": "Bradley Barcola",
-      "teamId": "478",
-      "teamName": "France",
-      "teamAbbr": "FRA",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "goals": 2,
-      "assists": 1
     }
   ],
   "topAssisters": [
@@ -283,6 +283,15 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
       "goals": 0,
       "assists": 5
+    },
+    {
+      "name": "Lionel Messi",
+      "teamId": "202",
+      "teamName": "Argentina",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "goals": 8,
+      "assists": 4
     },
     {
       "name": "Brahim Díaz",
@@ -344,7 +353,7 @@
       "teamName": "England",
       "teamAbbr": "ENG",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "goals": 0,
+      "goals": 1,
       "assists": 3
     },
     {
@@ -373,15 +382,6 @@
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
       "goals": 0,
       "assists": 3
-    },
-    {
-      "name": "Lionel Messi",
-      "teamId": "202",
-      "teamName": "Argentina",
-      "teamAbbr": "ARG",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "goals": 8,
-      "assists": 2
     },
     {
       "name": "Ousmane Dembélé",
@@ -1324,10 +1324,10 @@
       "name": "Argentina",
       "abbr": "ARG",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "matches": 6,
-      "accuratePasses": 3669,
-      "totalPasses": 4059,
-      "passPct": 90.4
+      "matches": 7,
+      "accuratePasses": 4206,
+      "totalPasses": 4649,
+      "passPct": 90.5
     },
     {
       "teamId": "482",
@@ -1370,16 +1370,6 @@
       "passPct": 89.5
     },
     {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
-      "matches": 6,
-      "accuratePasses": 2713,
-      "totalPasses": 3054,
-      "passPct": 88.8
-    },
-    {
       "teamId": "481",
       "name": "Germany",
       "abbr": "GER",
@@ -1387,6 +1377,16 @@
       "matches": 4,
       "accuratePasses": 2351,
       "totalPasses": 2658,
+      "passPct": 88.4
+    },
+    {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "matches": 7,
+      "accuratePasses": 2986,
+      "totalPasses": 3379,
       "passPct": 88.4
     },
     {
@@ -1842,6 +1842,14 @@
       "red": 1
     },
     {
+      "teamId": "448",
+      "name": "England",
+      "abbr": "ENG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+      "yellow": 8,
+      "red": 1
+    },
+    {
       "teamId": "452",
       "name": "Bosnia-Herzegovina",
       "abbr": "BIH",
@@ -1854,14 +1862,6 @@
       "name": "Switzerland",
       "abbr": "SUI",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
-      "yellow": 7,
-      "red": 1
-    },
-    {
-      "teamId": "448",
-      "name": "England",
-      "abbr": "ENG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
       "yellow": 7,
       "red": 1
     },
@@ -1911,6 +1911,14 @@
       "abbr": "CAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "yellow": 11,
+      "red": 0
+    },
+    {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "yellow": 9,
       "red": 0
     },
     {
@@ -1990,14 +1998,6 @@
       "name": "France",
       "abbr": "FRA",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
-      "yellow": 6,
-      "red": 0
-    },
-    {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
       "yellow": 6,
       "red": 0
     },
