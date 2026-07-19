@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-19T21:22:36.154Z",
-  "matchesPlayed": 103,
-  "totalGoals": 307,
+  "generatedAt": "2026-07-19T22:25:02.683Z",
+  "matchesPlayed": 104,
+  "totalGoals": 308,
   "topScorers": [
     {
       "name": "Kylian Mbappé",
@@ -556,6 +556,14 @@
       "red": 1
     },
     {
+      "name": "Enzo Fernández",
+      "teamId": "202",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "yellow": 1,
+      "red": 1
+    },
+    {
       "name": "Folarin Balogun",
       "teamId": "660",
       "teamAbbr": "USA",
@@ -732,6 +740,14 @@
       "red": 0
     },
     {
+      "name": "Cristian Romero",
+      "teamId": "202",
+      "teamAbbr": "ARG",
+      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "yellow": 2,
+      "red": 0
+    },
+    {
       "name": "Cyle Larin",
       "teamId": "206",
       "teamAbbr": "CAN",
@@ -768,22 +784,6 @@
       "teamId": "210",
       "teamAbbr": "PAR",
       "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Gervane Kastaneer",
-      "teamId": "11678",
-      "teamAbbr": "CUW",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11678.png",
-      "yellow": 2,
-      "red": 0
-    },
-    {
-      "name": "Granit Xhaka",
-      "teamId": "475",
-      "teamAbbr": "SUI",
-      "teamLogo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png",
       "yellow": 2,
       "red": 0
     }
@@ -1320,16 +1320,6 @@
   ],
   "teamPassing": [
     {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "matches": 7,
-      "accuratePasses": 4206,
-      "totalPasses": 4647,
-      "passPct": 90.5
-    },
-    {
       "teamId": "482",
       "name": "Portugal",
       "abbr": "POR",
@@ -1354,10 +1344,10 @@
       "name": "Spain",
       "abbr": "ESP",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
-      "matches": 7,
-      "accuratePasses": 4017,
-      "totalPasses": 4473,
-      "passPct": 89.8
+      "matches": 8,
+      "accuratePasses": 4779,
+      "totalPasses": 5325,
+      "passPct": 89.7
     },
     {
       "teamId": "205",
@@ -1368,6 +1358,16 @@
       "accuratePasses": 2379,
       "totalPasses": 2657,
       "passPct": 89.5
+    },
+    {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "matches": 8,
+      "accuratePasses": 4564,
+      "totalPasses": 5111,
+      "passPct": 89.3
     },
     {
       "teamId": "448",
@@ -1826,6 +1826,14 @@
       "red": 2
     },
     {
+      "teamId": "202",
+      "name": "Argentina",
+      "abbr": "ARG",
+      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+      "yellow": 14,
+      "red": 1
+    },
+    {
       "teamId": "210",
       "name": "Paraguay",
       "abbr": "PAR",
@@ -1911,14 +1919,6 @@
       "abbr": "CAN",
       "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
       "yellow": 11,
-      "red": 0
-    },
-    {
-      "teamId": "202",
-      "name": "Argentina",
-      "abbr": "ARG",
-      "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-      "yellow": 9,
       "red": 0
     },
     {
